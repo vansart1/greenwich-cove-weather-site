@@ -1,10 +1,13 @@
-// Cloudflare Workers Builds config — declares this repo as a static site.
-// All files in the repo root are served as static assets; there's no runtime code.
+// Cloudflare Workers Builds config.
+// A small Worker script (src/worker.js) handles the /refresh endpoint and falls
+// through to static assets for everything else.
 {
   "name": "greenwich-cove-weather-site",
   "compatibility_date": "2025-01-01",
+  "main": "src/worker.js",
   "assets": {
     "directory": "./",
+    "binding": "ASSETS",
     "not_found_handling": "404-page"
   }
 }
