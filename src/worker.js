@@ -35,24 +35,31 @@ async function handleRefresh(request, env) {
 
   const message = `Visitor at greenwichweather.victoransart.com asked for a fresh forecast.\nFrom: ${country} (${ip})\nUA: ${ua}`;
 
-  try {
-    const ntfyRes = await fetch(`https://ntfy.sh/${topic}`, {
-      method: "POST",
-      headers: {
-        "Title": "Greenwich Cove Weather — refresh request",
-        "Priority": "4",
-        "Tags": "wind_face,ocean",
-      },
-      body: message,
-    });
+  // Retry once on failure — the first hit from a cold Cloudflare edge to ntfy.sh
+  // can fail/timeout while warming up the TCP+TLS connection. A single retry
+  // covers that without masking real outages.
+  let lastErr = null;
+  for (let attempt = 0; attempt < 2; attempt++) {
+    try {
+      const ntfyRes = await fetch(`https://ntfy.sh/${topic}`, {
+        method: "POST",
+        headers: {
+          "Title": "Greenwich Cove Weather — refresh request",
+          "Priority": "4",
+          "Tags": "wind_face,ocean",
+        },
+        body: message,
+      });
 
-    if (!ntfyRes.ok) {
-      return json({ error: `ntfy returned ${ntfyRes.status}` }, 502);
+      if (ntfyRes.ok) {
+        return json({ ok: true, attempt });
+      }
+      lastErr = `ntfy returned ${ntfyRes.status}`;
+    } catch (e) {
+      lastErr = e.message || "fetch threw";
     }
-    return json({ ok: true });
-  } catch (e) {
-    return json({ error: e.message || "unknown error" }, 500);
   }
+  return json({ error: lastErr }, 502);
 }
 
 function json(payload, status = 200) {
