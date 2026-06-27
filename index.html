@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Greenwich Cove Weather</title>
+<style>
+  :root {
+    --bg: #fafafa;
+    --fg: #1a1a1a;
+    --muted: #666;
+    --border: #e5e5e5;
+    --card: #fff;
+    --risk: #d97706;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.5 -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif; }
+  main { max-width: 640px; margin: 0 auto; padding: 16px; }
+  header { margin-bottom: 16px; }
+  header h1 { margin: 0 0 4px; font-size: 22px; }
+  header p.tagline { margin: 0; color: var(--muted); font-size: 14px; }
+  .statusbar { display: flex; align-items: center; justify-content: space-between;
+    gap: 12px; flex-wrap: wrap; padding: 10px 12px; margin-bottom: 16px;
+    background: #fff; border: 1px solid var(--border); border-radius: 10px; }
+  .statusbar .updated { font-size: 13px; color: var(--muted); }
+  .statusbar .updated strong { color: var(--fg); font-weight: 600; }
+  .statusbar .actions { display: flex; gap: 8px; }
+  .statusbar a.btn { display: inline-block; padding: 7px 12px; border-radius: 8px;
+    text-decoration: none; font-size: 13px; font-weight: 500; line-height: 1;
+    border: 1px solid var(--border); background: #fff; color: var(--fg); }
+  .statusbar a.btn.primary { background: #1a1a1a; color: #fff; border-color: #1a1a1a; }
+  .statusbar a.btn:hover { filter: brightness(0.95); }
+  .alpha { background: #fff7e6; border: 1px solid #f5c97a; color: #7a4a00;
+    padding: 10px 12px; border-radius: 8px; font-size: 13px; margin-bottom: 20px; }
+  section.card { background: var(--card); border: 1px solid var(--border);
+    border-radius: 12px; padding: 16px; margin-bottom: 16px; }
+  section h2 { margin: 0 0 8px; font-size: 18px; display: flex; align-items: center; gap: 10px; }
+  .badge { display: inline-block; font-size: 11px; font-weight: 700;
+    letter-spacing: 0.05em; padding: 3px 8px; border-radius: 999px;
+    background: var(--risk); color: white; }
+  .summary { font-size: 16px; margin: 0 0 10px; }
+  .effect { font-size: 14px; color: var(--muted); margin: 0 0 12px; }
+  .tactics { font-size: 15px; margin: 12px 0 4px; }
+  details { margin-top: 10px; }
+  details summary { cursor: pointer; font-size: 14px; color: #2563eb;
+    list-style: none; padding: 6px 0; }
+  details summary::-webkit-details-marker { display: none; }
+  details summary::before { content: "▸ "; display: inline-block; transition: transform 0.15s; }
+  details[open] summary::before { transform: rotate(90deg); }
+  details[open] summary { margin-bottom: 6px; }
+  details .body { font-size: 14px; color: #333; }
+  details .body p { margin: 0 0 10px; }
+  details .body p:last-child { margin-bottom: 0; }
+  table.wind { width: 100%; border-collapse: collapse; margin: 8px 0 12px; font-size: 14px; }
+  table.wind th, table.wind td { text-align: left; padding: 8px 6px;
+    border-bottom: 1px solid var(--border); }
+  table.wind th { font-size: 12px; text-transform: uppercase;
+    letter-spacing: 0.05em; color: var(--muted); font-weight: 600; }
+  table.wind td:nth-child(1) { font-variant-numeric: tabular-nums; font-weight: 600; }
+  table.wind .gust, table.wind .deg { color: var(--muted); font-size: 12px; }
+  .empty { color: var(--muted); font-style: italic; }
+  details.caveats summary { color: var(--muted); }
+  details.caveats ul { margin: 0; padding-left: 20px; font-size: 13px; color: var(--muted); }
+  footer { margin-top: 28px; padding-top: 16px; border-top: 1px solid var(--border);
+    font-size: 12px; color: var(--muted); text-align: center; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Greenwich Cove Weather</h1>
+    <p class="tagline">AI-powered weather analysis for Greenwich Cove — the regional forecast, refined by what actually happens at the shoreline.</p>
+  </header>
+
+  <section class="card">
+    <h2>Storm risk <span class="badge">MODERATE</span></h2>
+    <p class="summary">A scattered line of weak shower and thunderstorm cells is approaching from the northwest, but with very little atmospheric fuel today, the cells should reach the cove as rain showers and a few rumbles — not damaging weather.</p>
+    <p class="effect"><strong>Local effect:</strong> The Sound is only 4–5°F cooler than the air right now, and tonight&#x27;s cells are coming overland from the NW — they won&#x27;t cross the cool water before reaching the cove.</p>
+    <details>
+      <summary>Detailed explanation</summary>
+      <div class="body"><p><strong>Regional picture.</strong> KOKX radar shows a scattered cluster of cells 9–21 miles N to NW of Riverside, with reflectivities running 36–44 dBZ. The closest cell sits 8.9 mi NW at 38 dBZ. NWS OKX's Area Forecast Discussion notes a chance of thunderstorms but explicitly says <strong>no severe storms are expected</strong>, and there are currently no active watches, warnings, or advisories. The official cove forecast was bumped to 50% PoP with 0.25–0.5" possible.</p><p><strong>Instability is very low.</strong> HRRR-analyzed CAPE over the cove is just <strong>20 J/kg</strong> right now and tops out at ~180 J/kg through the evening — well below the 1500 J/kg threshold where storms have enough fuel to organize. Bulk 0–6 km shear is moderate (36 kt WSW), but with this little CAPE the shear has nothing to act on.</p><p><strong>Local modifier — Sound effect won't help this time.</strong> Water temperature is 63°F at the WLIS buoy and 67°F at Bridgeport Harbor, against an air temperature of 72°F — a delta of just 4–5°F. The marine layer is too thin to reliably stabilize incoming cells. More importantly, today's cells are tracking from inland NW toward the coast — they don't cross the Sound on the way in, so the cool water never gets a chance to chew on them. The protective mechanism is not active.</p><p><strong>Most likely outcome for the cove.</strong> One or two of the stronger cells (40+ dBZ) may clip the area in the next 1–3 hours as rain showers with a few rumbles. Given the trivial CAPE and the AFD's explicit non-severe outlook, organized damaging weather is unlikely. Surrounding inland towns to the N/NW are slightly more exposed than the coast.</p><p><strong>What would change the call.</strong> A new cell building to ≥45 dBZ within 25 mi tracking directly at the cove, an upstream APRS gust ≥35 kt, or NWS issuing a severe thunderstorm watch would push this to <strong>high</strong>. The AFD notes a possible convective complex moving through Tuesday night into Wednesday morning with a back-door cold front — worth watching but not today's story.</p></div>
+    </details>
+  </section>
+
+  <section class="card">
+    <h2>Tonight's wind (17:00–22:00)</h2>
+    <table class='wind'><thead><tr><th>Time</th><th>kt</th><th>Dir</th><th>Shift</th></tr></thead><tbody><tr><td>17:00</td><td>5<span class='gust'> g7</span></td><td>SW<span class='deg'> 220°</span></td><td>right-shifting through SW toward WSW as gradient veers</td></tr>
+<tr><td>18:00</td><td>5<span class='gust'> g8</span></td><td>WSW<span class='deg'> 240°</span></td><td>peak of the window, light gradient settled</td></tr>
+<tr><td>19:00</td><td>4<span class='gust'> g6</span></td><td>WSW<span class='deg'> 245°</span></td><td>softening, direction holding</td></tr>
+<tr><td>20:00</td><td>2<span class='gust'> g4</span></td><td>E<span class='deg'> 90°</span></td><td>thermal collapse + backdoor easterly filling (sunset 20:31)</td></tr>
+<tr><td>21:00</td><td>2<span class='gust'> g3</span></td><td>ENE<span class='deg'> 70°</span></td><td>light backdoor, oscillating ±20°</td></tr>
+<tr><td>22:00</td><td>2<span class='gust'> g3</span></td><td>ENE<span class='deg'> 60°</span></td><td>very light, may go calm</td></tr></tbody></table>
+    <p class="tactics"><strong>Tactics:</strong> Right side favored as the gradient veers from SW to WSW through 18:00 — work right off the line, then play oscillations after the breeze softens. Expect a hard direction flip to easterly around sunset, so don&#x27;t get caught deep right late in the evening.</p>
+    <details>
+      <summary>Detailed explanation</summary>
+      <div class="body"><p><strong>Regime call: B-light.</strong> Synoptic pressure is essentially flat (1016–1017 hPa across the region), water–air ΔT is only 4.5°F (below the gate where a strong thermal SB sets up), and the coastal southerly fraction is just 35% — west of the cove is mixed, central CT coast is 100% southerly, and the eastern Sound has a cleaner SE 7 kt sea breeze working. RYC is currently reading SSW 6.2 kt gusting 8.4, matching HRRR's forecast direction for the cove.</p><p><strong>HRRR vs. obs divergence flagged but RYC tracks HRRR.</strong> The LIS-west zone median is WNW 302° while HRRR forecasts SSW 208° — a 94° split — but that median is dragged by inland-affected stations. The cove proper (RYC) is reading SSW, which lines up with HRRR's gradient call. Direction confidence at the cove is <strong>moderate</strong>; further offshore, low.</p><p><strong>What racers will feel.</strong> 4–8 kt in puffs through the 17:00–18:00 peak, with the breeze veering steadily from SW through WSW as the synoptic gradient settles. After 19:00 the breeze softens through sunset (20:31 EDT) and HRRR projects a hard flip to E/ENE around 20:00 — a backdoor easterly is already showing at KBOS (E 9 kt) and across LI's south shore, and that signal often arrives at the cove right at sunset. Expect 2–3 kt easterly oscillating ±20° after dark.</p><p><strong>Why right.</strong> With a veering SW → WSW gradient, the right side of the course (closer to the open Sound) gets first access to the new direction and cleaner pressure as the breeze fills in from the west. Cove geography favors right when the wind has any westerly component, since Greenwich Point shadows the left side of any course set off the harbor mouth. Once the breeze collapses near sunset, the easterly will come in from the opposite corner — don't commit deep right late in the window.</p><p><strong>Actionable.</strong> Start mid-line to right, work the right side on the first beat, and look for the WSW puffs filling from the buoy. After 19:30 stay flexible — the direction flip is the dominant feature of the evening, and being on the right tack when it arrives matters more than which side of the line you were on.</p></div>
+    </details>
+  </section>
+
+  <details class='caveats'><summary>Data caveats</summary><ul><li>HRRR and LIS-wide observed direction diverge by 94° (HRRR SSW vs obs median WNW); the cove station RYC tracks HRRR closely, so confidence is moderate at the cove and low further offshore.</li><li>Buoy 44040 reading is 71 min old — current but watch for stale water-temp updates next cycle.</li></ul></details>
+
+  <div class="statusbar">
+    <div class="updated">Updated <strong>Sat Jun 27, 3:18 PM UTC-04:00</strong></div>
+    <div class="actions">
+      <!-- TODO: wire to ntfy Pages Function once that step lands -->
+      <a class="btn primary" href="#" id="request-update">Refresh forecast</a>
+      <a class="btn" href="mailto:hello@propelrank.com?subject=Greenwich%20Cove%20Weather%20—%20feedback">Send feedback</a>
+    </div>
+  </div>
+
+  <div class="alpha">
+    This page is an experimental forecast.
+    Don't rely on it for safety, navigation, or weather decisions. Always cross-check
+    with NWS, radar, and your own judgment.
+  </div>
+
+  <footer>
+    Greenwich Cove Weather · experimental
+  </footer>
+</main>
+</body>
+</html>
