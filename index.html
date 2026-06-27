@@ -11,26 +11,23 @@
     --muted: #666;
     --border: #e5e5e5;
     --card: #fff;
-    --risk: #d97706;
+    --risk: #1f9d55;
   }
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg);
     font: 16px/1.5 -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif; }
   main { max-width: 640px; margin: 0 auto; padding: 16px; }
-  header { margin-bottom: 16px; }
+  header { margin-bottom: 12px; }
   header h1 { margin: 0 0 4px; font-size: 22px; }
   header p.tagline { margin: 0; color: var(--muted); font-size: 14px; }
-  .statusbar { display: flex; align-items: center; justify-content: space-between;
-    gap: 12px; flex-wrap: wrap; padding: 10px 12px; margin-bottom: 16px;
-    background: #fff; border: 1px solid var(--border); border-radius: 10px; }
-  .statusbar .updated { font-size: 13px; color: var(--muted); }
-  .statusbar .updated strong { color: var(--fg); font-weight: 600; }
-  .statusbar .actions { display: flex; gap: 8px; }
-  .statusbar a.btn { display: inline-block; padding: 7px 12px; border-radius: 8px;
-    text-decoration: none; font-size: 13px; font-weight: 500; line-height: 1;
+  .updated-line { font-size: 13px; color: var(--muted); margin: 0 0 16px 2px; }
+  .updated-line strong { color: var(--fg); font-weight: 600; }
+  .actions { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap;
+    margin: 16px 0; }
+  .actions a.btn { display: inline-block; padding: 8px 14px; border-radius: 8px;
+    text-decoration: none; font-size: 14px; font-weight: 500; line-height: 1;
     border: 1px solid var(--border); background: #fff; color: var(--fg); }
-  .statusbar a.btn.primary { background: #1a1a1a; color: #fff; border-color: #1a1a1a; }
-  .statusbar a.btn:hover { filter: brightness(0.95); }
+  .actions a.btn:hover { filter: brightness(0.97); border-color: #bbb; }
   .alpha { background: #fff7e6; border: 1px solid #f5c97a; color: #7a4a00;
     padding: 10px 12px; border-radius: 8px; font-size: 13px; margin-bottom: 20px; }
   section.card { background: var(--card); border: 1px solid var(--border);
@@ -73,41 +70,39 @@
     <p class="tagline">AI-powered weather analysis for Greenwich Cove — the regional forecast, refined by what actually happens at the shoreline.</p>
   </header>
 
+  <p class="updated-line">Updated <strong>Sat Jun 27, 5:39 PM</strong></p>
+
   <section class="card">
-    <h2>Storm risk <span class="badge">MODERATE</span></h2>
-    <p class="summary">Thunderstorm cells are about 27 miles to the southwest, but with very little atmospheric energy available they are expected to weaken on approach — expect a chance of light showers rather than a severe storm.</p>
-    <p class="effect"><strong>Local effect:</strong> Sound water at 68°F is only 4°F cooler than the air, producing a weak marine layer that provides minimal shielding compared to a typical summer storm day.</p>
+    <h2>Storm risk <span class="badge">LOW</span></h2>
+    <p class="summary">The storm cells that showed up earlier this afternoon have dissipated — radar is now clear, and with almost no atmospheric energy available, the evening risk is light showers at most.</p>
+    <p class="effect"><strong>Local effect:</strong> Sound water (68°F) is only 4°F cooler than the air, so the usual Riverside coastal buffer is not meaningfully active tonight.</p>
     <details>
       <summary>Detailed explanation</summary>
-      <div class="body"><p>KOKX radar at 20:58 UTC shows three storm cells <strong>27–29 miles to the southwest and WSW</strong>, with peak reflectivity of <strong>44 dBZ</strong>. No active NWS watches, advisories, or warnings are in effect for Greenwich.</p><p>The NWS Area Forecast Discussion notes that the highest instability sits over <strong>NE New Jersey and the Lower Hudson Valley</strong> — well west of Greenwich — and describes the available CAPE as "tall/skinny, less than 500 J/kg." HRRR confirms: only <strong>30 J/kg of CAPE</strong> near the cove at f01, rising to 60 J/kg at f02. These values are too low to sustain vigorous convection. Bulk wind shear is 32–37 kt from the WSW, which could organize storms under higher-CAPE conditions, but with this little instability the shear contributes little additional risk.</p><p>The cells are approaching from the SW and will cross Long Island Sound before reaching the cove. With a <strong>water–air temperature delta of only 4°F</strong> (Sound water 68°F vs. air 72°F), the marine stable layer over the Sound is weak — the pipeline's protective mechanism flag is <em>not</em> active tonight. Some Sound-crossing attenuation is still possible given the SW approach angle and negligible CAPE, but this is a partial effect, not a reliable shield.</p><p>The most likely outcome for the cove is a <strong>brief period of light rain showers</strong> consistent with the NWS forecast ("Chance Rain Showers, 50%"). Surrounding inland areas — where instability is marginally higher — may see slightly more robust activity. A thunderstorm at the cove is possible but unlikely given the near-zero CAPE here.</p><p>What would change this call: if radar reflectivity at these cells climbs above 50 dBZ and cells remain organized on approach, upgrade the risk. No upstream APRS gust preview is available — all nearby stations are reporting near-calm, so there is no pre-arrival warning signal yet.</p></div>
+      <div class="body"><p>KOKX radar as of 21:26Z shows <strong>no storm cells within detection range</strong> — the three cells that were visible 27–29 miles SW at 17:10 EDT have dissipated. CAPE is <strong>30 J/kg</strong> (HRRR f01), essentially zero fuel for storm development. The OKX Area Forecast Discussion (issued 19:58Z) notes "tall/skinny CAPE less than 500 J/kg" across the region and places any isolated thunderstorm risk in northeastern New Jersey and the Lower Hudson Valley. No NWS watches, advisories, or warnings are active for Greenwich. Bulk shear is 31.8 kt WSW — high shear is only relevant when instability is present, and tonight it isn't.</p><p>Light shower activity is still present in the region: Port Chester / Rye Brook (N1TKS, 4 mi WSW) logged 0.3 mm/hr, and Fort Salonga LI (DW1086, 15 mi ESE) recorded 0.3 mm/hr. These are disorganized shower cells consistent with the NWS "Chance Rain Showers, 50%" forecast. No upstream APRS stations are showing any gust precursor — all nearby sites are reporting near-calm, so there is no approaching gust signature to track.</p><p>The coastal stabilization modifier is weak. Sound water is 67.6°F vs. inland air 71.6°F — a delta of <strong>4°F</strong>, below the 10°F threshold for the Riverside protective mechanism. The <code>protective_mechanism_active</code> flag is <strong>false</strong>. With CAPE at 30 J/kg the mechanism's absence doesn't matter much — the low-end instability means any shower drifting through lacks the energy to produce lightning regardless.</p><p>What would change this call: a new convective cluster forming or approaching from the NW–W (Westchester, lower Hudson Valley) with reflectivity above 35 dBZ. The OKX AFD mentions MCS potential in NW flow <em>next weekend</em>, not tonight. Monitor radar if scattered showers increase in coverage, but no action needed at this time.</p></div>
     </details>
   </section>
 
   <section class="card">
-    <h2>Tonight's wind (17:00–22:00)</h2>
-    <table class='wind'><thead><tr><th>Time</th><th>kt</th><th>Dir</th><th>Shift</th></tr></thead><tbody><tr><td>17:00</td><td>3<span class='gust'> g5</span></td><td>NNW<span class='deg'> 346°</span></td><td>light offshore, obs-anchored</td></tr>
-<tr><td>18:00</td><td>3<span class='gust'> g4</span></td><td>ESE<span class='deg'> 119°</span></td><td>direction noise in calm air</td></tr>
-<tr><td>19:00</td><td>3<span class='gust'> g4</span></td><td>SE<span class='deg'> 138°</span></td><td>light and variable near sunset</td></tr>
-<tr><td>20:00</td><td>1<span class='gust'> g2</span></td><td>S<span class='deg'> 172°</span></td><td>near-calm at sunset (~20:20)</td></tr>
-<tr><td>21:00</td><td>2<span class='gust'> g3</span></td><td>SSE<span class='deg'> 150°</span></td><td>post-sunset, variable</td></tr>
-<tr><td>22:00</td><td>1<span class='gust'> g2</span></td><td>SSW<span class='deg'> 207°</span></td><td>calm/variable</td></tr></tbody></table>
-    <p class="tactics"><strong>Tactics:</strong> Drifter-class conditions through the evening race window — RYC is showing a 2.8 kt ten-minute average with no persistent direction. Keep to the center of the course and respond to individual puffs; no side is reliably favored.</p>
+    <h2>Tonight's wind (5 PM–10 PM)</h2>
+    <table class='wind'><thead><tr><th>Time</th><th>kt</th><th>Dir</th><th>Shift</th></tr></thead><tbody><tr><td>5 PM</td><td>3<span class='gust'> (gusts 5)</span></td><td>NNW<span class='deg'> 346°</span></td><td>NNW, direction incoherent across ensemble</td></tr>
+<tr><td>6 PM</td><td>3<span class='gust'> (gusts 5)</span></td><td>ESE<span class='deg'> 119°</span></td><td>backing to ESE — boundary-layer decoupling in near-calm</td></tr>
+<tr><td>7 PM</td><td>3<span class='gust'> (gusts 5)</span></td><td>SE<span class='deg'> 138°</span></td><td>SE, Greenwich Point shadow on east shore</td></tr>
+<tr><td>8 PM</td><td>1<span class='gust'> (gusts 3)</span></td><td>S<span class='deg'> 172°</span></td><td>softening near sunset (~20:20), near-calm</td></tr>
+<tr><td>9 PM</td><td>2<span class='gust'> (gusts 3)</span></td><td>SSE<span class='deg'> 150°</span></td><td>post-sunset, SSE, calm</td></tr>
+<tr><td>10 PM</td><td>1<span class='gust'> (gusts 2)</span></td><td>SSW<span class='deg'> 207°</span></td><td>calm</td></tr></tbody></table>
+    <p class="tactics"><strong>Tactics:</strong> Drifter conditions all evening — 1–3 kt with direction wandering 140° through the window, no coherent pressure or favored side. Stay center and minimize losses; this is a finesse-sailing night, not a pressure-hunting one.</p>
     <details>
       <summary>Detailed explanation</summary>
-      <div class="body"><p><strong>Regime: B-light (gradient-only, near-calm).</strong> The thermal/sea-breeze ingredient is missing: the land–water temperature differential is only <strong>4.0°F</strong> (KHPN inland 71.6°F, Sound water 68°F at BRHC3) — below the 5°F gate required for a meaningful thermal driver. The synoptic gradient is also nearly absent: ensemble authoritative mean speed is just <strong>3.8 kt</strong>. This places tonight firmly in B-light — wind direction and magnitude are governed by local eddying and boundary-layer noise, not organized flow.</p><p>RYC ground truth at 17:10 EDT: <strong>NW 308°, 4.6 kt, gusting 5.3 kt, 10-min avg 2.8 kt.</strong> That is a real but faint offshore puff. Across the ensemble, <strong>direction agreement is only 0.31</strong> — less than one in three stations agrees on direction. Western LIS leans NNW (RYC, Port Chester corridor), central LIS leans SW–SSW (KBDR, KHVN), and eastern LIS shows southerly (Block Island, Westerly). This is a fragmented, near-calm wind field with no coherent regional driver.</p><p>The HRRR f01–f06 forecast shows <strong>1–3 kt with wildly cycling directions</strong> (NNW → ESE → SE → S → SSE → SSW across the evening hours). At these speeds, HRRR surface wind direction is essentially numerical noise — the model is resolving eddying in a nearly-windless boundary layer, not a real wind regime. Do not trade on individual HRRR direction calls.</p><p>Sunset tonight is approximately <strong>20:20 EDT.</strong> In B-light there is no thermal collapse (there was no thermal to begin with), but the already-faint gradient may soften slightly after dark as the nocturnal boundary layer stabilizes. HRRR shows speeds dropping toward 1 kt after 20:00.</p><p>Cove geography note: with no established wind direction, the pressure-by-side table yields no reliable call. Center of the course sees the most consistent air, away from immediate shoreline sheltering. <strong>Stay center, react to individual puffs, do not commit to a side.</strong> One wildcard: if the SW storm cells (27 mi out) produce outflow as they approach, brief gusty W–NW puffs are possible in the 18:00–20:00 window — these could temporarily upgrade conditions to 8–12 kt before returning to calm.</p></div>
+      <div class="body"><p><strong>Regime B-light:</strong> the temperature differential between inland air (71.6°F at KHPN) and Sound water (67.6°F at BRHC3 Bridgeport Harbor) is <strong>4.0°F</strong> — just below the 5°F gate required to trigger the sea-breeze thermal engine. Mostly cloudy skies suppressed surface heating further: coastal southerly fraction is 0.28, with <strong>zero southerly penetration inland</strong>. The synoptic gradient is equally negligible — authoritative station mean just 3.4 kt. With both ingredients absent, tonight is firmly Regime B-light.</p><p>Direction coherence is very low: the 26-station ensemble direction agreement is <strong>0.38</strong>. RYC and the airports (KBDR, KHPN) show NNW; nearby APRS stations show WNW; central LIS airports (KHVN) show WSW; eastern LIS/RI stations show S/SSE. HRRR forecasts a wander from NNW (346°) at 17:00 EDT, to ESE (119°) at 18:00, SE (138°) at 19:00, then S/SSE (150–172°) through 21:00, SSW (207°) by 22:00 — all below 4 kt. At these speeds, HRRR surface direction is essentially numerical noise in a nearly-windless boundary layer; do not trade individual direction calls. Expect random scatter of 30–60° around any single-hour number.</p><p>Cove geography: during the NNW phase (17:00–18:00 EDT), cleanest flow is mid-cove, away from either shore. If the direction does shift toward ESE–SE (18:00–20:00), Greenwich Point / Tod's Point creates a partial wind shadow on the east shore — pressure shifts slightly to the west side of the course. With speeds at 1–3 kt, these differences are tenths of a knot; expect large holes everywhere regardless of position.</p><p>Sunset is approximately <strong>20:20 EDT</strong>. In Regime B-light there is no thermal collapse — the thermal never fired — but HRRR already forecasts ~1 kt by 20:00. Any race starting after 19:30 EDT faces a significant risk of sub-3 kt conditions before the finish.</p><p>The NWS point forecast reads "south wind around 6 mph" — already contradicted by current RYC (NNW 1.4 kt, 10-min avg 2.5 kt) and HRRR sub-4 kt output across all hours. Trust the live observations. This is not a sea-breeze maturation divergence; the forecast text describes a synoptic southerly that never materialized at the surface in western LIS.</p></div>
     </details>
   </section>
 
-  <details class='caveats'><summary>Data caveats</summary><ul><li>Buoy 44040 observation is 129 minutes old — wind and SST data may be stale</li><li>HRRR f10–f12 not available for this cycle</li><li>Ensemble direction agreement very low (0.31) — wind field is fragmented and near-calm; directional guidance is approximate</li></ul></details>
-
-  <div class="statusbar">
-    <div class="updated">Updated <strong>Sat Jun 27, 5:10 PM UTC-04:00</strong></div>
-    <div class="actions">
-      <!-- TODO: wire to ntfy Pages Function once that step lands -->
-      <a class="btn primary" href="#" id="request-update">Refresh forecast</a>
-      <a class="btn" href="mailto:hello@propelrank.com?subject=Greenwich%20Cove%20Weather%20—%20feedback">Send feedback</a>
-    </div>
+  <div class="actions">
+    <a class="btn" href="#" id="request-update">Refresh forecast</a>
+    <a class="btn" href="mailto:hello@propelrank.com?subject=Greenwich%20Cove%20Weather%20—%20feedback">Send feedback</a>
   </div>
+
+  <details class='caveats'><summary>Data caveats</summary><ul><li>Buoy 44040 (WLIS) wind sensor offline — over-water wind unavailable; SST available at 62.1°F (8m depth, obs age 92 min).</li><li>EW9544 (Old Greenwich waterfront APRS) stale — last report ~19 days ago, excluded from ensemble.</li><li>Direction ensemble coherence very low (agreement 0.38) — regime call is robust but hourly direction numbers are low confidence; treat as illustrative.</li></ul></details>
 
   <div class="alpha">
     This page is an experimental forecast.
@@ -116,8 +111,41 @@
   </div>
 
   <footer>
-    Greenwich Cove Weather · experimental
+    Greenwich Cove Weather · Experimental AI weather analysis by Victor Ansart
   </footer>
 </main>
+<script>
+  // Refresh-button handler: POST /refresh, show inline feedback.
+  (function() {
+    var btn = document.getElementById('request-update');
+    if (!btn) return;
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      if (btn.dataset.sending === '1' || btn.dataset.sent === '1') return;
+      btn.dataset.sending = '1';
+      btn.dataset.originalText = btn.textContent;
+      btn.textContent = 'Sending…';
+      btn.style.opacity = '0.6';
+      fetch('/refresh', { method: 'POST' })
+        .then(function(r) {
+          if (r.ok) {
+            btn.textContent = 'Sent — Victor was notified';
+            btn.dataset.sent = '1';
+            btn.style.opacity = '1';
+            btn.style.cursor = 'default';
+          } else {
+            btn.textContent = 'Error — try again';
+            btn.dataset.sending = '';
+            btn.style.opacity = '1';
+          }
+        })
+        .catch(function() {
+          btn.textContent = 'Error — try again';
+          btn.dataset.sending = '';
+          btn.style.opacity = '1';
+        });
+    });
+  })();
+</script>
 </body>
 </html>
