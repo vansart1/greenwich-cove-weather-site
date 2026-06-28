@@ -22,8 +22,11 @@
   header p.tagline { margin: 0; color: var(--muted); font-size: 14px; }
   .updated-line { font-size: 13px; color: var(--muted); margin: 0 0 16px 2px; }
   .updated-line strong { color: var(--fg); font-weight: 600; }
+  .actions-note { font-size: 13px; color: var(--muted); text-align: center;
+    margin: 24px 0 8px; }
+  .actions-note em { font-style: normal; font-weight: 600; color: var(--fg); }
   .actions { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap;
-    margin: 16px 0; }
+    margin: 8px 0 16px; }
   .actions a.btn { display: inline-block; padding: 8px 14px; border-radius: 8px;
     text-decoration: none; font-size: 14px; font-weight: 500; line-height: 1;
     border: 1px solid var(--border); background: #fff; color: var(--fg); }
@@ -70,7 +73,7 @@
     <p class="tagline">AI-powered weather analysis for Greenwich Cove — the regional forecast, refined by what actually happens at the shoreline.</p>
   </header>
 
-  <p class="updated-line">Updated <strong>Sat Jun 27, 5:39 PM</strong></p>
+  <p class="updated-line">Forecast generated: <strong>Saturday, June 27 at 5:39 PM EDT</strong></p>
 
   <section class="card">
     <h2>Storm risk <span class="badge">LOW</span></h2>
@@ -97,6 +100,12 @@
     </details>
   </section>
 
+  <p class="actions-note">
+    The forecast refreshes automatically every day at 4:30 PM. For a fresh run at
+    another time, click <em>Refresh forecast</em> below — Victor will get a phone
+    notification and trigger a new run as soon as he can.
+  </p>
+
   <div class="actions">
     <a class="btn" href="#" id="request-update">Refresh forecast</a>
     <a class="btn" href="mailto:hello@propelrank.com?subject=Greenwich%20Cove%20Weather%20—%20feedback">Send feedback</a>
@@ -116,34 +125,44 @@
 </main>
 <script>
   // Refresh-button handler: POST /refresh, show inline feedback.
+  // Retries once on failure to mask transient cold-start hiccups.
   (function() {
     var btn = document.getElementById('request-update');
     if (!btn) return;
+
+    function attempt() {
+      return fetch('/refresh', { method: 'POST' }).then(function(r) {
+        if (!r.ok) throw new Error('status ' + r.status);
+        return r;
+      });
+    }
+
+    function succeed() {
+      btn.textContent = 'Sent — Victor was notified';
+      btn.dataset.sent = '1';
+      btn.style.opacity = '1';
+      btn.style.cursor = 'default';
+    }
+
+    function fail() {
+      btn.textContent = 'Error — try again';
+      btn.dataset.sending = '';
+      btn.style.opacity = '1';
+    }
+
     btn.addEventListener('click', function(e) {
       e.preventDefault();
       if (btn.dataset.sending === '1' || btn.dataset.sent === '1') return;
       btn.dataset.sending = '1';
-      btn.dataset.originalText = btn.textContent;
       btn.textContent = 'Sending…';
       btn.style.opacity = '0.6';
-      fetch('/refresh', { method: 'POST' })
-        .then(function(r) {
-          if (r.ok) {
-            btn.textContent = 'Sent — Victor was notified';
-            btn.dataset.sent = '1';
-            btn.style.opacity = '1';
-            btn.style.cursor = 'default';
-          } else {
-            btn.textContent = 'Error — try again';
-            btn.dataset.sending = '';
-            btn.style.opacity = '1';
-          }
-        })
-        .catch(function() {
-          btn.textContent = 'Error — try again';
-          btn.dataset.sending = '';
-          btn.style.opacity = '1';
-        });
+
+      attempt().then(succeed).catch(function() {
+        // Brief delay then one retry — typically covers cold-start.
+        setTimeout(function() {
+          attempt().then(succeed).catch(fail);
+        }, 500);
+      });
     });
   })();
 </script>
