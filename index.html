@@ -64,19 +64,15 @@
   details.caveats ul { margin: 0; padding-left: 20px; font-size: 13px; color: var(--muted); }
   footer { margin-top: 28px; padding-top: 16px; border-top: 1px solid var(--border);
     font-size: 12px; color: var(--muted); text-align: center; }
-  /* Conditions panel */
-  .card-split { display: flex; gap: 0; align-items: flex-start; }
-  .conditions-panel {
-    flex: 0 0 100px; text-align: center;
-    border-right: 1px solid var(--border); padding-right: 16px; margin-right: 16px;
-    padding-top: 4px;
-  }
-  .storm-panel { flex: 1; min-width: 0; }
-  .cond-icon { font-size: 2.5rem; line-height: 1; margin-bottom: 10px; }
-  .cond-value { font-size: 18px; font-weight: 700; line-height: 1.2; }
-  .cond-feels { color: var(--muted); font-size: 15px; margin-top: 8px; }
+  /* Conditions card */
+  .cond-card { display: flex; align-items: center; gap: 20px; }
+  .cond-icon { font-size: 2.5rem; line-height: 1; flex-shrink: 0; }
+  .cond-stats { display: flex; gap: 24px; }
+  .cond-stat { text-align: center; }
+  .cond-value { font-size: 22px; font-weight: 700; line-height: 1.2; }
+  .cond-feels { color: var(--muted); }
   .cond-label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.06em;
-    color: var(--muted); font-weight: 600; margin-bottom: 4px; }
+    color: var(--muted); font-weight: 600; margin-top: 2px; }
 </style>
 </head>
 <body>
@@ -88,19 +84,16 @@
 
   <p class="updated-line">Forecast generated: <strong>Monday, June 29 at 4:33 PM EDT</strong></p>
 
+  <section class="card cond-card"><div class="cond-icon">☀️</div><div class="cond-stats"><div class="cond-stat"><div class="cond-value">84°F</div><div class="cond-label">Temp</div></div><div class="cond-stat"><div class="cond-value cond-feels">85°F</div><div class="cond-label">Feels Like</div></div></div></section>
+
   <section class="card">
-    <div class="card-split">
-      <div class="conditions-panel"><div class="cond-icon">☀️</div><div class="cond-value">84°F</div><div class="cond-label">Temp</div><div class="cond-value cond-feels">85°F</div><div class="cond-label">Feels Like</div></div>
-      <div class="storm-panel">
-        <h2>Storm risk <span class="badge">LOW</span></h2>
-        <p class="summary">No storms threatening the cove today — clear skies and dry conditions through the evening, with the next chance of thunderstorms not until midweek.</p>
-        <p class="effect"><strong>Local effect:</strong> Sound water at 70°F versus 84°F inland air has built a moderate marine stable layer that would deflect approaching convection, but no cells are inbound today.</p>
-        <details>
-          <summary>Detailed explanation</summary>
-          <div class="body"><p>The regional storm picture is quiet. KOKX radar shows no cells within detection range and CAPE is just 90 J/kg — far below the ~500 J/kg threshold for sustained thunderstorm development. NWS forecasters at OKX confirm "very little instability with distinct 600–800mb capping," noting that remnants of a northwest MCS moving through Tuesday afternoon are decaying as they enter a suppressive environment.</p><p>Two active NWS alerts cover the area: an <strong>Air Quality Alert</strong> through Tuesday evening (ozone and heat) and an <strong>Extreme Heat Watch</strong> starting Wednesday, July 1 through the July 4 holiday weekend. Neither is a convective threat for today. No severe thunderstorm, tornado, or flash flood warnings are in effect.</p><p>The Riverside cove's protective mechanism is technically active: Sound water at 70°F versus 84°F inland air creates a <strong>moderate marine stable layer</strong> with a +14°F delta. In a scenario where convective cells were approaching from the SW–NW, this layer would tend to choke low-level inflow and weaken storms before they reach the shoreline. With no storms inbound today, this modifier has nothing to do — but it is worth noting for the heat event ahead: the cove will remain meaningfully cooler than surrounding inland communities through the July 4 week.</p><p>Shear is moderate at 30 kt NW (HRRR f01), which could organize convection if instability were present. With only 90 J/kg CAPE and a strong cap, the shear is essentially moot. The most likely scenario for Monday evening is continued sunny, hot, and dry conditions. What would change the call: an unexpected pop-up from intense daytime surface heating — possible in theory with surface temps near 87°F, but the OKX cap assessment makes it unlikely before midweek destabilization.</p></div>
-        </details>
-      </div>
-    </div>
+    <h2>Storm risk <span class="badge">LOW</span></h2>
+    <p class="summary">No storms threatening the cove today — clear skies and dry conditions through the evening, with the next chance of thunderstorms not until midweek.</p>
+    <p class="effect"><strong>Local effect:</strong> Sound water at 70°F versus 84°F inland air has built a moderate marine stable layer that would deflect approaching convection, but no cells are inbound today.</p>
+    <details>
+      <summary>Detailed explanation</summary>
+      <div class="body"><p>The regional storm picture is quiet. KOKX radar shows no cells within detection range and CAPE is just 90 J/kg — far below the ~500 J/kg threshold for sustained thunderstorm development. NWS forecasters at OKX confirm "very little instability with distinct 600–800mb capping," noting that remnants of a northwest MCS moving through Tuesday afternoon are decaying as they enter a suppressive environment.</p><p>Two active NWS alerts cover the area: an <strong>Air Quality Alert</strong> through Tuesday evening (ozone and heat) and an <strong>Extreme Heat Watch</strong> starting Wednesday, July 1 through the July 4 holiday weekend. Neither is a convective threat for today. No severe thunderstorm, tornado, or flash flood warnings are in effect.</p><p>The Riverside cove's protective mechanism is technically active: Sound water at 70°F versus 84°F inland air creates a <strong>moderate marine stable layer</strong> with a +14°F delta. In a scenario where convective cells were approaching from the SW–NW, this layer would tend to choke low-level inflow and weaken storms before they reach the shoreline. With no storms inbound today, this modifier has nothing to do — but it is worth noting for the heat event ahead: the cove will remain meaningfully cooler than surrounding inland communities through the July 4 week.</p><p>Shear is moderate at 30 kt NW (HRRR f01), which could organize convection if instability were present. With only 90 J/kg CAPE and a strong cap, the shear is essentially moot. The most likely scenario for Monday evening is continued sunny, hot, and dry conditions. What would change the call: an unexpected pop-up from intense daytime surface heating — possible in theory with surface temps near 87°F, but the OKX cap assessment makes it unlikely before midweek destabilization.</p></div>
+    </details>
   </section>
 
   <section class="card">
