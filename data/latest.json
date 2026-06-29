@@ -8,16 +8,61 @@
     "detail_html": "<p>The regional storm picture is quiet. KOKX radar shows no cells within detection range and CAPE is just 90 J/kg — far below the ~500 J/kg threshold for sustained thunderstorm development. NWS forecasters at OKX confirm \"very little instability with distinct 600–800mb capping,\" noting that remnants of a northwest MCS moving through Tuesday afternoon are decaying as they enter a suppressive environment.</p><p>Two active NWS alerts cover the area: an <strong>Air Quality Alert</strong> through Tuesday evening (ozone and heat) and an <strong>Extreme Heat Watch</strong> starting Wednesday, July 1 through the July 4 holiday weekend. Neither is a convective threat for today. No severe thunderstorm, tornado, or flash flood warnings are in effect.</p><p>The Riverside cove's protective mechanism is technically active: Sound water at 70°F versus 84°F inland air creates a <strong>moderate marine stable layer</strong> with a +14°F delta. In a scenario where convective cells were approaching from the SW–NW, this layer would tend to choke low-level inflow and weaken storms before they reach the shoreline. With no storms inbound today, this modifier has nothing to do — but it is worth noting for the heat event ahead: the cove will remain meaningfully cooler than surrounding inland communities through the July 4 week.</p><p>Shear is moderate at 30 kt NW (HRRR f01), which could organize convection if instability were present. With only 90 J/kg CAPE and a strong cap, the shear is essentially moot. The most likely scenario for Monday evening is continued sunny, hot, and dry conditions. What would change the call: an unexpected pop-up from intense daytime surface heating — possible in theory with surface temps near 87°F, but the OKX cap assessment makes it unlikely before midweek destabilization.</p>"
   },
   "wind": {
-    "forecast_window": {"start": "17:00", "end": "22:00"},
+    "forecast_window": {
+      "start": "17:00",
+      "end": "22:00"
+    },
     "regime": "B-light",
     "regime_label": "Light gradient, late-afternoon thermal fading",
     "hourly": [
-      {"time": "17:00", "speed_kt": 4, "gust_kt": 6, "dir_deg": 131, "dir_compass": "SE", "shift_note": "light SE per HRRR; cove currently still SSW 2 kt — transition in progress"},
-      {"time": "18:00", "speed_kt": 5, "gust_kt": 8, "dir_deg": 110, "dir_compass": "ESE", "shift_note": "backing to ESE; sheltered by Greenwich Point"},
-      {"time": "19:00", "speed_kt": 5, "gust_kt": 7, "dir_deg": 91, "dir_compass": "E", "shift_note": "E — cove heavily sheltered; may feel lighter than open Sound"},
-      {"time": "20:00", "speed_kt": 2, "gust_kt": 4, "dir_deg": 124, "dir_compass": "SE", "shift_note": "softening near sunset"},
-      {"time": "21:00", "speed_kt": 5, "gust_kt": 7, "dir_deg": 196, "dir_compass": "SSW", "shift_note": "SSW synoptic gradient reasserting post-sunset"},
-      {"time": "22:00", "speed_kt": 4, "gust_kt": 6, "dir_deg": 200, "dir_compass": "SSW", "shift_note": "light SSW persisting"}
+      {
+        "time": "17:00",
+        "speed_kt": 4,
+        "gust_kt": 6,
+        "dir_deg": 131,
+        "dir_compass": "SE",
+        "shift_note": "light SE per HRRR; cove currently still SSW 2 kt — transition in progress"
+      },
+      {
+        "time": "18:00",
+        "speed_kt": 5,
+        "gust_kt": 8,
+        "dir_deg": 110,
+        "dir_compass": "ESE",
+        "shift_note": "backing to ESE; sheltered by Greenwich Point"
+      },
+      {
+        "time": "19:00",
+        "speed_kt": 5,
+        "gust_kt": 7,
+        "dir_deg": 91,
+        "dir_compass": "E",
+        "shift_note": "E — cove heavily sheltered; may feel lighter than open Sound"
+      },
+      {
+        "time": "20:00",
+        "speed_kt": 2,
+        "gust_kt": 4,
+        "dir_deg": 124,
+        "dir_compass": "SE",
+        "shift_note": "softening near sunset"
+      },
+      {
+        "time": "21:00",
+        "speed_kt": 5,
+        "gust_kt": 7,
+        "dir_deg": 196,
+        "dir_compass": "SSW",
+        "shift_note": "SSW synoptic gradient reasserting post-sunset"
+      },
+      {
+        "time": "22:00",
+        "speed_kt": 4,
+        "gust_kt": 6,
+        "dir_deg": 200,
+        "dir_compass": "SSW",
+        "shift_note": "light SSW persisting"
+      }
     ],
     "tactics_blurb": "Cove winds are at or below drifting threshold throughout the evening window — HRRR shows 2–5 kt cycling SE–E–SSW, with RYC now at 2 kt SSW. Racing in these conditions will be fickle; if the start fires, hold center and look for any puff from the S–SSW.",
     "favored_side": "center",
@@ -26,5 +71,10 @@
   "data_caveats": [
     "Buoy 44040 (WLIS) offline — UConn ERDDAP 404; over-water wind and depth readings unavailable",
     "HRRR/obs direction divergence +64° (model SE 131°, current obs SSW 195°); direction forecast for 17:00–19:00 has moderate confidence"
-  ]
+  ],
+  "conditions": {
+    "sky": "Sunny",
+    "temp_f": 83.8,
+    "feels_like_f": 85.3
+  }
 }
