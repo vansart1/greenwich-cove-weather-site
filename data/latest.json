@@ -1,80 +1,82 @@
 {
-  "generated_at": "2026-06-29T16:33:00-04:00",
+  "generated_at": "2026-06-30T16:33:15-04:00",
   "storm": {
     "risk_level": "low",
-    "summary_layperson": "No storms threatening the cove today — clear skies and dry conditions through the evening, with the next chance of thunderstorms not until midweek.",
-    "local_effect": "neutral",
-    "local_effect_blurb": "Sound water at 70°F versus 84°F inland air has built a moderate marine stable layer that would deflect approaching convection, but no cells are inbound today.",
-    "detail_html": "<p>The regional storm picture is quiet. KOKX radar shows no cells within detection range and CAPE is just 90 J/kg — far below the ~500 J/kg threshold for sustained thunderstorm development. NWS forecasters at OKX confirm \"very little instability with distinct 600–800mb capping,\" noting that remnants of a northwest MCS moving through Tuesday afternoon are decaying as they enter a suppressive environment.</p><p>Two active NWS alerts cover the area: an <strong>Air Quality Alert</strong> through Tuesday evening (ozone and heat) and an <strong>Extreme Heat Watch</strong> starting Wednesday, July 1 through the July 4 holiday weekend. Neither is a convective threat for today. No severe thunderstorm, tornado, or flash flood warnings are in effect.</p><p>The Riverside cove's protective mechanism is technically active: Sound water at 70°F versus 84°F inland air creates a <strong>moderate marine stable layer</strong> with a +14°F delta. In a scenario where convective cells were approaching from the SW–NW, this layer would tend to choke low-level inflow and weaken storms before they reach the shoreline. With no storms inbound today, this modifier has nothing to do — but it is worth noting for the heat event ahead: the cove will remain meaningfully cooler than surrounding inland communities through the July 4 week.</p><p>Shear is moderate at 30 kt NW (HRRR f01), which could organize convection if instability were present. With only 90 J/kg CAPE and a strong cap, the shear is essentially moot. The most likely scenario for Monday evening is continued sunny, hot, and dry conditions. What would change the call: an unexpected pop-up from intense daytime surface heating — possible in theory with surface temps near 87°F, but the OKX cap assessment makes it unlikely before midweek destabilization.</p>"
+    "summary_layperson": "No thunderstorms expected this evening — a storm complex tracking south from upstate New York is forecast to fall apart well before it reaches the coast.",
+    "local_effect": "mitigating",
+    "local_effect_blurb": "Long Island Sound's cool water (69°F vs. 82°F inland air) has built a moderate marine stable layer that tends to choke low-level convection at the coastline.",
+    "detail_html": "<p>The regional storm picture is quiet for this evening. HRRR puts available CAPE at 60 J/kg — essentially no thermodynamic instability for thunderstorm development near the coast. A weakening MCS tracking south from upstate New York is the main item to watch; NWS forecasters at OKX expect it to largely dissipate before reaching the region as instability is limited locally, with any remnant activity confined to the northern half of the coverage area well north of Riverside.</p><p>Bulk shear is elevated at 40 kt (0–6 km, NNW) — the kind of shear that normally supports organized convection. With CAPE at 60 J/kg, however, there is no updraft energy for shear to work with. Note that the RAP model shows a much higher estimate (710 J/kg) at the same forecast hour; this disagreement is flagged in caveats, but HRRR's finer 3-km resolution and the NWS OKX AFD text both support the low-instability read. The more dangerous setup arrives later in the week: scattered thunderstorms are possible Wednesday through Saturday as the upper pattern shifts.</p><p>The Riverside cove's protective mechanism is active. Sound water at 69°F versus 82°F inland air creates a <strong>+13°F temperature delta</strong> and a moderate marine stable layer over the Sound. This layer tends to choke low-level inflow from approaching convection — often weakening or splitting storm cells at the coastline while areas 2–3 miles inland take the full impact. With CAPE this low, any convective remnant from the northern MCS would have minimal energy to begin with; the marine layer suppresses what little remains. The cove is well-insulated from tonight's minimal storm risk.</p><p>Active NWS alerts: an <strong>Air Quality Alert</strong> through tonight (ozone and particulates, heat-driven) and an <strong>Extreme Heat Warning</strong> beginning tomorrow midday through July 3. Neither is a convective hazard today. What would change the call: an unexpected afternoon pop-up from intense surface heating — possible in theory with inland temps near 90°F — but the OKX AFD assessment and very low HRRR CAPE together make this unlikely before Wednesday.</p>"
   },
   "wind": {
     "forecast_window": {
       "start": "17:00",
       "end": "22:00"
     },
-    "regime": "B-light",
-    "regime_label": "Light gradient, late-afternoon thermal fading",
+    "regime": "A+",
+    "regime_label": "Thermal with synoptic tailwind",
     "hourly": [
       {
         "time": "17:00",
-        "speed_kt": 4,
-        "gust_kt": 6,
-        "dir_deg": 131,
-        "dir_compass": "SE",
-        "shift_note": "light SE per HRRR; cove currently still SSW 2 kt — transition in progress"
+        "speed_kt": 12,
+        "gust_kt": 17,
+        "dir_deg": 212,
+        "dir_compass": "SSW",
+        "shift_note": "SSW building — near thermal peak"
       },
       {
         "time": "18:00",
-        "speed_kt": 5,
-        "gust_kt": 8,
-        "dir_deg": 110,
-        "dir_compass": "ESE",
-        "shift_note": "backing to ESE; sheltered by Greenwich Point"
+        "speed_kt": 11,
+        "gust_kt": 15,
+        "dir_deg": 209,
+        "dir_compass": "SSW",
+        "shift_note": "steady SSW, mature thermal, oscillating ±10°"
       },
       {
         "time": "19:00",
-        "speed_kt": 5,
-        "gust_kt": 7,
-        "dir_deg": 91,
-        "dir_compass": "E",
-        "shift_note": "E — cove heavily sheltered; may feel lighter than open Sound"
+        "speed_kt": 8,
+        "gust_kt": 11,
+        "dir_deg": 204,
+        "dir_compass": "SSW",
+        "shift_note": "softening as sunset approaches"
       },
       {
         "time": "20:00",
-        "speed_kt": 2,
-        "gust_kt": 4,
-        "dir_deg": 124,
-        "dir_compass": "SE",
-        "shift_note": "softening near sunset"
+        "speed_kt": 6,
+        "gust_kt": 9,
+        "dir_deg": 208,
+        "dir_compass": "SSW",
+        "shift_note": "thermal fading near sunset (20:22 EDT)"
       },
       {
         "time": "21:00",
-        "speed_kt": 5,
-        "gust_kt": 7,
-        "dir_deg": 196,
+        "speed_kt": 4,
+        "gust_kt": 6,
+        "dir_deg": 211,
         "dir_compass": "SSW",
-        "shift_note": "SSW synoptic gradient reasserting post-sunset"
+        "shift_note": "gradient remnant, softening"
       },
       {
         "time": "22:00",
         "speed_kt": 4,
         "gust_kt": 6,
         "dir_deg": 200,
-        "dir_compass": "SSW",
-        "shift_note": "light SSW persisting"
+        "dir_compass": "S",
+        "shift_note": "thermal collapsed, light gradient only"
       }
     ],
-    "tactics_blurb": "Cove winds are at or below drifting threshold throughout the evening window — HRRR shows 2–5 kt cycling SE–E–SSW, with RYC now at 2 kt SSW. Racing in these conditions will be fickle; if the start fires, hold center and look for any puff from the S–SSW.",
-    "favored_side": "center",
-    "tactics_detail_html": "<p>Regime call: <strong>B-light</strong>. The deltaT is a robust 14°F (84°F inland, 70°F Sound water), which is normally a strong sea-breeze ingredient. However, the coastal station southerly fraction is only 0.40 — below the 0.60 threshold for a confirmed moderate sea breeze — and the LI north shore stations are showing W–N–NE flow, not the southerly signature of a fully penetrated Atlantic sea breeze. The sea breeze peaked earlier this afternoon and is now fading. HRRR's authoritative station mean is 6.6 kt SSW, but RYC in the cove reads just 2.1 kt SSW and the APRS network mean is 1.0 kt. B-light applies: gradient &lt; 8 kt, SB not confirmed active, wind field fragmented (direction agreement 0.57).</p><p><strong>HRRR/obs divergence flagged: +64°.</strong> The model is forecasting SE 131° for 17:00–18:00 but current western-LIS stations are at SSW 195° — a 64° veered gap. The sea-breeze maturation correction was not applied (coastal fraction below the active gate), but the trust-obs rule leads to calling the current wind SSW, not SE. For the forecast window, HRRR likely captures the broader synoptic backing toward SE–E as the thermal push fades, but the transition timing has moderate confidence — the cove may hold SSW an hour longer than the model suggests.</p><p>Cove geometry matters especially in E flow. The cove opens due south; E and ESE directions are blocked by the Greenwich Point / Tod's Point peninsula to the east. Expect the open Sound to read 5–6 kt from ESE/E while the start line feels 2–3 kt. The most favorable direction for the cove's N–S axis — SSW — only appears in the final two hours at 4–5 kt, still below meaningful racing threshold.</p><p>Backdoor check (late June, just outside primary window): KBOS shows ENE 9 kt and KPVD shows E 3 kt, both indicating easterly flow upstream. However KGON (eastern LIS) is WSW 9 kt — not backing NE. This looks like a synoptic coastal eddy pattern, not a propagating backdoor cold front. No directional threat from the northeast for Greenwich today.</p><p>Fleet impact: at 2–5 kt in the cove throughout the window, this is drifter territory. Starts may be postponed or abandoned. If racing proceeds, center is the safest position — direction is oscillating widely (57% network agreement) with no dominant pressure side. Any brief SSW puff from the open Sound will favor the west side temporarily, but shifts will not be persistent enough to commit to a tack.</p>"
+    "tactics_blurb": "SSW sea breeze at peak (Regime A+) — right side of the course favored as the gradient reinforces the thermal and channels cleanly along the western Belle Haven shore. Start mid-line and work right on the first beat; expect oscillations around 210° through the 17:00–19:00 peak before the thermal softens toward sunset.",
+    "favored_side": "right",
+    "tactics_detail_html": "<p><strong>Regime A+ confirmed.</strong> Both sea-breeze ingredients are firmly in place: temperature differential (inland 82°F, Sound water 69°F) is 13°F — well above the 5°F threshold — and the synoptic gradient is onshore at 10 kt SSW, reinforcing the thermal rather than opposing it. This sub-regime delivers steadier, stronger wind than a pure-thermal day and holds the flow 30–60 minutes past sunset as the gradient persists once thermal forcing collapses.</p><p>HRRR forecasts SSW 197° for the 17:00 window. The western-LIS station ensemble currently observes SSW 203° — a +6° divergence below the 15° override threshold, so trust-obs-over-model is not flagged. The sea-breeze maturation correction applies (+15°, scaled to the 13°F deltaT), placing the corrected forecast direction at <strong>212° SSW</strong> for the race window. Direction confidence is high; western-LIS zone direction agreement is 0.90 across 10 stations. Note that KBDR and KHVN anemometers are both offline, degrading the CT coastal METAR wind read — the call relies on RYC, the APRS coastal cluster, and the buoy (stale at 75 min).</p><p>In SSW–SW flow at 212°, Greenwich Cove's north–south axis is near-optimally aligned with the inflow. Wind enters cleanly from the Sound with slight channeling along the <strong>western shore</strong> (Belle Haven / Indian Harbor side). The right side of the course is favored on the beat — starboard tack carries boats toward the west where pressure is marginally stronger and flow is steadier. The east side near Tod's Point sits in a subtle fetch shadow from the Greenwich Point peninsula, running slightly lighter and shiftier.</p><p>HRRR shows the peak at 17:00–18:00 (~12 kt), then a steady softening through 19:00–20:00 (8→6 kt) as the thermal relaxes ahead of the 20:22 EDT sunset. In Regime A+, the gradient remnant carries the flow 30–60 minutes past sunset — expect 4 kt at 21:00 and ~4 kt at 22:00, enough for racing but firmly drifter territory. Shift character through the peak hours (17:00–19:00) is mature oscillating around 210–212°; play the lifts and headers rather than committing to a persistent tack.</p><p>RYC currently reads SW 3 kt, 10-min average 4.9 kt, gust 12 kt — lighter than the open Sound, typical as the SB matures. GW2598 at Rye (9 mi WSW, directly upwind in SSW flow) is at SSW 7 kt gusting 17, and LI south-shore airports show 11–13 kt SSW. Expect the cove to fill in through the 17:00–18:00 window as over-Sound pressure propagates north. Fleet impact: 12 kt is nicely powered for most one-design dinghies — a good race evening if the breeze arrives on schedule.</p>"
+  },
+  "conditions": {
+    "sky": "Partly Sunny",
+    "temp_f": 79.7,
+    "feels_like_f": 79.7
   },
   "data_caveats": [
-    "Buoy 44040 (WLIS) offline — UConn ERDDAP 404; over-water wind and depth readings unavailable",
-    "HRRR/obs direction divergence +64° (model SE 131°, current obs SSW 195°); direction forecast for 17:00–19:00 has moderate confidence"
-  ],
-  "conditions": {
-    "sky": "Sunny",
-    "temp_f": 83.8,
-    "feels_like_f": 85.3
-  }
+    "KBDR anemometer offline — CT coastal METAR wind unavailable; KGON and APRS coastal cluster used as fallback",
+    "KHVN anemometer offline — New Haven coastal wind unavailable",
+    "Buoy 44040 MET observation stale (75 min old); SST observation stale (88 min old)",
+    "HRRR CAPE (60 J/kg) and RAP CAPE (710 J/kg) disagree substantially — HRRR f01 used as primary; NWS OKX AFD supports the lower estimate"
+  ]
 }
