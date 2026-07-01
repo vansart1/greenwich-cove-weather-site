@@ -1,81 +1,34 @@
 {
-  "generated_at": "2026-07-01T18:18:47-04:00",
+  "generated_at": "2026-07-01T18:52:00-04:00",
   "storm": {
     "risk_level": "moderate",
-    "summary_layperson": "Isolated thunderstorms are possible late this afternoon and evening as a heat wave peaks, but the cool Sound will likely weaken any storm that tries to cross the coast — expect heat and haze with only a small chance a cell reaches the cove.",
-    "local_effect": "mitigating",
-    "local_effect_blurb": "Cool Sound water (72°F) against 88°F inland air is a 16°F gap, strong enough to form a stable marine layer that often chokes incoming thunderstorms at the shoreline.",
-    "detail_html": "<p><strong>Regional picture:</strong> NWS has an Extreme Heat Warning in effect through Thursday evening; heat indices climb to ~109°F this afternoon. Storm potential is a background risk, not the headline — the AFD calls today's severe risk Marginal to Slight with damaging wind as the primary threat (DCAPE up to 2000 J/kg). CAPE is 2320 J/kg with 34 kt of 0–6 km shear from the NW. Radar is currently quiet within 50 mi.</p><p><strong>Local modifier active:</strong> water_air_temp_delta is +15.7°F, marine layer strength <strong>strong</strong>, sound_effect_likelihood <strong>moderate</strong>, protective_mechanism_active = true. A stable layer sits over Long Island Sound, and any cell that tries to cross the coast tends to lose its low-level fuel.</p><p><strong>Most likely outcome:</strong> if a storm fires this evening, expect the cove to feel outflow wind but with the rain/thunder core weaker or displaced — surrounding inland areas (Stamford, White Plains) may get hit harder. The forecast is only <strong>20% precip</strong>; a completely dry evening is more likely than a hit.</p><p><strong>What would change the call:</strong> if a cell tracks in from the northwest over land (bypassing the Sound), the marine layer buys nothing — treat any NW-approach warning at face value. Same if CAPE spikes above 3000 J/kg (RAP fallback already reads 2970, close to the punch-through gate) — vigorous updrafts can override the modifier.</p>"
+    "summary_layperson": "Thunderstorm cells are pushing south about 40 miles to the north, and because they're coming overland from that direction rather than crossing Long Island Sound, the usual coastal protection that sometimes shields the cove won't help tonight.",
+    "local_effect": "neutral",
+    "local_effect_blurb": "Cells are arriving from due north over inland Connecticut, bypassing Long Island Sound's 72°F water entirely — the marine-layer storm shield cannot activate when storms don't cross the Sound.",
+    "detail_html": "<p>Three storm cells are tracking southward <strong>40–47 miles north</strong> of the cove, with peak reflectivity reaching 56 dBZ — well into severe-capable territory. NWS OKX has placed the region in a Marginal to Slight Risk for severe weather today, with damaging winds as the primary threat (DCAPE near 2,000 J/kg). HRRR shows CAPE at 2,320 J/kg and the area forecast discussion states that \"any thunderstorm has the potential to be strong to severe.\" At typical storm motion of 20–30 mph, cells could reach the area in approximately 80–120 minutes from the time of this forecast.</p><p><strong>The usual Riverside coastal protection is not in play tonight.</strong> The Long Island Sound marine layer deflects storms best when cells track southwest to northwest across the cool water before reaching the cove. These cells are arriving from due north, moving entirely over inland Connecticut — so the 72°F Sound water cannot provide the stabilizing layer that sometimes weakens storms here. The 15°F air-sea temperature differential is real, but the geometry is wrong. Tonight, regional NWS guidance applies directly to the cove with no local discount.</p><p>Shear is 34 kt from the northwest — essentially at the strong-shear threshold (≥35 kt) where organized cells maintain themselves through the evening. A southerly sea breeze is marginally active along the shoreline (62% of coastal stations southerly), but at this shear level with CAPE above 2,000 J/kg, the boundary layer is not a reliable buffer against an organized convective line approaching from inland. The marginal/slight SPC risk designation is consistent with this picture: real threat, but confidence in whether individual cells will reach severe criteria is limited.</p><p>The most likely scenario: one or more cells reaching the Greenwich/Riverside area <strong>between 20:00 and 21:30 EDT</strong>, with gusty outflow winds (primary threat) and brief heavy rain. Inland areas across Westchester and northern CT are in an equivalent position — the cove has no particular advantage or disadvantage relative to surrounding towns tonight, which is itself a notable departure from most summer storm events.</p><p>Watch for upstream APRS stations at Port Chester or Rye (bearing WSW, 4–8 miles) spiking gust values — that is a <strong>10–20 minute preview</strong> of what's arriving. Upgrade to high risk if a cell crosses inside 25 miles at ≥45 dBZ on a southward track. Downgrade if reflectivity drops below 40 dBZ before reaching 30 miles, or if cells split westward toward the Hudson Valley instead of continuing south.</p>"
   },
   "wind": {
-    "forecast_window": {
-      "start": "17:00",
-      "end": "22:00"
-    },
+    "forecast_window": {"start": "17:00", "end": "22:00"},
     "regime": "A+",
     "regime_label": "Thermal with synoptic tailwind",
     "hourly": [
-      {
-        "time": "17:00",
-        "speed_kt": 6,
-        "gust_kt": 9,
-        "dir_deg": 188,
-        "dir_compass": "S",
-        "shift_note": "sea breeze ramping, right shift continuing"
-      },
-      {
-        "time": "18:00",
-        "speed_kt": 10,
-        "gust_kt": 14,
-        "dir_deg": 212,
-        "dir_compass": "SSW",
-        "shift_note": "peak thermal, mature SSW"
-      },
-      {
-        "time": "19:00",
-        "speed_kt": 8,
-        "gust_kt": 11,
-        "dir_deg": 217,
-        "dir_compass": "SW",
-        "shift_note": "holding, gradient reinforcing"
-      },
-      {
-        "time": "20:00",
-        "speed_kt": 6,
-        "gust_kt": 8,
-        "dir_deg": 194,
-        "dir_compass": "SSW",
-        "shift_note": "softening as sun drops"
-      },
-      {
-        "time": "21:00",
-        "speed_kt": 3,
-        "gust_kt": 5,
-        "dir_deg": 192,
-        "dir_compass": "SSW",
-        "shift_note": "thermal collapsing, drops toward 3 kt"
-      },
-      {
-        "time": "22:00",
-        "speed_kt": 2,
-        "gust_kt": 3,
-        "dir_deg": 195,
-        "dir_compass": "SSW",
-        "shift_note": "collapsed, drifting"
-      }
+      {"time": "17:00", "speed_kt": 10, "gust_kt": 14, "dir_deg": 205, "dir_compass": "SSW", "shift_note": "SB at peak (obs-based)"},
+      {"time": "18:00", "speed_kt": 10, "gust_kt": 14, "dir_deg": 211, "dir_compass": "SSW", "shift_note": "steady, right shift continuing"},
+      {"time": "19:00", "speed_kt": 9, "gust_kt": 12, "dir_deg": 216, "dir_compass": "SW", "shift_note": "softening toward sunset"},
+      {"time": "20:00", "speed_kt": 7, "gust_kt": 10, "dir_deg": 175, "dir_compass": "S", "shift_note": "thermal collapsing"},
+      {"time": "21:00", "speed_kt": 3, "gust_kt": 5, "dir_deg": 192, "dir_compass": "SSW", "shift_note": "softening with sunset"},
+      {"time": "22:00", "speed_kt": 2, "gust_kt": 4, "dir_deg": 195, "dir_compass": "SSW", "shift_note": "nearly dead, remnant gradient"}
     ],
-    "tactics_blurb": "SSW thermal + synoptic tailwind — clean flow up the cove axis with a mature right-shift signature through 19:00. Get the first two races in; the thermal collapses fast after sunset (~20:30) and 21:00 finish lines will be drifting.",
+    "tactics_blurb": "West side of the course (right on the beat) is modestly favored in SSW 210° flow — start the first race before 19:00 EDT for the best conditions, as the thermal drops below 5 kt by 21:00 and storm cells to the north add a lightning-risk consideration for late starts.",
     "favored_side": "right",
-    "tactics_detail_html": "<p><strong>Regime call: A+ (thermal with synoptic tailwind).</strong> Inland–water deltaT is 15.7°F (huge), coastal_pct is 0.53 (developing/borderline moderate — SB still ramping through afternoon), and the synoptic gradient at 8.9 kt SSW is adding to the thermal rather than fighting it. Classic western-LIS afternoon: SB and gradient stacked in the same direction.</p><p><strong>Favored side — right.</strong> With SSW–SW flow, the cove opens due south so the flow is clean straight up the axis. During the ramping phase of a SB (before ~15:00 local, and again as it matures 17:00–19:00) the direction shifts steadily clockwise, so right-side leverage on the beat pays. West shore has slight channeling but stronger pressure is toward the middle-right of the course as you head up.</p><p><strong>Shift character:</strong> in a mature SB you'd play oscillations, but with deltaT this large the thermal is still building through the early races — expect a persistent right shift through 19:00 (ramping SB behavior), then oscillations around a mean ~215° for one race, then collapse. Do <em>not</em> commit hard left early. HRRR/obs divergence is only 13° (below the trust-obs threshold) — direction confidence high, forecast direction ~212° SSW.</p><p><strong>Sunset collapse:</strong> sunset today ~20:30 EDT. HRRR drops the SSW flow from 9 kt at 19:00 to 3 kt at 21:00 — that's a fast thermal death. Expect wind to drop below 5 kt within 20 minutes of sunset. Any race starting after 20:00 risks finishing in a hole.</p><p><strong>What the fleet feels:</strong> 6–10 kt SSW through the first two races — powered-up 420/Laser sailing, dinghies in the sweet spot. Bigger boats will want the SSW to hold. Third race is a gamble.</p>"
+    "tactics_detail_html": "<p><strong>Regime A+ — thermal sea breeze reinforced by a southerly synoptic gradient.</strong> The thermal driver is strong: ΔT = 15.3°F (KHPN inland at 87.8°F, Long Island Sound water at 72.5°F), well above the 5°F gate. The synoptic gradient reads ~7.6 kt SSW from authoritative stations — onshore and adding to the sea breeze rather than opposing it. The sea breeze is moderately established (coastal_pct 62%, inland_pct 12%), with Buoy 44040 at 210° SSW 4.5 kt confirming penetration across the Sound. Backdoor cold-front check is outside the seasonal window (July) — no threat.</p><p><strong>Direction — HRRR at 193° SSW, corrected to 211°.</strong> The western LIS sea-breeze maturation correction applies (+18°), yielding a corrected forecast of 211° SSW at 18:00 EDT, veering to 216° SW by 19:00 EDT as the SB reaches its afternoon peak. Model/obs divergence is only −1° (HRRR and current stations nearly identical), so the correction is a pure maturation adjustment, not an override. Direction confidence is HIGH. With SSW/SW flow into the cove's south-facing mouth, expect clean flow — the classic good-racing direction, with slight channeling advantage along the west shore.</p><p><strong>Collapse timing</strong>: sunset approximately 20:24 EDT. In Regime A+, the synoptic tailwind should extend the breeze 30–60 minutes past normal thermal collapse — but HRRR shows an abrupt drop: 10 kt at 18:00 EDT → 7 kt at 20:00 → 3 kt at 21:00. The open-coast KBDR reading at 18:20 EDT (9 kt/gust 14 kt SSW) confirms HRRR values for the exposed Sound; RYC in the sheltered cove is already at 3.9 kt (10-min avg 3.4 kt). Tonight's SSW gradient component appears thin, and the post-sunset collapse will be abrupt. Expect race-useful breeze only through approximately 20:30 EDT.</p><p>Shift character: the SB is well past its ramping phase and into maturation. Through 19:00 EDT expect SSW with moderate oscillations (±10–15°). Around 20:00 EDT, as the thermal decays at sunset, direction will back briefly toward S (~175°) — a classic collapse signature — before settling into a faint SSW remnant at very low speeds. That post-sunset shift is disorganized and not worth playing tactically.</p><p>Fleet impact: KBDR's 9 kt/gust 14 kt is solid one-design racing on the open Sound, but the cove's sheltered position puts RYC at 3.9 kt — drifter territory right now. With SSW 205–216° flow, the west side of the course (right on the windward leg) has a marginal edge from channeling along the west shore. Prioritize the right side on the first beat, keep the starting position mid-line. With breeze dropping below 5 kt by 21:00 EDT, only 1–2 races are realistic; storm cells to the north (possible lightning by 20:00–21:00 EDT) add a safety reason to call early rather than late.</p>"
   },
   "conditions": {
-    "sky": "Slight Chance Showers And Thunderstorms",
-    "temp_f": 82,
-    "feels_like_f": 90
+    "sky": "Slight Chance Showers And Thunderstorms then Partly Cloudy",
+    "temp_f": 81.6,
+    "feels_like_f": 88
   },
   "data_caveats": [
-    "Buoy 44040 wind unavailable (last reading 72 min ago) — buoy subregion in the SB depth check has only 1 sample.",
-    "Sea breeze fractions borderline (coastal_pct 0.53) — call is a developing SB backed by 15.7°F deltaT.",
-    "HRRR: 1 forecast hour flagged fetch/parse warning (pipeline still usable)."
+    "Buoy 44040 (Western LIS) obs stale — last reading 77 min ago"
   ]
 }
