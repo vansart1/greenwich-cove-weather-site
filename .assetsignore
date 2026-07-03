@@ -1,0 +1,6 @@
+.git
+.wrangler
+.DS_Store
+README.md
+wrangler.jsonc
+src
