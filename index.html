@@ -81,6 +81,36 @@
   .cond-feels { color: var(--muted); }
   .cond-label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.06em;
     color: var(--muted); font-weight: 600; margin-top: 2px; }
+  /* Tide card */
+  .tide-status { font-size: 15px; margin: 0 0 10px; }
+  .tide-dir { font-weight: 700; }
+  .tide-rising { color: #1f9d55; }
+  .tide-falling { color: #c0392b; }
+  .tide-when { color: var(--muted); }
+  .tide-chart svg { width: 100%; height: auto; display: block; }
+  .tg { stroke: var(--border); stroke-width: 1; }
+  .tyl { font-size: 10px; fill: var(--muted); text-anchor: end; }
+  .txl { font-size: 10px; fill: var(--muted); text-anchor: middle; }
+  .tarea { fill: #2563eb; fill-opacity: 0.10; }
+  .tline { fill: none; stroke: #2563eb; stroke-width: 2; }
+  .tdot { fill: #2563eb; }
+  .thl { font-size: 10px; fill: #333; text-anchor: middle; }
+  .tmark { stroke: #d97706; stroke-width: 1.5; stroke-dasharray: 4 3; }
+  .tmdot { fill: #d97706; stroke: #fff; stroke-width: 1.5; }
+  .tml { font-size: 11px; font-weight: 700; fill: #d97706; text-anchor: middle; }
+  .tide-controls { display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+    margin: 10px 0 4px; }
+  .tide-btn { padding: 6px 12px; border-radius: 8px; font-size: 13px; font-weight: 500;
+    border: 1px solid var(--border); background: #fff; color: var(--fg);
+    cursor: pointer; font-family: inherit; }
+  .tide-btn:hover { filter: brightness(0.97); border-color: #bbb; }
+  #tide-picker { padding: 5px 8px; border-radius: 8px; border: 1px solid var(--border);
+    font-size: 13px; font-family: inherit; }
+  #tide-picker-wrap { display: inline-flex; align-items: center; gap: 8px; }
+  #tide-picker-wrap[hidden] { display: none; }
+  .tide-source { font-size: 12px; color: var(--muted); margin: 8px 0 0; }
+  .tide-source a { color: inherit; }
+
 </style>
 </head>
 <body>
@@ -91,34 +121,50 @@
     <p class="tagline">AI accounts for local effects like the sea breeze, the Sound’s cold water, and the hill breeze after sunset. A meteorologist in your pocket.</p>
   </header>
 
-  <p class="updated-line">Forecast generated: <strong>Friday, July 3 at 5:33 PM EDT</strong></p>
+  <p class="updated-line">Forecast generated: <strong>Saturday, July 4 at 12:31 PM EDT</strong></p>
 
-  <section class="card cond-card"><div class="cond-icon">⛈</div><div class="cond-stats"><div class="cond-stat"><div class="cond-value">98°F</div><div class="cond-label">Temp</div></div><div class="cond-stat"><div class="cond-value cond-feels">108°F</div><div class="cond-label">Feels Like</div></div></div></section>
+  <section class="card cond-card"><div class="cond-icon">⛈</div><div class="cond-stats"><div class="cond-stat"><div class="cond-value">88°F</div><div class="cond-label">Temp</div></div><div class="cond-stat"><div class="cond-value cond-feels">97°F</div><div class="cond-label">Feels Like</div></div></div></section>
 
   <section class="card">
     <h2>Storm risk <span class="badge">MODERATE</span></h2>
-    <p class="summary">Thunderstorms with some severe potential are moving slowly eastward from New Jersey, but the cool Long Island Sound is likely to weaken them before they reach the cove — expect increased winds tonight and possible distant rumbles, while towns a few miles inland take the brunt.</p>
-    <div class='arrival'><div class='arrival-main'>⏱ Expected at the cove <strong>~2:55 AM</strong> <span class='arrival-window'>(window 12:31 AM–7:13 AM)</span> <span class='arrival-conf'>medium confidence</span></div><div class='arrival-blurb'>Radar-tracked cells ~40 mi due west closing at 3.6 kt; the marine layer is likely to push arrival late and weaken any storms before they cross the Sound.</div></div>
-    <p class="effect"><strong>Local effect:</strong> Cool Sound water (70°F vs. 97°F air — a 26°F gap) creates a strong stable marine layer that typically chokes incoming convection before it crosses the shoreline.</p>
+    <p class="summary">Thunderstorms are likely to fire this afternoon in the extreme heat, but nothing is on radar yet and the cool Long Island Sound should take the punch out of any storms before they reach the cove — inland towns are more likely to get the heavy rain.</p>
+    
+    <p class="effect"><strong>Local effect:</strong> Cool Sound water (71°F vs. 88°F air — a 17°F gap) maintains a strong stable marine layer that typically chokes incoming storms at the shoreline.</p>
     <details>
       <summary>Detailed explanation</summary>
-      <div class="body"><p>Scattered thunderstorms with some severe potential are organized across NJ and the NY metro area, <strong>40–47 miles WSW</strong> of the cove. KOKX radar shows a cluster of cells with peak reflectivity of <strong>56 dBZ</strong>, moving east-southeast at roughly <strong>5 kt</strong> — an unusually slow pace. The KOKX Area Forecast Discussion notes a severe thunderstorm watch for western portions of the area, and SPC has placed the region in a <strong>Slight Risk</strong> for severe weather today (eastern CT/Long Island at Marginal Risk). HRRR CAPE is <strong>1,710 J/kg</strong> (RAP at 2,480 J/kg) with 0–6 km shear of ~20 kt — enough for vigorous storms, though not yet in the strongly organized range.</p><p>The dominant local modifier is a <strong>strong marine stable layer</strong> over Long Island Sound. At 70°F, the Sound water is <strong>27°F cooler than the 97°F inland air</strong> — one of the largest air-water differentials of the season. Cells approaching from the WSW must cross the Sound nearly perpendicularly, maximizing exposure to this stabilizing layer. CAPE at 1,710 J/kg is well below the 3,000 J/kg punch-through threshold, and shear at 20 kt is well below the 35 kt amplifying gate — both parameters favor storm suppression rather than intensification at the coast.</p><p>Most likely outcome for the cove: winds pick up this evening as the system approaches (expect W/WNW gusts), but cells are likely to weaken or drop their rain as they cross the Sound. The cove may see a brief gust increase and possible distant thunder overnight, while areas 2+ miles inland take a heavier hit. This is the classic cove-spared, inland-soaked pattern when the marine layer is this strong.</p><p>What would change the call: if CAPE climbs toward the 2,480 J/kg RAP estimate or higher, the marine-layer protection erodes. Watch for cells consolidating west of Newark into a compact MCS — linear squall-line dynamics can override local suppression. A shift in storm motion to due east (vs. ESE) would also reduce the effective Sound-crossing distance and deflection time.</p><p>Cells are closing very slowly at 3–4 kt. Radar-tracked ETA to the cove is around <strong>2:55 AM EDT</strong>, with a wide arrival window of <strong>12:31 AM–7:13 AM</strong> — the broad late edge reflects both slow-motion uncertainty and the marine layer's tendency to push arrival late or prevent it entirely. Any overnight arrival is most likely a wind event; significant rain or lightning at the cove is the lower-probability outcome given the strong Sound effect.</p></div>
+      <div class="body"><p>Radar is currently <strong>clean</strong> — the 12:11 PM KOKX scan shows no storm cells within tracking range, and the arrival engine reports nothing in the approach sector. The threat today is storms that haven't formed yet: NWS Upton has <strong>showers and thunderstorms likely after 2 PM (70% chance)</strong>, fired by an extreme-heat air mass — high near 96°F with heat index values to 104°F, and an <strong>Extreme Heat Warning in effect until 9 PM</strong>.</p><p>Instability is real but not extreme: HRRR CAPE is <strong>1,290 J/kg</strong> (RAP runs hotter at 1,840 J/kg) with 0–6 km shear around <strong>33 kt from the west</strong>. That's the gray zone — enough organization for vigorous cells, but below the ~35 kt gate where storms reliably intensify at the coast. Notably, HRRR decays CAPE quickly this evening (a few hundred J/kg after 6 PM), so the storm window is the afternoon heat peak, not the night.</p><p>The dominant local modifier is a <strong>strong marine stable layer</strong>: Sound water is 71°F against 88°F air — a 17°F differential — and the pipeline's Sound-effect likelihood is <strong>high</strong> with the protective mechanism active. Storms approaching on the westerly steering flow must cross this layer, and at 1,290–1,840 J/kg they are well below the ~3,000 J/kg punch-through threshold.</p><p>Most likely outcome for the cove: storms fire inland over the hot interior mid-to-late afternoon; the cove sees gusty westerly outflow and possibly a brief shower, while the heavy rain and lightning stay over towns a few miles north. This is the classic cove-spared, inland-soaked pattern when the marine layer is this strong.</p><p>What would change the call: CAPE verifying toward the RAP number (1,840+) with shear climbing toward the 35–40 kt the extended HRRR hours show would erode the marine-layer protection — an organized line coming off the NYC metro area would be the punch-through scenario. Watch for cells consolidating to the west and for sustained 35+ kt gusts at upstream APRS stations; either would shift this to a direct-hit call.</p></div>
     </details>
   </section>
 
   <section class="card">
-    <h2>Wind for the evening of Friday July 3rd</h2>
-    <table class='wind'><thead><tr><th>Time</th><th>kt</th><th>Dir</th><th>Shift</th></tr></thead><tbody><tr><td>5 PM</td><td>8<span class='gust'> (gusts 13)</span></td><td>W<span class='deg'> 270°</span></td><td>steady W — cove running ~4 kt above model (RYC 12 kt now)</td></tr>
-<tr><td>6 PM</td><td>9<span class='gust'> (gusts 14)</span></td><td>WNW<span class='deg'> 282°</span></td><td>veering to WNW, building</td></tr>
-<tr><td>7 PM</td><td>8<span class='gust'> (gusts 12)</span></td><td>WNW<span class='deg'> 289°</span></td><td>WNW steady, approaching sunset</td></tr>
-<tr><td>8 PM</td><td>7<span class='gust'> (gusts 11)</span></td><td>WSW<span class='deg'> 252°</span></td><td>backing to WSW near sunset (~8:23 PM) — thermal relaxing</td></tr>
-<tr><td>9 PM</td><td>6<span class='gust'> (gusts 9)</span></td><td>WNW<span class='deg'> 284°</span></td><td>softening post-sunset, WNW</td></tr>
-<tr><td>10 PM</td><td>5<span class='gust'> (gusts 7)</span></td><td>NW<span class='deg'> 307°</span></td><td>NW shift, thermal collapse</td></tr></tbody></table>
-    <p class="tactics"><strong>Tactics:</strong> W/WNW winds 8–9 kt (cove running ~4 kt stronger per RYC) oscillating ±20° through the evening; expect a backing shift to WSW near sunset (~8:23 PM), then a persistent NW rotation after dark as the thermal collapses — start center and be ready for the pre-sunset left shift.</p>
+    <h2>Wind for the evening of Saturday July 4th</h2>
+    <table class='wind'><thead><tr><th>Time</th><th>kt</th><th>Dir</th><th>Shift</th></tr></thead><tbody><tr><td>5 PM</td><td>10<span class='gust'> (gusts 16)</span></td><td>W<span class='deg'> 279°</span></td><td>steady W — cove running ~3 kt above model (RYC avg 11 kt now)</td></tr>
+<tr><td>6 PM</td><td>9<span class='gust'> (gusts 14)</span></td><td>WNW<span class='deg'> 283°</span></td><td>W/WNW holding; gusty outflow possible if storms fire</td></tr>
+<tr><td>7 PM</td><td>8<span class='gust'> (gusts 13)</span></td><td>WNW<span class='deg'> 285°</span></td><td>steady, gradually softening</td></tr>
+<tr><td>8 PM</td><td>7<span class='gust'> (gusts 11)</span></td><td>W<span class='deg'> 280°</span></td><td>easing near sunset (~8:22 PM)</td></tr>
+<tr><td>9 PM</td><td>6<span class='gust'> (gusts 9)</span></td><td>WNW<span class='deg'> 285°</span></td><td>post-sunset softening, gradient holds</td></tr>
+<tr><td>10 PM</td><td>5<span class='gust'> (gusts 8)</span></td><td>WNW<span class='deg'> 290°</span></td><td>light WNW, nocturnal damping</td></tr></tbody></table>
+    <p class="tactics"><strong>Tactics:</strong> W/WNW 8–10 kt through the evening with the cove running a few knots above model, easing gradually after sunset (~8:22 PM) — start center with a slight right lean toward the WNW pressure, and be ready to bail if a thunderstorm cell approaches: gusty outflow can arrive ahead of any rain.</p>
     <details>
       <summary>Detailed explanation</summary>
-      <div class="body"><p>Today's wind regime is <strong>B-moderate — synoptic westerly with thermal amplification</strong>. The inland heating is extraordinary (97°F air vs. 70°F Sound water, a 26°F delta), creating a strong thermal pressure gradient, but the flow has organized along the synoptic W/WNW axis rather than the classic SSW sea-breeze direction. Only 32% of coastal stations are blowing southerly, confirming no classic sea breeze is established. Mean authoritative speed across airport anemometers is 8.8 kt; RYC is reading <strong>11.9 kt WNW (294°) with gusts to 19.1 kt</strong> — the cove is channeling and funneling W/WNW flow through its southern opening.</p><p>HRRR/obs divergence is notable: the model shows W 270° at 7.9 kt for 5 PM, while RYC reads WNW 294° at 11.9 kt — <strong>4 kt and 24° apart</strong>. Trust RYC for the current hour. The rightward bias relative to HRRR is consistent with cove channeling of WNW flow and thermally-driven surface convergence adding speed. For forecast hours, use HRRR trends as directional guidance while expecting actual cove speeds to run 3–5 kt above model values. No direction correction is applied (B regime, not A/A+); raw HRRR directions are used for the forecast hours.</p><p>Direction character through the evening: W (270°) veering to WNW (282–289°) through 7 PM, then a notable <strong>backing to WSW (252°) around sunset (~8:23 PM)</strong> as the land-heating gradient relaxes, followed by a swing to NW (307°) by 10 PM as the nocturnal boundary layer stabilizes. Expect roughly <strong>60° of oscillation</strong> across the window, with the WSW dip being the most tactically significant shift.</p><p>Cove geography in W/WNW flow: the wind channels in from the NYC direction — steady direction but holes near the CT (eastern/northern) shoreline, with the best pressure mid-cove and toward the cove mouth. In oscillating W/WNW conditions the course geometry is fairly symmetric — no strong persistent pressure advantage to either side.</p><p>Racing tactics: <strong>favor center starts</strong> to preserve options in both oscillating directions. On the first beat a slight right-side lean takes you toward the dominant WNW source. Watch carefully for the pre-sunset backing to WSW around 8:15–8:30 PM — that is a port-tack lift (starboard header) that briefly rewards the left side. If racing past 8:30 PM, treat the NW shift as a persistent rightward rotation signaling thermal collapse, not an oscillation to play back. Speeds are powered up (10–12 kt range at the cove) — solid planing conditions for skiffs. B-moderate gradient wind holds through sunset and into the evening; no full wind collapse expected.</p></div>
+      <div class="body"><p>Today is <strong>Regime B-moderate — gradient-only westerly</strong>, despite a huge thermal setup. The inland–water differential is 16.6°F (91°F inland vs. 71°F Sound), which would normally scream sea breeze, but only <strong>22% of coastal stations are blowing southerly</strong> (CT coast 44%, LI north shore 0%) and HRRR keeps the flow W–WNW all evening. The westerly gradient has organized the boundary layer and the classic SSW thermal never established. Mean authoritative wind is 8.7 kt — squarely B-moderate.</p><p>Model/obs divergence is significant and worth knowing: HRRR forecasts W 269° while the western-LIS ensemble reads NW 318° — a <strong>49° gap with direction agreement at just 0.46</strong>, typical of a superheated midday boundary layer full of local thermals. RYC itself reads NW 323° at 6.8 kt (10-min average 10.9 kt, gusts 16). Direction confidence is low right now; expect the field to settle toward W/WNW as the afternoon mixes out. Trust RYC for the current hour and treat forecast directions as ±20°.</p><p>A forecast-detail caveat: the 15Z HRRR cycle's hour-by-hour data ends at 5 PM local. The 6–10 PM numbers above are built from HRRR's extended outlook (evening speeds 3.5–11.2 kt, mean 7.2) plus the B-moderate evening rules — treat them as a trend, not gospel.</p><p>Cove geography in W/WNW flow: wind channels down the Sound from the NYC direction — steady direction overall, but with holes near the CT (northern/eastern) shoreline and the best pressure mid-cove toward the mouth. Course geometry is fairly symmetric; <strong>favor center starts</strong> with a slight right-side lean toward the dominant WNW source. No thermal collapse cliff tonight — B-moderate gradient holds through sunset (~8:22 PM) and just softens 1–2 kt after dark.</p><p>The wildcard is convection: NWS has thunderstorms 70% likely after 2 PM. If a cell fires upwind, the first sign on the water will be a sharp W gust line well ahead of any rain — the marine layer tends to strip the rain but pass the outflow. 10–12 kt in the cove is powered-up, good racing for dinghies; a storm-outflow gust to 25+ would be a different evening. Keep an eye west.</p></div>
     </details>
+  </section>
+
+  <section class="card">
+    <h2>Tide at Greenwich Cove</h2>
+    <p class="tide-status" id="tide-status">Loading tide predictions…</p>
+    <div class="tide-chart" id="tide-chart-wrap"></div>
+    <div class="tide-controls">
+      <button type="button" class="tide-btn" id="tide-edit">Change date &amp; time</button>
+      <span id="tide-picker-wrap" hidden>
+        <input type="datetime-local" id="tide-picker">
+        <button type="button" class="tide-btn" id="tide-now">Back to now</button>
+      </span>
+    </div>
+    <p class="tide-source">Tide predictions from
+      <a href="https://tidesandcurrents.noaa.gov/noaatidepredictions.html?id=8469198">NOAA
+      (Stamford station, 2.5 mi from the cove)</a>, fetched live when the page loads.</p>
   </section>
 
   <p class="actions-note">
@@ -132,7 +178,7 @@
     <a class="btn" href="mailto:hello@propelrank.com?subject=Greenwich%20Cove%20Marine%20Weather%20—%20feedback">Send feedback</a>
   </div>
 
-  <details class='caveats'><summary>Data caveats</summary><ul><li>Buoy 44040 wind observation 73 min old (last updated 8:15 PM UTC) — use with caution</li><li>Buoy 44040 SST reading 86 min old</li><li>EW9204 (Valhalla APRS) stale 416 min — excluded from ensemble</li><li>KISP (Islip) and KFRG (Farmingdale) anemometers down — LI south shore wind obs unavailable</li><li>KPVD (Providence) anemometer data null — backdoor sentinel degraded to 2 of 3 stations</li><li>EW9544 (Old Greenwich) reporting 0 kt amid active W/WNW winds — possible anemometer issue, speed excluded from ensemble</li><li>AFD notes severe thunderstorm watch for western portions of the area; not reflected in local NWS alerts feed for this lat/lon — watch likely applies to areas west of Greenwich</li></ul></details>
+  <details class='caveats'><summary>Data caveats</summary><ul><li>Buoy 44040 offline (UConn ERDDAP unreachable) — over-water wind and sea-breeze depth signal unavailable</li><li>KISP (Islip) wind sensor down — LI south shore coverage degraded</li><li>KPVD (Providence) anemometer data null — backdoor sentinel at 2 of 3 stations (out of season, low impact)</li><li>GW4034 APRS stale 830 min — excluded from ensemble</li><li>HRRR 15Z cycle hourly detail ends 5 PM local — 6–10 PM wind rows synthesized from the extended outlook, lower confidence</li><li>Direction agreement across the ensemble is 0.46 (midday thermal mixing) — forecast directions are ±20°</li></ul></details>
 
   <div class="alpha">
     This page is an experimental forecast.
@@ -145,6 +191,229 @@
   </footer>
 </main>
 <script>
+  // Tide card: fetch NOAA CO-OPS predictions for the displayed day and draw
+  // the curve client-side, so the marker always reflects when the visitor
+  // loaded the page (or the date/time they picked), not when the daily
+  // publish ran.
+  (function() {
+    var STATION = '8469198';
+    var API = 'https://api.tidesandcurrents.noaa.gov/api/prod/datagetter';
+    var COMMON = 'product=predictions&datum=MLLW&station=' + STATION +
+                 '&time_zone=lst_ldt&units=english&format=json';
+
+    var statusEl = document.getElementById('tide-status');
+    var chartEl = document.getElementById('tide-chart-wrap');
+    var editBtn = document.getElementById('tide-edit');
+    var pickerWrap = document.getElementById('tide-picker-wrap');
+    var picker = document.getElementById('tide-picker');
+    var nowBtn = document.getElementById('tide-now');
+    if (!statusEl || !chartEl) return;
+
+    // All times are cove-local (America/New_York) wall-clock values: a
+    // 'YYYY-MM-DD' string plus minutes since that day's midnight. NOAA's
+    // time_zone=lst_ldt returns station-local times, so viewers in other
+    // timezones still see cove time — which is what a tide chart should show.
+    var state = { live: true, date: null, minutes: 0,
+                  curve: null, hilo: null, loadedDate: null };
+
+    function pad(n) { return (n < 10 ? '0' : '') + n; }
+
+    function coveNow() {
+      var parts = new Intl.DateTimeFormat('en-US', {
+        timeZone: 'America/New_York', year: 'numeric', month: '2-digit',
+        day: '2-digit', hour: '2-digit', minute: '2-digit', hour12: false
+      }).formatToParts(new Date());
+      var g = {};
+      parts.forEach(function(p) { g[p.type] = p.value; });
+      return { date: g.year + '-' + g.month + '-' + g.day,
+               minutes: (parseInt(g.hour, 10) % 24) * 60 + parseInt(g.minute, 10) };
+    }
+
+    function addDays(dateStr, n) {
+      var d = new Date(dateStr + 'T12:00:00Z');
+      d.setUTCDate(d.getUTCDate() + n);
+      return d.toISOString().slice(0, 10);
+    }
+
+    function compact(dateStr) { return dateStr.replace(/-/g, ''); }
+
+    // Minutes relative to midnight of baseDate for a NOAA 't' like '2026-07-04 15:30'.
+    function relMinutes(t, baseDate) {
+      var day = t.slice(0, 10);
+      var mins = parseInt(t.slice(11, 13), 10) * 60 + parseInt(t.slice(14, 16), 10);
+      if (day === baseDate) return mins;
+      if (day === addDays(baseDate, 1)) return mins + 1440;
+      return null;
+    }
+
+    function fmtTime(mins) {
+      var m = ((mins % 1440) + 1440) % 1440;
+      var h = Math.floor(m / 60), mm = m % 60;
+      var suf = h < 12 ? 'AM' : 'PM';
+      var h12 = h % 12 || 12;
+      return h12 + ':' + pad(mm) + ' ' + suf;
+    }
+
+    function fmtDateLong(dateStr) {
+      return new Date(dateStr + 'T12:00:00Z').toLocaleDateString('en-US',
+        { timeZone: 'UTC', weekday: 'short', month: 'short', day: 'numeric' });
+    }
+
+    function fetchPredictions(params) {
+      return fetch(API + '?' + COMMON + '&' + params).then(function(r) {
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        return r.json();
+      }).then(function(j) {
+        if (!j.predictions || !j.predictions.length) throw new Error('empty');
+        return j.predictions;
+      });
+    }
+
+    // Fetch the target day plus the next one, so "next high/low" exists even
+    // for a late-evening load.
+    function loadDay(dateStr) {
+      var b = compact(dateStr), e = compact(addDays(dateStr, 1));
+      return Promise.all([
+        fetchPredictions('interval=30&begin_date=' + b + '&end_date=' + e),
+        fetchPredictions('interval=hilo&begin_date=' + b + '&end_date=' + e)
+      ]).then(function(res) {
+        state.curve = res[0].map(function(p) {
+          return { m: relMinutes(p.t, dateStr), v: parseFloat(p.v) };
+        }).filter(function(p) { return p.m !== null && p.m <= 1440; });
+        state.hilo = res[1].map(function(p) {
+          return { m: relMinutes(p.t, dateStr), v: parseFloat(p.v), type: p.type };
+        }).filter(function(p) { return p.m !== null; });
+        state.loadedDate = dateStr;
+      });
+    }
+
+    function heightAt(mins) {
+      var c = state.curve;
+      if (mins <= c[0].m) return c[0].v;
+      for (var i = 1; i < c.length; i++) {
+        if (c[i].m >= mins) {
+          var a = c[i - 1], b = c[i];
+          return a.v + (b.v - a.v) * (mins - a.m) / (b.m - a.m);
+        }
+      }
+      return c[c.length - 1].v;
+    }
+
+    function renderStatus() {
+      var next = state.hilo.filter(function(p) { return p.m > state.minutes; })
+                           .slice(0, 2);
+      var lo = Math.max(state.minutes - 15, 0);
+      var hi = Math.min(state.minutes + 15, 1440);
+      var rising = heightAt(hi) >= heightAt(lo);
+      var dir = rising
+        ? '<span class="tide-dir tide-rising">\u25b2 Rising</span>'
+        : '<span class="tide-dir tide-falling">\u25bc Falling</span>';
+      var when = state.live ? '' :
+        '<span class="tide-when">' + fmtDateLong(state.date) + ' ' +
+        fmtTime(state.minutes) + ' \u2014 </span>';
+      var bits = next.map(function(p) {
+        return (p.type === 'H' ? 'high' : 'low') + ' tide ' + fmtTime(p.m) +
+               (p.m >= 1440 ? ' (next day)' : '') +
+               ' (' + p.v.toFixed(1) + ' ft)';
+      });
+      statusEl.innerHTML = when + dir +
+        (bits.length ? ' \u2014 next ' + bits.join(', then ') : '');
+    }
+
+    function renderChart() {
+      var W = 640, H = 220, L = 36, R = 12, T = 26, B = 26;
+      var pts = state.curve;
+      var vmin = Infinity, vmax = -Infinity;
+      pts.forEach(function(p) { vmin = Math.min(vmin, p.v); vmax = Math.max(vmax, p.v); });
+      vmin = Math.floor(vmin - 0.4); vmax = Math.ceil(vmax + 0.4);
+      function x(m) { return L + (W - L - R) * m / 1440; }
+      function y(v) { return T + (H - T - B) * (vmax - v) / (vmax - vmin); }
+      var d = pts.map(function(p, i) {
+        return (i ? 'L' : 'M') + x(p.m).toFixed(1) + ' ' + y(p.v).toFixed(1);
+      }).join('');
+      var area = d + 'L' + x(pts[pts.length - 1].m).toFixed(1) + ' ' + y(vmin).toFixed(1) +
+                 'L' + x(pts[0].m).toFixed(1) + ' ' + y(vmin).toFixed(1) + 'Z';
+      var s = '';
+      for (var v = vmin; v <= vmax; v += 2) {
+        s += '<line x1="' + L + '" y1="' + y(v).toFixed(1) + '" x2="' + (W - R) +
+             '" y2="' + y(v).toFixed(1) + '" class="tg"/>' +
+             '<text x="' + (L - 5) + '" y="' + (y(v) + 3).toFixed(1) +
+             '" class="tyl">' + v + ' ft</text>';
+      }
+      [[0, '12 AM'], [360, '6 AM'], [720, 'Noon'], [1080, '6 PM'], [1440, '12 AM']]
+        .forEach(function(t) {
+          s += '<text x="' + x(t[0]).toFixed(1) + '" y="' + (H - 8) +
+               '" class="txl">' + t[1] + '</text>';
+        });
+      s += '<path d="' + area + '" class="tarea"/>';
+      s += '<path d="' + d + '" class="tline"/>';
+      state.hilo.forEach(function(p) {
+        if (p.m < 0 || p.m > 1440) return;
+        var px = x(p.m), py = y(p.v);
+        s += '<circle cx="' + px.toFixed(1) + '" cy="' + py.toFixed(1) +
+             '" r="3" class="tdot"/>';
+        var lx = Math.min(Math.max(px, L + 22), W - R - 22);
+        s += '<text x="' + lx.toFixed(1) + '" y="' + (py - 9).toFixed(1) +
+             '" class="thl">' + fmtTime(p.m) + '</text>';
+      });
+      var tm = Math.min(state.minutes, 1440), tv = heightAt(tm);
+      s += '<line x1="' + x(tm).toFixed(1) + '" y1="' + T + '" x2="' + x(tm).toFixed(1) +
+           '" y2="' + (H - B) + '" class="tmark"/>';
+      s += '<circle cx="' + x(tm).toFixed(1) + '" cy="' + y(tv).toFixed(1) +
+           '" r="5" class="tmdot"/>';
+      var mlx = Math.min(Math.max(x(tm), L + 18), W - R - 18);
+      s += '<text x="' + mlx.toFixed(1) + '" y="' + (T - 8) + '" class="tml">' +
+           (state.live ? 'Now' : fmtTime(tm)) + '</text>';
+      chartEl.innerHTML = '<svg viewBox="0 0 ' + W + ' ' + H +
+        '" xmlns="http://www.w3.org/2000/svg" role="img" ' +
+        'aria-label="Tide height curve for the day">' + s + '</svg>';
+    }
+
+    function setTarget(dateStr, minutes, live) {
+      state.date = dateStr; state.minutes = minutes; state.live = live;
+      var p = (state.loadedDate === dateStr) ? Promise.resolve() : loadDay(dateStr);
+      p.then(function() { renderStatus(); renderChart(); })
+       .catch(function() {
+         statusEl.textContent =
+           'Tide data unavailable right now \u2014 see the NOAA link below.';
+         chartEl.innerHTML = '';
+       });
+    }
+
+    editBtn.addEventListener('click', function() {
+      pickerWrap.hidden = !pickerWrap.hidden;
+      if (!pickerWrap.hidden) {
+        picker.value = state.date + 'T' + pad(Math.floor(state.minutes / 60)) +
+                       ':' + pad(state.minutes % 60);
+      }
+    });
+
+    picker.addEventListener('change', function() {
+      var v = picker.value;
+      if (!v || v.length < 16) return;
+      var mins = parseInt(v.slice(11, 13), 10) * 60 + parseInt(v.slice(14, 16), 10);
+      setTarget(v.slice(0, 10), mins, false);
+    });
+
+    nowBtn.addEventListener('click', function() {
+      var n = coveNow();
+      pickerWrap.hidden = true;
+      setTarget(n.date, n.minutes, true);
+    });
+
+    // Keep the "Now" marker honest while the tab stays open.
+    setInterval(function() {
+      if (!state.live) return;
+      var n = coveNow();
+      if (n.date !== state.date || n.minutes !== state.minutes) {
+        setTarget(n.date, n.minutes, true);
+      }
+    }, 60000);
+
+    var n = coveNow();
+    setTarget(n.date, n.minutes, true);
+  })();
+
   // Refresh-button handler: POST /refresh, show inline feedback.
   // Retries once on failure to mask transient cold-start hiccups.
   (function() {
