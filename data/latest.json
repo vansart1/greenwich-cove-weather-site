@@ -1,90 +1,42 @@
 {
-  "generated_at": "2026-07-06T16:36:26-04:00",
+  "generated_at": "2026-07-06T20:48:30-04:00",
   "storm": {
     "risk_level": "moderate",
-    "summary_layperson": "Bands of rain and a few rumbles of thunder are circling the cove from the north tonight, with locally heavy rainfall — not severe storms — as the main concern.",
+    "summary_layperson": "Light rain has already begun at the cove, with the main storm complex 7 miles away — heavier rain and lightning are likely by 10 PM, and a Flood Watch is in effect through 6 AM.",
     "local_effect": "neutral",
-    "local_effect_blurb": "Sound water (69°F) is nearly the same temperature as the air, so there is no cooling marine layer, and storms approaching from the NNW travel over land rather than across the Sound — the cove gets no special protection tonight.",
-    "detail_html": "<p>The 4:24 PM radar shows an active cluster of showers and embedded cells ringing the cove from the north and northwest. The nearest echo boundary is roughly <strong>7.5 mi NNW</strong> with peak reflectivity near <strong>46 dBZ</strong>, while a loose arc of cells stretches from NNW through NNE at 10–20 mi out. The system as a whole is drifting <strong>slowly ENE at 7.3 kt</strong> — barely closing on the cove. Most of the higher-reflectivity cells (41–42 dBZ) to the north are moving away; only one cell 11 mi NW has a positive closing speed (2.5 kt).</p><p>Tonight's storms approach from the <strong>NNW over land</strong>, so Long Island Sound offers no protective buffer. The Sound's deflection mechanism — which can weaken or split incoming cells — only engages when storms cross the cool water from the southwest. An NNW land approach bypasses it entirely, meaning the cove faces similar conditions to surrounding inland towns. <strong>No marine layer is present</strong>: Sound water (69°F) is slightly warmer than the air (66°F), the opposite of the cool-water protective scenario.</p><p>Despite the active radar picture, <strong>instability is essentially zero</strong> — CAPE is 10 J/kg, and the NWS Area Forecast Discussion notes that \"instability is very limited over the local area, hindering the development of torrential rainfall rates.\" An active <strong>Flood Watch</strong> is in effect through Tuesday 6 AM, driven by high atmospheric moisture (~2-inch PWATs) and slow storm motion rather than explosive convective development. The NWS forecast calls for a quarter to half inch of rain with locally higher amounts possible.</p><p>The closing cell (11 mi NW, 36 dBZ) is predicted to reach the cove around <strong>8:16 PM</strong>, with a wide window of 7:18–9:14 PM. The wide range reflects the very slow closing speed — even small wobbles in storm track shift arrival by 30–45 minutes. No marine-layer or sea-breeze adjustments were applied to the window. Motion is radar-measured (centroid tracking), so confidence is medium.</p><p>What would change the call: a sudden upstream gust spike at N1TKS (Port Chester, WSW) or GW4034 would signal an outflow boundary triggering new convection. Conversely, the low-CAPE environment favors cells continuing to weaken as they drift east — the highest reflectivities may stay north and only light rain reach the cove.</p>",
+    "local_effect_blurb": "Long Island Sound water (69°F) is warmer than the air (64°F) tonight, so no marine cooling layer is in place to deflect or weaken incoming storms.",
+    "detail_html": "<p>A complex of showers and thunderstorms extends across Westchester and Fairfield County, with <strong>KOKX showing a peak return of 44 dBZ</strong> and the nearest identified cell at <strong>6.3 miles NW (35 dBZ)</strong> tracking eastward toward the cove. CAPE is nearly absent at <strong>10 J/kg</strong> — the atmosphere has no meaningful buoyancy for severe dynamics. This is primarily a <strong>heavy rain and lightning event</strong>, not a severe thunderstorm scenario. The active <strong>Flood Watch through 6 AM</strong> is calibrated to 1–2 inches of rainfall over the period, consistent with the high-shear/low-CAPE setup producing sustained stratiform and embedded convective rain rather than brief, explosive cells. Light rain is already reaching the cove (RYC rain rate 0.05 in/hr; 1–3 mm recorded in the past hour at Port Chester and Rye APRS stations).</p><p>The typical Riverside coastal buffer is <strong>not in play tonight</strong>. The \"Sound effect\" — where cool water creates a stable marine layer that undercuts incoming convection — requires warm air over cool water. Tonight the relationship is inverted: Long Island Sound water is <strong>69°F</strong> against an inland air temperature of only <strong>64°F</strong>, a −4.5°F delta. No stable cooling layer exists over the water. Storms crossing into the cove area will not be weakened by the Sound transit; conditions here should mirror surrounding inland communities in Greenwich, Stamford, and Rye.</p><p>Storm motion was <strong>not radar-tracked</strong> — no usable prior KOKX scan was available in the 15–35 minute look-back window. The arrival engine is using <strong>HRRR 700mb steering</strong>: ~6.6 kt toward 92° (due east), giving a closing-speed component of <strong>3.1 kt</strong> toward the cove from the NW. That slow approach is why the arrival window is so wide. A second cell cluster (37 dBZ) sits 17–18 miles to the west and is closing faster at ~6 kt, tracking roughly 15–20 minutes behind the lead cell.</p><p>The ETA engine places first impact around <strong>9:52 PM</strong>, with the credible window spanning <strong>9:06–10:38 PM</strong>. Because there is no marine-layer mitigating adjustment and no punch-through amplification, the window is symmetric — no reason to lean early or late. Upstream APRS stations in Port Chester (N1TKS, 4 mi WSW) and Rye Brook (GW4034, 5 mi WSW) are useful sentinels: a gust spike at either station typically leads cove arrival by 20–35 minutes at this closing speed.</p><p>What would change this call upward: any approaching cell intensifying above <strong>45 dBZ</strong> within 25 miles, or an upstream APRS station spiking above 35 kt before the main reflectivity arrives. With 10 J/kg CAPE, both are unlikely — but 38 kt of low-level shear provides some organizational support for isolated stronger cells. Clearing is likely after 11 PM–1 AM as the system exits eastward.</p>",
     "arrival": {
-      "expected_local": "8:16 PM",
-      "window_local": {
-        "earliest": "7:18 PM",
-        "latest": "9:14 PM"
-      },
-      "confidence": "medium",
-      "blurb": "Radar-tracked cell 11 mi NW closing slowly at 2.5 kt — a diffuse, slow-moving rain system rather than an organized line, so exact timing is uncertain within the window."
+      "expected_local": "9:52 PM",
+      "window_local": { "earliest": "9:06 PM", "latest": "10:38 PM" },
+      "confidence": "low",
+      "blurb": "Nearest cell 6 mi NW closing at 3 kt on model-estimated motion; wide window reflects the slow approach — no local marine-layer adjustment in effect."
     }
   },
   "wind": {
-    "forecast_window": {
-      "start": "17:00",
-      "end": "22:00"
-    },
+    "forecast_window": { "start": "17:00", "end": "22:00" },
     "regime": "B-moderate",
-    "regime_label": "Gradient-only, ENE — no thermal driver",
+    "regime_label": "Gradient-only, ENE synoptic flow",
     "hourly": [
-      {
-        "time": "17:00",
-        "speed_kt": 14,
-        "gust_kt": 20,
-        "dir_deg": 41,
-        "dir_compass": "NE",
-        "shift_note": "steady, building with storm circulation nearby"
-      },
-      {
-        "time": "18:00",
-        "speed_kt": 16,
-        "gust_kt": 23,
-        "dir_deg": 57,
-        "dir_compass": "ENE",
-        "shift_note": "peak, veering ENE near storm complex"
-      },
-      {
-        "time": "19:00",
-        "speed_kt": 15,
-        "gust_kt": 21,
-        "dir_deg": 48,
-        "dir_compass": "NE",
-        "shift_note": "holding, slight backing pre-arrival"
-      },
-      {
-        "time": "20:00",
-        "speed_kt": 13,
-        "gust_kt": 18,
-        "dir_deg": 42,
-        "dir_compass": "NE",
-        "shift_note": "near storm-passage window, softening"
-      },
-      {
-        "time": "21:00",
-        "speed_kt": 11,
-        "gust_kt": 15,
-        "dir_deg": 37,
-        "dir_compass": "NNE",
-        "shift_note": "softening post-passage, backing NNE"
-      },
-      {
-        "time": "22:00",
-        "speed_kt": 10,
-        "gust_kt": 14,
-        "dir_deg": 34,
-        "dir_compass": "NNE",
-        "shift_note": "steady, diminishing"
-      }
+      { "time": "17:00", "speed_kt": 10, "gust_kt": 15, "dir_deg": 65, "dir_compass": "ENE", "shift_note": "steady ENE gradient" },
+      { "time": "18:00", "speed_kt": 11, "gust_kt": 17, "dir_deg": 63, "dir_compass": "ENE", "shift_note": "steady" },
+      { "time": "19:00", "speed_kt": 12, "gust_kt": 18, "dir_deg": 62, "dir_compass": "ENE", "shift_note": "steady, building" },
+      { "time": "20:00", "speed_kt": 13, "gust_kt": 20, "dir_deg": 60, "dir_compass": "ENE", "shift_note": "steady" },
+      { "time": "21:00", "speed_kt": 14, "gust_kt": 21, "dir_deg": 60, "dir_compass": "ENE", "shift_note": "steady, storms approaching" },
+      { "time": "22:00", "speed_kt": 15, "gust_kt": 22, "dir_deg": 56, "dir_compass": "NE", "shift_note": "possible gust front, storms arriving" }
     ],
-    "tactics_blurb": "Gradient-only NE–ENE flow at 12–16 kt with active storm cells to the north — not a racing evening. If conditions clear, NNE–NE offshore air is fairly uniform across the cove; stay center or shade west, as Greenwich Point shelters the east shore from ENE flow.",
-    "favored_side": "center",
-    "tactics_detail_html": "<p><strong>Regime: B-moderate (gradient-only).</strong> The thermal driver is absent — Sound water at 69°F is slightly warmer than inland air at 66°F, a negative temperature differential (−3°F) that eliminates sea-breeze potential. Sea-breeze fractions are 0% across all subregions. Wind is pure synoptic gradient flow, reinforced by the mesoscale circulation around the storm complex to the north. Regime B wind does not collapse at sunset — it holds through the evening and beyond.</p><p><strong>Direction uncertainty is high.</strong> HRRR forecasts NE (~40°) for the 17:00–22:00 window, but current observations show a significant eastward bias: the western LIS ensemble median sits at ESE 107°, KHVN reports ENE 60°, KHPN reports E 90°. This 73° model–obs divergence likely reflects storm-driven mesoscale circulation rather than the background synoptic flow. As the storm complex drifts away ENE, direction should gradually veer toward HRRR's NE forecast — expect ENE to NE (50–80°) through most of the window, trending NNE after 21:00. The HRRR directions are used for the forecast table; actual direction may remain more easterly than shown through 19:00.</p><p><strong>Speed and gust character:</strong> HRRR peaks at ~16 kt around 18:00 EDT then diminishes to ~11 kt by 21:00. The current authoritative mean (10.5 kt across METARs) is below the peak, consistent with a building gradient. Gust estimates (~1.4× mean) are consistent with the current KHVN gust ratio (17/11 kt). Direction agreement across the ensemble is 0.78 — reasonably coherent for an active storm environment — but the high APRS coefficient of variation (1.09) confirms the APRS stations are fragmented, reflecting local shelter and storm effects. Expect persistent flow rather than oscillating shifts; there is no thermal driver to produce regular sea-breeze oscillations.</p><p><strong>Cove geometry with NE–ENE flow:</strong> offshore air is clean and laminar in the NE quadrant. The east shore (near Greenwich Point / Tod's Point) receives partial shelter when flow is ENE or E — the start line will be lighter there than mid-cove. Center to slight west is the favored position. As flow backs toward NNE after 21:00, it becomes more uniform across the cove.</p><p><strong>Fleet impact:</strong> 12–16 kt is powered-up dinghy territory, with gusts to 23 kt at peak — survival-mode for lighter classes. However, with storm cells within 10 mi, a Flood Watch active, and rain already falling at surrounding stations, sailing tonight is inadvisable. If conditions clear after 21:00, the diminishing NNE 10–11 kt gradient flow would be raceable for most classes.</p>"
+    "tactics_blurb": "Not a racing window — storms are arriving around 9–10 PM with the cove exposed in ENE gradient flow. If forced onto the water before 9 PM, slight advantage on the left/west side as ENE flow wraps around Greenwich Point.",
+    "favored_side": "left",
+    "tactics_detail_html": "<p>Tonight's wind is entirely <strong>gradient-driven</strong> — Regime B-moderate. The sea-breeze two-ingredient test fails completely: inland air (64°F) is actually cooler than Long Island Sound water (69°F), giving an inverted delta of −4.5°F where a positive 5°F is required. The ensemble shows coastal_pct at just 5% with zero inland southerly flow. No thermal driver exists, and no sea-breeze maturation direction correction applies. The synoptic ENE gradient is what you get.</p><p>Authoritative mean wind speed is <strong>8.5 kt</strong> (ensemble), with <strong>KBDR at 15 kt gusting 22</strong> on the open coast and <strong>RYC averaging 8.6 kt</strong> in the cove. The near-2× siting gap reflects significant shelter from Greenwich Point in ENE flow — the cove's N–S axis is largely perpendicular to the incoming ENE direction, and the eastern wall blocks much of that component. Expect real-water speeds in the 8–13 kt range while KBDR reads 14–16 kt. HRRR 23Z f01–f03 (20:00–22:00 EDT) shows 13–15 kt ENE, consistent with the observed gradient. Forecast hours 17:00–19:00 EDT predate the 23Z cycle and are estimated from the NWS gradient forecast (NE 12–16 mph) and current observations.</p><p>Direction is <strong>backing persistently from ENE toward NE and NNE overnight</strong>. HRRR shows 60° at 20:00 EDT, 51° by 23:00, 30° by 01:00 — a system-scale rotation with no oscillations to play tactically. From 21:00 EDT onward, storm outflow gust fronts could produce abrupt direction spikes in unpredictable directions; the gradient direction ceases to be the operative wind field once a gust front arrives.</p><p>In ENE flow, Greenwich Point shelters the <strong>eastern side</strong> of the cove. The best available pressure sits on the <strong>left/west side</strong> (Field Point / Belle Haven) where flow curves around the southern tip of the Point. With storms arriving by 9–10 PM, any meaningful racing window closed around <strong>20:30 EDT</strong> as the lead cell entered 5-mile range. Tonight is not a racing night.</p>"
   },
   "conditions": {
     "sky": "Showers And Thunderstorms",
-    "temp_f": 66,
-    "feels_like_f": 66
+    "temp_f": 66.2,
+    "feels_like_f": 66.2
   },
   "data_caveats": [
-    "RYC WeatherLink observation is 84 min old — cove-specific wind and temperature unverifiable",
-    "Buoy 44040 reading is 76 min old — over-water speed and direction may not reflect current conditions",
-    "HRRR forecast direction (NE ~40°) diverges 73° from current observations (ENE ~107°) — direction uncertainty high; forecast table uses HRRR but actual direction may remain more easterly through 19:00 EDT"
+    "Buoy 44040 offline — UConn ERDDAP returned 404; over-water wind and sea-state data unavailable",
+    "Storm arrival ETA uses HRRR model-estimated motion (no radar-tracked speed); confidence low — lean on the 9:06–10:38 PM window rather than the 9:52 PM point estimate",
+    "HRRR hourly forecast unavailable for 17:00–19:00 EDT (pre-dating the 23Z model cycle); those hours estimated from NWS gradient forecast and current observations"
   ]
 }
