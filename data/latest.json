@@ -1,34 +1,82 @@
 {
-  "generated_at": "2026-07-16T17:29:36-04:00",
+  "generated_at": "2026-07-17T16:39:05-04:00",
   "storm": {
-    "risk_level": "low",
-    "summary_layperson": "Radar is clear this evening — the slight-chance storm window is passing with no activity, and if a stray shower did develop, the cool Long Island Sound water would likely weaken it before it reaches the cove.",
+    "risk_level": "moderate",
+    "summary_layperson": "A line of thunderstorms is approaching from the west, but the cool Long Island Sound should weaken them before they reach the cove.",
     "local_effect": "mitigating",
-    "local_effect_blurb": "Sound water at 70°F — about 13°F cooler than the air — keeps a stable marine layer that tends to weaken incoming showers before they reach the shore.",
-    "detail_html": "<p>Radar at KOKX is clear — <strong>no storm cells</strong> anywhere in the monitored area as of the 5:22 PM scan. The NWS forecast carried a slight (20%) chance of an isolated shower or thunderstorm late this afternoon into early evening, and that window is now passing with nothing having developed over the region. The main sky story remains wildfire smoke aloft, with an Air Quality Alert in effect through midnight.</p><p>Atmospheric storm fuel is minimal: about 200 J/kg of CAPE now, fading to essentially zero after 8 PM. Winds aloft are strong (51 kt of deep-layer shear), which would organize storms efficiently if fuel were present — but at these instability levels there is nothing to organize.</p><p>The cove's usual summertime protection is active. Long Island Sound water is 70°F under low-80s air, a roughly 13°F gap that maintains a moderate stable marine layer over the water. Anything approaching from the west or southwest would have to cross that cool, stable air, which chokes a storm's low-level fuel supply and often weakens or splits it before the shoreline — the cove's risk runs lower than towns a few miles inland in this setup.</p><p>Most likely outcome for the evening: no precipitation through the racing hours and overnight. There are no upstream cells to track and instability decays with the daylight.</p><p>What would change the call: a cell firing over Westchester and riding the strong westerly steering flow could cover ground quickly with little warning — a rapidly building cumulus tower in the western sky around 6–7 PM would be the tell. The much better storm chance arrives <strong>Saturday</strong>, when widespread showers and thunderstorms are expected.</p>"
+    "local_effect_blurb": "Cool Sound water (70°F) and a 13°F air–water temperature gap create a stable marine layer that typically weakens storms as they cross the Sound.",
+    "detail_html": "<p>A pre-frontal squall line is organized across New Jersey and the New York metro area this afternoon, tied to an Enhanced risk of severe weather issued by the NWS for the Lower Hudson Valley. The closest radar echo sits <strong>34 miles WSW</strong> of the cove at 39 dBZ, moving eastward at a model-estimated 22 knots (no independent echo velocity is available — storm motion comes from HRRR steering). Best estimate for cove arrival is <strong>5:41 PM</strong>, with the uncertainty window running from 5:09 to 6:30 PM. Confidence is low.</p><p>The dominant local factor is the cool Long Island Sound. Water is 70°F against an air temperature of 82°F — a <strong>13°F air–water difference</strong> that has established a moderate stable marine layer over the Sound. Approaching cells are tracking on a WSW heading, nearly perpendicular to the Sound, so they must cross the full width of cool water before reaching the cove. That geometry consistently starves surface convection of heat and moisture; the NWS Sound-effect assessment rates this scenario <strong>high likelihood of weakening</strong>.</p><p>Bulk 0–6 km wind shear is <strong>40 knots</strong> from the west-northwest. Strong shear can help organize cells and sustain them in transit, but it also drives a quick passage rather than a slow-moving training event. HRRR shows 0 J/kg of CAPE locally right now; the OKX forecast discussion cites CAM models at 1,000–2,000 J/kg of MLCAPE ahead of the trough. Even at 2,000 J/kg, CAPE stays below the 3,000 J/kg threshold where cells routinely punch through a marine layer of this strength.</p><p>Most likely outcome for the cove: the gradient wind shift from the approaching system is already visible (RYC reading SSE, HRRR calling WNW within the hour), and that transition will continue. Rain is possible, significant thunder less likely here than 2 miles inland. Surrounding communities — Port Chester, White Plains, lower Westchester — carry a higher risk with no marine-layer buffer.</p><p>What would upgrade this forecast: a cell reaching <strong>45 dBZ within 25 miles</strong>, or an upstream APRS station in Port Chester or Rye reporting a <strong>gust ≥35 knots</strong>, would move the risk to high. Also note: an Air Quality Alert for smoke is active through Friday evening — visibility is reduced even without precipitation.</p>",
+    "arrival": {
+      "expected_local": "5:41 PM",
+      "window_local": {
+        "earliest": "5:09 PM",
+        "latest": "6:30 PM"
+      },
+      "confidence": "low",
+      "blurb": "Radar-tracked cell 34 mi WSW closing at model-estimated 22 kt; the marine layer over the Sound may slow or weaken it, pushing arrival toward the later end of the window."
+    }
   },
   "wind": {
-    "forecast_window": {"start": "17:00", "end": "22:00"},
-    "regime": "B-moderate",
-    "regime_label": "Moderate gradient wind — no sea breeze",
+    "forecast_window": {
+      "start": "17:00",
+      "end": "21:00"
+    },
+    "regime": "C",
+    "regime_label": "Conflicting winds — light WNW gradient battling a fading sea breeze",
     "hourly": [
-      {"time": "17:00", "speed_kt": 11, "gust_kt": 18, "dir_deg": 287, "dir_compass": "WNW", "shift_note": "puffy, active thermal mixing"},
-      {"time": "18:00", "speed_kt": 9, "gust_kt": 14, "dir_deg": 299, "dir_compass": "WNW", "shift_note": "brief veer right, softening"},
-      {"time": "19:00", "speed_kt": 6, "gust_kt": 9, "dir_deg": 298, "dir_compass": "WNW", "shift_note": "race start — fading, back begins"},
-      {"time": "20:00", "speed_kt": 4, "gust_kt": 6, "dir_deg": 269, "dir_compass": "W", "shift_note": "backed to W, light near sunset (8:25 PM)"},
-      {"time": "21:00", "speed_kt": 4, "gust_kt": 6, "dir_deg": 266, "dir_compass": "W", "shift_note": "light westerly, gusts damped"},
-      {"time": "22:00", "speed_kt": 4, "gust_kt": 6, "dir_deg": 265, "dir_compass": "W", "shift_note": "light and steady"}
+      {
+        "time": "17:00",
+        "speed_kt": 4,
+        "gust_kt": 6,
+        "dir_deg": 290,
+        "dir_compass": "WNW",
+        "shift_note": "sea breeze fading, WNW gradient asserting"
+      },
+      {
+        "time": "18:00",
+        "speed_kt": 5,
+        "gust_kt": 8,
+        "dir_deg": 301,
+        "dir_compass": "WNW",
+        "shift_note": "WNW gradient establishing, storm approach possible"
+      },
+      {
+        "time": "19:00",
+        "speed_kt": 5,
+        "gust_kt": 7,
+        "dir_deg": 315,
+        "dir_compass": "NW",
+        "shift_note": "NW, pre-trough shift"
+      },
+      {
+        "time": "20:00",
+        "speed_kt": 2,
+        "gust_kt": 3,
+        "dir_deg": 34,
+        "dir_compass": "NNE",
+        "shift_note": "near calm, trough passage"
+      },
+      {
+        "time": "21:00",
+        "speed_kt": 5,
+        "gust_kt": 8,
+        "dir_deg": 123,
+        "dir_compass": "ESE",
+        "shift_note": "direction uncertain — ESE post-trough rebound, model confidence low"
+      }
     ],
-    "tactics_blurb": "For the 7 PM race start: about 6 kt WNW at the gun, fading to 4 kt and swinging left toward due west during the first hour — favor the left side of the beat to ride the persistent left shift, keep clear air, and expect the last legs to be a light-air drift.",
-    "favored_side": "left",
-    "tactics_detail_html": "<p>This is a <strong>moderate gradient-wind day — no sea breeze in play</strong>. The air–water temperature difference (about 13°F: mid-80s air over a 70°F Sound) would normally support a thermal sea breeze, but the westerly background wind never let one establish — none of the Connecticut-coast or Long Island north-shore stations show a southerly component. The wind is the large-scale gradient, WNW across the whole network, and because this is a gradient-wind day rather than a sea-breeze day, the model direction is used directly (model and observations agree within 6°, so direction confidence is high).</p><p>Right now the Riverside YC station reads <strong>WNW (287°) at 11 kt, gusting 18</strong> — lively, puffy late-afternoon conditions driven by daytime thermal mixing. That mixing is the breeze's life support, and it shuts down with the approaching sunset: expect roughly 9 kt at 6 PM, <strong>6 kt at the 7 PM race start</strong>, and 4 kt by 8 PM, with the gust spread collapsing as the air steadies.</p><p>The direction tells the tactical story for the race window. The breeze holds WNW (near 300°) through the start, then swings left — counterclockwise — to due west (about 270°) between 7 and 8 PM as the daytime component fades out of the gradient. That is a roughly <strong>30° persistent left shift during the first hour of racing</strong>: boats on the left side of the beat ride it as a growing lift, while boats that bang the right corner sail extra distance. Favor the left, and re-check laylines late in the beat — they will move.</p><p>In WNW flow the cove gets puffs channeled off the northwest shore with soft spots close under the Connecticut shoreline, so early in the race keep to pressure lanes mid-course-and-left rather than corner-hunting. After the shift completes, the westerly is light and fairly steady — position for clear air above all else.</p><p>Fleet impact: the first beat starts in workable 6-kt pressure but the race finishes in 4 kt or less — a light-air specialists' evening. Boat handling through the fade (smooth roll tacks, minimal rudder) will decide more than raw speed. Races that get off promptly at 7 PM enjoy the best of it; any second start will be a drifter.</p>"
+    "tactics_blurb": "No clear favored side tonight — light, oscillating winds between SSW sea breeze and WNW gradient with a pre-trough lull near 8 PM and an uncertain direction swing after. Stay centered off every start, cover your competitors, and keep one eye on the western horizon for approaching cells.",
+    "favored_side": "center",
+    "tactics_detail_html": "<p>Today’s wind falls in the <strong>conflicting-winds</strong> category — a thermal sea breeze and a light WNW gradient wind are fighting for control of the surface during the race window. The thermal driver is strong: the air–water temperature difference is <strong>12.8°F</strong> (Sound water at 70°F, air at 81°F), which normally supports a reliable afternoon sea breeze. Right now at 4:30 PM it is: Riverside YC reads SSE at 4 knots, Bridgeport SSW at 9 knots. But HRRR, which has ingested the approaching frontal system, forecasts WNW for the entire 5–9 PM window — a 93-degree disagreement with current surface observations.</p><p>Because the gradient wind is in control (not the sea breeze), the sea-breeze direction correction does not apply to these hourly forecasts. Direction confidence is rated <strong>low</strong>: the model–obs divergence is too large to reconcile cleanly. The most honest summary is light and oscillating — sea breeze fading between 5 and 6 PM, WNW gradient asserting, then a pre-trough lull around 8 PM, and uncertain post-trough directions after 9 PM.</p><p>For the early beats (5–6 PM): the sea breeze (SSE–SSW) may still be competing with the WNW gradient, producing oscillating shifts of 60–90°. No persistent pressure is expected on either tack. Speed will be light — 4–5 knots with gusts to 7–8 — so leverage from position matters more than boat speed gains. Staying centered covers both phases of the oscillation and avoids getting caught in a header on the corner.</p><p>Around 7 PM HRRR shows a NW shift at 4–5 knots ahead of the trough passage, followed by a near-calm lull (~2 knots) as the trough itself crosses around 8 PM. After 9 PM the model shows an anomalous ESE swing — treat this as low confidence; post-trough flow after a convective cell is notoriously unpredictable and may oscillate widely before settling.</p><p>Sunset is 8:18 PM EDT — well outside the primary race window — so thermal collapse is not a factor here. The main wildcard is the approaching storm line: any cells that reach the cove will produce outflow that can send sudden puffs from the NW or W regardless of the background gradient, so stay nimble and don’t over-commit to a layline.</p>"
   },
   "conditions": {
-    "sky": "Areas Of Smoke",
-    "temp_f": 84,
-    "feels_like_f": 87
+    "sky": "Patchy Smoke",
+    "temp_f": 80.8,
+    "feels_like_f": 81
   },
   "data_caveats": [
-    "Buoy WLIS (western Sound) wind observation was 73 minutes old at fetch time — used as background reference only."
+    "WLIS buoy (44040) wind obs are 75 minutes old — treated as background reference only",
+    "RAP CAPE unavailable; CAPE estimate from OKX AFD discussion (CAMs show 1,000–2,000 J/kg MLCAPE ahead of trough)",
+    "HRRR direction and current surface obs diverge by 93° (model WNW, obs SSW); direction confidence low"
   ]
 }
