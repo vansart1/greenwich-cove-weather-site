@@ -1,37 +1,91 @@
 {
-  "generated_at": "2026-07-21T16:31:00-04:00",
+  "generated_at": "2026-07-22T20:31:00-04:00",
   "storm": {
-    "risk_level": "high",
-    "summary_layperson": "Dangerous thunderstorms are sweeping directly over the cove right now, with a Tornado Watch in effect until 9 PM and a second round of organized severe weather expected from the west through the early evening — there is no coastal buffer to weaken storms here tonight.",
-    "local_effect": "amplifying",
-    "local_effect_blurb": "Long Island Sound water (71°F) is nearly as warm as the air (73°F), so the marine layer that sometimes slows incoming storms is absent — and with 45-knot wind shear through the atmosphere, any organized cell approaching from the west can arrive at full strength.",
-    "detail_html": "<p>A severe convective outbreak is underway across the region, driven by a warm front lifting north through the area this afternoon and evening. Radar at 4:19 PM showed storm cells as close as 0.2 miles from Greenwich Cove at reflectivities reaching 62 dBZ — the intensity range associated with large hail and damaging winds. Rain rates at the cove dock station exceeded 6 inches per hour at last reading. A <strong>Tornado Watch is active until 9:00 PM</strong>, a Severe Thunderstorm Warning runs through 5:00 PM, and a Flash Flood Warning is in effect until 7:15 PM.</p><p>The current storm cells are tracking north-northwest at roughly 7 knots and pulling away from the cove. However, the NWS Upton forecast office explicitly warns of organized, upstream severe thunderstorm activity capable of reaching the western Sound between <strong>5 and 9 PM</strong> — exactly the 17:00–22:00 window. If the warm front pushes far enough north to allow a brief lull in activity, conditions become more favorable for that upstream convection to hold together on approach. Damaging wind gusts are the primary severe threat; the environment also supports isolated brief tornadoes.</p><p>There is no local factor softening this risk. Long Island Sound water is only 2°F cooler than the air (71°F vs. 73°F), so no meaningful stable marine layer exists over the water today. On cold-water days — when the Sound runs 10°F or more below air temperature — this layer can weaken or deflect incoming storms before they reach the coast. That mechanism is not available tonight. Atmospheric wind shear is 45 knots or more through the lower atmosphere, and storm energy (CAPE) is near 2,200 joules per kilogram. Any organized cell approaching from the west or southwest has the ingredients to maintain full intensity all the way to the cove.</p><p>What would lower the risk: if the warm front clears well north before 5 PM and the local instability is consumed by the current storm activity, leaving the organized upstream convection without enough fuel to sustain itself into the area. The NWS considers this possible but not certain. Until the 5–9 PM window closes without a new round of storms, the risk remains high.</p>"
+    "risk_level": "moderate",
+    "summary_layperson": "A line of thunderstorm cells is approaching from the northwest with arrivals possible as early as 6 PM — the Long Island Sound's cool water is likely to weaken them on the way in, so the cove may get gusty winds while areas two miles inland take more thunder and heavier rain.",
+    "local_effect": "mitigating",
+    "local_effect_blurb": "The Sound's 71°F water against 84°F inland air creates a 13°F gap that builds a moderate stable layer over the water, typically choking low-level convection before it reaches the cove.",
+    "detail_html": "<p>Radar shows three storm cells 34–36 mi to the WNW through NNW, tracked moving toward the cove at <strong>23 kt ENE</strong> (measured centroid motion across two KOKX scans). The leading pair — bearing WNW at 44 dBZ and NW at 43 dBZ — are closing at 13–15 kt with ETAs of 6:28 PM and 6:42 PM. A slower third cell to the NNW at 36 dBZ has a late-night ETA around 10:36 PM.</p><p>NWS forecasters cite <strong>SBCAPE around 2,000 J/kg</strong> with DCAPE exceeding 1,000 J/kg and a \"severe wind threat where storms reach their equilibrium level around 40,000 ft.\" HRRR shows only 660 J/kg — the AFD figure reflects actual soundings and is more representative here. Bulk shear of 42.6 kt (WSW) combined with 2,000 J/kg CAPE produces organized convection with genuine gusty wind potential.</p><p>The protective mechanism is active. Long Island Sound sits at 71°F against 84°F inland air — a <strong>13°F air–water gap</strong> — and the storm approach crosses the Sound nearly perpendicularly from the WNW–NW, which maximizes the marine layer's effect. Measured storm motion of 23 kt (moderate speed, not a fast squall line) also favors deflection. At sub-3,000 J/kg CAPE, the stable marine boundary layer can choke low-level convection as cells cross the water. Most likely outcome: <strong>the cove sees gusty winds and possibly some rain; areas two to three miles inland take more thunder and heavier precipitation.</strong></p><p>The first cell's early edge opens around 5:57 PM. The late edge stretches to 7:24 PM because the marine layer may slow or weaken the cells over the Sound. Watch live radar for the WNW cell's reflectivity trend as it approaches the CT shore — if it drops below 35 dBZ over the water, the Sound effect is working as expected and storm risk here drops significantly.</p><p>What would change the call upward: an upstream APRS station near Rye or Port Chester spiking gusts above 25 kt before the listed ETA means the gust front is outrunning radar reflectivity — lean to an earlier, stronger arrival. Conversely, cells fading below 35 dBZ over the Sound is a clean signal the threat is weakening. No NWS warnings or watches are currently in effect.</p>",
+    "arrival": {
+      "expected_local": "6:28 PM",
+      "window_local": {
+        "earliest": "5:57 PM",
+        "latest": "7:24 PM"
+      },
+      "confidence": "medium",
+      "blurb": "Radar-tracked cell 35 mi WNW closing at 15 kt, with a near-identical 43 dBZ cell immediately behind at 6:42 PM — the marine layer may slow or weaken both as they cross the Sound, biasing arrival toward the late edge."
+    }
   },
   "wind": {
-    "forecast_window": {"start": "17:00", "end": "22:00"},
-    "regime": "B-light",
-    "regime_label": "Light, post-storm gradient — no sea breeze, direction will wander",
+    "forecast_window": {
+      "start": "17:00",
+      "end": "22:00"
+    },
+    "regime": "C",
+    "regime_label": "Conflicting winds — offshore gradient fighting the sea breeze",
     "hourly": [
-      {"time": "17:00", "speed_kt": 4, "gust_kt": 10, "dir_deg": 340, "dir_compass": "NNW", "shift_note": "post-storm, direction unstable"},
-      {"time": "18:00", "speed_kt": 4, "gust_kt": 8, "dir_deg": 75, "dir_compass": "ENE", "shift_note": "light and variable"},
-      {"time": "19:00", "speed_kt": 8, "gust_kt": 14, "dir_deg": 139, "dir_compass": "SE", "shift_note": "brief building, direction shifting"},
-      {"time": "20:00", "speed_kt": 3, "gust_kt": 7, "dir_deg": 149, "dir_compass": "SSE", "shift_note": "softening near sunset"},
-      {"time": "21:00", "speed_kt": 5, "gust_kt": 10, "dir_deg": 210, "dir_compass": "SSW", "shift_note": "light SSW, settling post-sunset"},
-      {"time": "22:00", "speed_kt": 10, "gust_kt": 16, "dir_deg": 210, "dir_compass": "SSW", "shift_note": "extended range, low confidence"}
+      {
+        "time": "17:00",
+        "speed_kt": 7,
+        "gust_kt": 11,
+        "dir_deg": 271,
+        "dir_compass": "W",
+        "shift_note": "gradient W, holding ahead of approaching cells"
+      },
+      {
+        "time": "18:00",
+        "speed_kt": 9,
+        "gust_kt": 14,
+        "dir_deg": 272,
+        "dir_compass": "W",
+        "shift_note": "W, storm cells closing — gust front possible"
+      },
+      {
+        "time": "19:00",
+        "speed_kt": 9,
+        "gust_kt": 18,
+        "dir_deg": 279,
+        "dir_compass": "W",
+        "shift_note": "W–WNW, storm gust front arrival window; temporary spike likely"
+      },
+      {
+        "time": "20:00",
+        "speed_kt": 7,
+        "gust_kt": 11,
+        "dir_deg": 294,
+        "dir_compass": "WNW",
+        "shift_note": "veering WNW, softening near sunset"
+      },
+      {
+        "time": "21:00",
+        "speed_kt": 6,
+        "gust_kt": 9,
+        "dir_deg": 306,
+        "dir_compass": "NW",
+        "shift_note": "post-sunset NW, lightening"
+      },
+      {
+        "time": "22:00",
+        "speed_kt": 6,
+        "gust_kt": 9,
+        "dir_deg": 315,
+        "dir_compass": "NW",
+        "shift_note": "light NW, night weakening"
+      }
     ],
-    "tactics_blurb": "Post-storm winds tonight will be light and directionless — no favored side, so stay central, keep options open, and treat storm risk as the primary variable; conditions could reset completely if a new cell arrives.",
-    "favored_side": "center",
-    "tactics_detail_html": "<p>Tonight is not a sea-breeze day. The air–water temperature difference is just 2.2°F (air 73°F, water 71°F) — far below the threshold needed to drive a meaningful thermal sea breeze, and the sea-breeze direction gate is not met. The post-storm environment will instead produce light, highly variable winds through the 17:00–22:00 window as the atmosphere reorganizes behind the convective activity. This is a light gradient-wind situation where the synoptic pattern provides almost no sustained push in any direction, and post-storm mesoscale chaos fills in with direction scatter.</p><p>The HRRR 19Z forecast shows winds cycling through NNW, ENE, SE, SSE, and SSW across the five primary hours of the window — a roughly 180° sweep in direction with speeds barely reaching 8 knots at peak. This level of directional scatter reflects both the HRRR's difficulty resolving light-wind patterns and the storm-influenced mesoscale environment. Actual conditions at each hour will depend heavily on which cells are active nearby and how the warm-frontal boundary shifts. Treat the forecast directions as rough guidance, not precise calls.</p><p>Sunset is at approximately 8:04 PM EDT, falling just after the 20:00 hour. On a normal sea-breeze day, the thermal collapses around this time — tonight that transition is irrelevant since there is no meaningful sea breeze in play. What sunset does mean: temperatures ease slightly, any residual gradient weakens further, and the post-sunset hours (20:00–22:00) are likely to be the lightest — unless a new storm cell resets conditions with a gust front. The 22:00 row comes from HRRR extended range output (lower confidence) and should be treated as a rough guide only.</p><p>Tactically: the cove's geography provides no leverage when wind direction is shifting 180° across the window. There is no pressure band or consistent lift to chase toward either side of the course. Stay central, cover early shifts quickly without committing deep, and sail to the mark rather than to a side. Be prepared for sudden changes in speed and direction if storm activity approaches — a gust front can arrive with 20–30 knots from an unexpected direction with little notice.</p><p>The dominant uncertainty for this window is the storm outlook, not the wind regime. If organized severe weather moves through between 17:00 and 21:00 as the NWS discussion warns, race-tactical wind considerations become secondary to safety. Treat the storm risk as the primary variable and adjust tactics around whatever conditions actually materialize.</p>"
+    "tactics_blurb": "With the offshore gradient winning the W–WNW battle at western Long Island Sound and storm cells arriving during the early part of the window, racing before 8 PM is not advisable — if conditions clear, the post-storm NW at 5–7 kt favors a right-side bias with the best pressure in the center of the course.",
+    "favored_side": "right",
+    "tactics_detail_html": "<p>The air–water temperature difference of 13.1°F (air 84°F, Sound water 71°F) provides strong thermal energy for a sea breeze — and one is indeed running across central and eastern Long Island Sound, with KBDR, KHVN, KGON, and Block Island all showing SSW at 7–16 kt. <strong>That sea breeze has not penetrated western LIS.</strong> RYC reads WNW 288° at 12.6 kt gusting 19.3 kt, and nearby Old Greenwich and Port Chester APRS stations confirm WNW–NW flow. The offshore gradient of roughly 10 kt is beating the sea breeze at the western end of the Sound. This is a conflicting-winds day: two flows competing, with the gradient winning here while the sea breeze wins everything east of Bridgeport.</p><p>HRRR shows a steady clockwise veer through the window — W 271°→272°→279° at 7–9 kt for 17:00–19:00, then WNW 294° at 7 kt around 20:00, NW 306° at 6 kt at 21:00, and fading to roughly 6 kt NW by 22:00. Sunset at approximately 8:15 PM removes any remaining thermal component; thereafter the flow is pure gradient and continues to veer and weaken. Note that HRRR is under-reading the cove by about 4 kt relative to the current RYC observation (HRRR f01 shows 8.3 kt while RYC simultaneously reads 12.6 kt). The storm-approach environment or localized acceleration at the cove mouth may be inflating the reading — actual speeds through the window may run somewhat higher than the hourly table reflects.</p><p>Three storm cells are closing from WNW through NNW with the lead cell's early edge arriving as soon as 5:57 PM. Even under the marine-layer protection scenario — the more likely outcome given the 13°F air–water delta — a gust front will precede precipitation. Expect a sharp temporary wind spike to WNW–NW, possibly reaching 20–25 kt, around the 19:00 slot, followed by a lull as the storm passes. The hourly table shows background HRRR gradient flow; during storm passage actual gusts will exceed those figures.</p><p>With W–WNW flow crossing the N–S cove axis, wind enters from the western shore rather than running up the cove. The \"holes near the CT shore\" pattern applies — weaker, more irregular pressure close to the north shore, better flow in the center of the course and toward mid-Sound. Shift character is <strong>not</strong> the regular oscillations of a mature sea-breeze day; this is gradient-and-convective puffs separated by lulls. As the gradient steadily veers from W toward NW through the window, <strong>the right side of every upwind leg gains persistently</strong> — the veer is continuous, not a two-way oscillation, so commit right rather than playing it as a tactical shift.</p><p>The storm arrival window (5:57–7:44 PM) overlaps the early part of the evening series. Even with the marine layer limiting precipitation, racing in organized 40+ kt shear with 43–44 dBZ cells approaching is not recommended. If the cells weaken below 35 dBZ while crossing the Sound, post-storm conditions from roughly 20:00 onward will offer light NW at 5–7 kt — marginal but raceable, with a clean right-bias call. Monitor live radar: if the WNW cells hold intensity across the Sound, wait for passage before sending the fleet out.</p>"
   },
   "conditions": {
-    "sky": "Showers And Thunderstorms",
-    "temp_f": 73.1,
-    "feels_like_f": 73.1
+    "sky": "Chance Showers And Thunderstorms",
+    "temp_f": 86.3,
+    "feels_like_f": 89
   },
   "data_caveats": [
-    "Buoy 44040 last wind obs 75 min old — readings predate the storm and do not reflect current conditions",
-    "KGON (Groton) and KWST (Westerly) anemometers offline — eastern Sound wind data unavailable",
-    "RYC rain rate 6.19 in/hr at fetch time — active storm over the cove; post-storm wind evolution is highly uncertain",
-    "HRRR wrfsfc does not include gust field — hourly gusts estimated at approximately 1.8× mean speed"
+    "Buoy 44040 (WLIS) offline — UConn ERDDAP 404; over-water sea-breeze depth and wind signals unavailable.",
+    "KHPN anemometer down (outlier); inland Westchester wind not available.",
+    "KISP anemometer down (outlier); south-shore LI wind not available.",
+    "AFD SBCAPE (2,000 J/kg) significantly exceeds HRRR CAPE (660 J/kg); storm risk assessed using the AFD figure as more representative of the actual atmospheric state."
   ]
 }
