@@ -1,42 +1,90 @@
 {
-  "generated_at": "2026-07-29T16:56:01-04:00",
+  "generated_at": "2026-07-30T16:34:52-04:00",
   "storm": {
     "risk_level": "moderate",
-    "summary_layperson": "Scattered strong storm cells are rotating through the wider region this evening, with one tracked to pass near the cove around 6:30 PM; the Sound is unusually warm right now so it won't offer its usual cooling protection against these storms.",
+    "summary_layperson": "Scattered thunderstorm cells are moving through the region from the north and northwest this evening, with a couple tracked toward the cove in the next hour or so — but without the Sound's usual cooling cushion in play tonight, the cove won't get any special protection from them.",
     "local_effect": "neutral",
-    "local_effect_blurb": "Water and air temperatures are almost identical today (75°F vs 75°F), so there's no stabilizing marine layer to weaken storms before they reach the cove.",
-    "detail_html": "<p>Radar shows a cluster of showers and thunderstorms across the wider metro area, with several cells reaching <strong>50–60 dBZ</strong> within 12–25 miles west and northwest of the cove. Bulk shear is a healthy <strong>24 kt</strong> and CAPE sits at <strong>1,320 J/kg</strong> — enough instability for organized cells, though below the 1,500 J/kg threshold where storms typically punch through any protective layer regardless of local conditions.</p><p>Normally the cool Sound creates a stabilizing marine layer that weakens storms as they cross the water. Not today: water and air temperature are within <strong>0.2°F</strong> of each other, so the <strong>marine-layer protective mechanism is inactive</strong>. That means the cove has no local advantage over inland towns like Stamford or White Plains — whatever reaches the shoreline reaches the water at roughly full strength.</p><p>Most of the nearby high-reflectivity cells (11–25 mi out, including a 54 dBZ cell 23 mi WNW) are tracking <strong>away</strong> from the cove as the broader system races southwest at 52 kt. The one cell still classified as \"closing\" is farther out — 42 miles NNW — and closing at a comparatively modest 21 kt.</p><p>Most likely outcome for the cove: a chance of a passing shower or embedded thunderstorm cell in the 6:00–7:00 PM window, similar to or slightly wetter than what surrounding inland areas see, since there's no Sound-effect cushion tonight. This is a notably different setup than a typical humid summer evening here.</p><p>What would change the call: any cell reclassifying from \"moving away\" to \"closing\" on the next radar update, or CAPE building past 1,500 J/kg, would push this toward high risk. A weakening trend in the tracked cell's reflectivity or an increase in its distance would support downgrading to low.</p>",
+    "local_effect_blurb": "Sound water (74°F) and air (73°F) are almost the same temperature tonight, so there's no stabilizing marine layer to weaken these storms before they reach the cove.",
+    "detail_html": "<p>Radar shows a cluster of showers and thunderstorms scattered across the wider metro area, consistent with the NWS forecast discussion's note of \"weak forcing and weak low-level instability\" supporting a slight chance of storms. Multiple cells in the <strong>38–47 dBZ</strong> range sit within 6–16 miles of the cove, mostly to the north, northwest, and northeast.</p><p>Normally the cool Sound builds a stabilizing marine layer that weakens storms crossing the water. Not tonight: water and air temperature are within <strong>0.5°F</strong> of each other, so the <strong>marine-layer protective mechanism is inactive</strong>. Shear is a moderate <strong>18 kt</strong> and CAPE is modest at <strong>610–750 J/kg</strong> — not enough instability for major intensification, and there are no active NWS watches or warnings.</p><p>Timing is layered: a fast-moving cell 14 miles NNE, closing at 22 kt, is projected to graze the area first, around <strong>4:53 PM</strong> — just before this window opens. The pipeline's primary tracked cell, 12.7 miles NNW and closing slowly at 9 kt, is expected around <strong>5:35 PM</strong> (window 5:16–5:55 PM, radar-measured motion, medium confidence). A third cell 15 miles N, closing at 12.5 kt, could add a second wave near 5:21 PM.</p><p>Most likely outcome: the cove sees a couple of quick shower or thunderstorm passes clustered in the <strong>4:50–6:00 PM</strong> stretch, with a risk similar to surrounding inland towns since there's no Sound-effect cushion tonight. No additional cells are currently classified as closing beyond that window, so the risk should ease through the rest of the evening.</p><p>What would change the call: any of the 40+ dBZ cells reclassifying to a shorter-ETA \"closing\" status, CAPE building past 1,500 J/kg (HRRR shows it trending up from 610 toward ~1,040 J/kg over the next few hours), or an NWS watch/warning being issued would push this toward high risk.</p>",
     "arrival": {
-      "expected_local": "6:30 PM",
-      "window_local": {"earliest": "6:04 PM", "latest": "6:56 PM"},
+      "expected_local": "5:35 PM",
+      "window_local": {
+        "earliest": "5:16 PM",
+        "latest": "5:55 PM"
+      },
       "confidence": "medium",
-      "blurb": "Radar-tracked cell 42 mi NNW closing at 21 kt as the broader system races southwest at 52 kt; with no marine layer active tonight, don't count on the Sound to weaken or delay it the way it might on a typical summer evening."
+      "blurb": "Radar-tracked cell 12.7 mi NNW closing slowly at 9 kt; with no marine layer active tonight, don't expect the Sound to weaken or delay it — treat the window as a real ETA, not a cushioned one."
     }
   },
   "wind": {
-    "forecast_window": {"start": "17:00", "end": "22:00"},
+    "forecast_window": {
+      "start": "17:00",
+      "end": "22:00"
+    },
     "regime": "B-light",
-    "regime_label": "Light gradient wind — no sea breeze, direction unsettled",
+    "regime_label": "Light gradient wind — no sea breeze, direction unsettled by nearby storms",
     "hourly": [
-      {"time": "17:00", "speed_kt": 8, "gust_kt": 14, "dir_deg": 299, "dir_compass": "WNW", "shift_note": "current obs — direction unsettled, low agreement across stations"},
-      {"time": "18:00", "speed_kt": 9, "gust_kt": 17, "dir_deg": 280, "dir_compass": "W", "shift_note": "storm cell tracking through the region — possible gusty, shifty periods"},
-      {"time": "19:00", "speed_kt": 7, "gust_kt": 15, "dir_deg": 245, "dir_compass": "WSW", "shift_note": "convective influence easing, backing toward SW"},
-      {"time": "20:00", "speed_kt": 6, "gust_kt": 11, "dir_deg": 230, "dir_compass": "SW", "shift_note": "light gradient, no sea breeze — direction still wandering"},
-      {"time": "21:00", "speed_kt": 5, "gust_kt": 9, "dir_deg": 220, "dir_compass": "SW", "shift_note": "past sunset, boundary layer stabilizing, wind easing"},
-      {"time": "22:00", "speed_kt": 4, "gust_kt": 7, "dir_deg": 210, "dir_compass": "SSW", "shift_note": "light and variable, nocturnal boundary layer settling in"}
+      {
+        "time": "17:00",
+        "speed_kt": 7,
+        "gust_kt": 16,
+        "dir_deg": 140,
+        "dir_compass": "SE",
+        "shift_note": "cells closing NNW–NNE, 20–80 min out — gusty, shifting squalls possible"
+      },
+      {
+        "time": "18:00",
+        "speed_kt": 6,
+        "gust_kt": 13,
+        "dir_deg": 190,
+        "dir_compass": "SSW",
+        "shift_note": "storm activity clearing — still gusty in the wake"
+      },
+      {
+        "time": "19:00",
+        "speed_kt": 5,
+        "gust_kt": 10,
+        "dir_deg": 110,
+        "dir_compass": "ESE",
+        "shift_note": "light and variable, convective influence fading"
+      },
+      {
+        "time": "20:00",
+        "speed_kt": 4,
+        "gust_kt": 8,
+        "dir_deg": 200,
+        "dir_compass": "SSW",
+        "shift_note": "settling into light post-convective gradient flow"
+      },
+      {
+        "time": "21:00",
+        "speed_kt": 4,
+        "gust_kt": 8,
+        "dir_deg": 233,
+        "dir_compass": "SW",
+        "shift_note": "light and steadier, no sea breeze in play"
+      },
+      {
+        "time": "22:00",
+        "speed_kt": 4,
+        "gust_kt": 7,
+        "dir_deg": 235,
+        "dir_compass": "SW",
+        "shift_note": "light gradient continuing — low-confidence hour, beyond HRRR's hourly resolution"
+      }
     ],
-    "tactics_blurb": "No sea breeze today — the air-to-water temperature gap is only 0.2°F, so this is purely a light, wandering gradient flow that nearby storm cells could kick around through early evening. Stay center on the course and play the shifts rather than committing to a side.",
+    "tactics_blurb": "A light, no-sea-breeze evening further complicated by thunderstorm cells passing north and northeast of the cove — expect gusty, shifting wind early in the window that settles into light and variable gradient flow later. Stay flexible near the middle of the course and treat any puff as short-lived.",
     "favored_side": "center",
-    "tactics_detail_html": "<p>This is a <strong>light gradient-wind day, not a sea-breeze day</strong> (B-light). The air–water temperature difference is just 0.2°F — far short of the ~5°F needed to drive a thermal sea breeze — and the coastal station ensemble confirms it: only 30% of coastal stations are reading southerly, versus the persistent-southerly majority you'd see on a real thermal day. The synoptic gradient itself is weak, with the authoritative airport-anemometer average at just 7.7 kt.</p><p>Direction agreement across the station ensemble is low (0.43, well under the 0.7 threshold that usually signals a clean, trustworthy read), which lines up with what's happening regionally: scattered thunderstorm cells passing 12–40 miles to the west and northwest are disturbing the local flow with outflow-influenced gusts and shifts rather than a clean synoptic direction. RYC is currently reading WNW at 8.5 kt (13.9 kt gusts, 7.6 kt 10-min average) while the wider ensemble median sits at SSW — a large divergence that reflects this local unsettled character rather than a model/obs sea-breeze lag (the maturation correction doesn't apply on a non-thermal day).</p><p>Given the directional scatter, no single side of the course holds a clear geography-driven edge tonight — favor the center and expect to play shifts reactively rather than committing early to one shore.</p><p>Shift character through the window: expect the most erratic behavior 18:00–19:00 while nearby convection is closest, then a gradual backing from W/WNW toward SW/SSW as the cells clear out and pass south of the region, with speeds easing toward a light, nearly variable flow by 22:00. None of this is sea-breeze oscillation — it's convective disturbance settling into a weak nocturnal gradient.</p><p>Data note: HRRR model guidance beyond the first forecast hour (17:00) was unavailable this run — NOMADS had not yet posted f02–f12 for the 20Z cycle at fetch time. The 18:00–22:00 hourly figures above are built from current-observation persistence and the regional storm/gradient trend rather than model output, so treat direction and speed for those hours as lower-confidence, especially through the 18:00–19:00 convective window.</p>"
+    "tactics_detail_html": "<p>Tonight is a <strong>gradient-only, no-sea-breeze day</strong>: the inland-vs-Sound temperature differential is essentially flat (−0.5°F), and only 10% of coastal stations are showing the southerly flow that would signal a thermal sea breeze. With the thermal driver absent, this is regime B regardless of magnitude, and the light gradient wind (ensemble authoritative mean 5 kt) puts it in the <strong>light-gradient</strong> bucket.</p><p>The wind field is unusually fragmented right now — <strong>direction agreement across the 29-station ensemble is just 0.24</strong>, far below the 0.6–0.8 range that would call a coherent field. That's consistent with several thunderstorm cells and their outflow boundaries crossing the area at different bearings rather than a single clean flow. With no consistent geographic edge to lean on, favor the <strong>center</strong> of the course rather than committing to either shore.</p><p>Shift character is <strong>erratic, not tactical</strong> — this isn't the clean oscillation of a mature sea breeze or the one-way rotation of a frontal passage; it's outflow-driven gusting that can reverse direction in minutes as cells pass. Expect the roughest, gustiest stretch (RYC already gusting to 9 kt against a 2–5 kt sustained base) in the first hour or two of the window while cells are actively closing, easing to a more settled light-and-variable gradient by 19:00–20:00.</p><p>Worth flagging: HRRR's raw forecast direction (ESE, ~108° for the top of the window) diverges sharply from the current RYC observation (SSE, 151°) — a <strong>138° gap</strong>. That's well past the threshold where the two should be trusted equally; direction confidence for this window is <strong>low</strong>, and the hourly directions below should be read as a rough envelope, not a precise forecast, especially while storms are nearby.</p><p>For racers: this points to drifter-class conditions (2–7 kt sustained) punctuated by brief mid-teens gusts near passing cells, then trailing off to light and shifty by full dark. Not a night to count on pressure holding anywhere specific — play what you see boat-to-boat.</p>"
   },
   "conditions": {
-    "sky": "Chance Showers And Thunderstorms",
-    "temp_f": 78,
-    "feels_like_f": 78
+    "sky": "Showers And Thunderstorms Likely",
+    "temp_f": 73.8,
+    "feels_like_f": 73.8
   },
   "data_caveats": [
-    "HRRR forecast hours f02–f12 unavailable at fetch time (NOMADS had not yet posted the 20Z cycle beyond f01) — wind table for 18:00–22:00 is built from obs persistence and trend, not model output.",
-    "WLIS/Buoy 44040 (marine.wlis_44040) reading is 68 minutes old — treat as a slightly stale cross-check, not current.",
-    "No sea-breeze direction maturation correction applied — today is a gradient-only (non-thermal) day, so the correction doesn't apply."
+    "HRRR forecast wind direction diverges sharply from current RYC observation (108° model vs 151° obs, 138° gap) — hourly wind directions this evening carry low confidence.",
+    "Wind field is fragmented (direction agreement 0.24 across 29 stations) due to nearby thunderstorm activity — expect more variability than the hourly table can capture.",
+    "22:00 hour falls outside HRRR's primary hourly forecast (f01–f06); direction is extrapolated from the trailing trend and the f07–f12 extended outlook's aggregate speed only."
   ]
 }
