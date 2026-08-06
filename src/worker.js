@@ -24,6 +24,8 @@ export default {
   },
 };
 
+const DAILY_LIMIT_PER_IP = 25;
+
 async function handleRefresh(request, env) {
   const topic = env.NTFY_TOPIC;
   if (!topic) {
@@ -34,6 +36,43 @@ async function handleRefresh(request, env) {
   // request, so this is just informational — useful when you see the buzz
   // and want to know if it's likely a real visitor vs. someone scanning.
   const ip = request.headers.get("cf-connecting-ip") || "unknown";
+
+  // Burst limit first: it's a no-cost check, so a hammering client never
+  // reaches the KV read below.
+  // NOTE: this binding is best-effort — Cloudflare enforces it per location
+  // rather than as a global counter, and in testing it let back-to-back calls
+  // through. It's free and can only help, but it is NOT the real control; the
+  // daily KV cap below is. Don't rely on this alone.
+  if (env.REFRESH_LIMIT) {
+    const { success } = await env.REFRESH_LIMIT.limit({ key: rateKey(ip) });
+    if (!success) {
+      // Logged (verdict only, never the key — it derives from the visitor IP)
+      // so genuine abuse is visible in `wrangler tail`.
+      console.log("burst limit tripped");
+      return json(
+        { error: "rate limited", scope: "burst", retryAfterSec: 60 },
+        429,
+        { "Retry-After": "60" },
+      );
+    }
+  }
+
+  // Daily cap per visitor. KV is eventually consistent across colos, so a
+  // client spraying from several regions at once can land a little over the
+  // cap — the burst limit above is what keeps that gap small.
+  const counterKey = await dailyKey(ip);
+  let count = 0;
+  if (env.REFRESH_COUNTS) {
+    count = Number(await env.REFRESH_COUNTS.get(counterKey)) || 0;
+    if (count >= DAILY_LIMIT_PER_IP) {
+      return json(
+        { error: "rate limited", scope: "daily", limit: DAILY_LIMIT_PER_IP },
+        429,
+        { "Retry-After": "3600" },
+      );
+    }
+  }
+
   const country = request.cf?.country || "??";
   const ua = (request.headers.get("user-agent") || "").slice(0, 60);
 
@@ -69,7 +108,14 @@ async function handleRefresh(request, env) {
       });
 
       if (ntfyRes.ok) {
-        return json({ ok: true, attempt });
+        // Only count sends that actually reached the phone — a visitor
+        // shouldn't spend their daily allowance on our failed attempts.
+        if (env.REFRESH_COUNTS) {
+          await env.REFRESH_COUNTS.put(counterKey, String(count + 1), {
+            expirationTtl: 60 * 60 * 36,
+          });
+        }
+        return json({ ok: true, attempt, remaining: DAILY_LIMIT_PER_IP - count - 1 });
       }
 
       // Keep ntfy's own error text — losing it is what made this endpoint
@@ -116,9 +162,29 @@ function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-function json(payload, status = 200) {
+// A single IPv6 user is handed a whole /64, so limiting on the full address
+// lets one person cycle through effectively unlimited keys. Bucket v6 by /64;
+// v4 addresses are used whole.
+function rateKey(ip) {
+  if (!ip.includes(":")) return ip;
+  return ip.split(":").slice(0, 4).join(":") + "::/64";
+}
+
+// Visitor IPs are personal data and there's no reason to keep them at rest —
+// the counter only needs a stable opaque key, so store a hash instead.
+async function dailyKey(ip) {
+  const day = new Date().toISOString().slice(0, 10);
+  const data = new TextEncoder().encode(`${day}|${rateKey(ip)}`);
+  const digest = await crypto.subtle.digest("SHA-256", data);
+  const hex = [...new Uint8Array(digest)]
+    .map((b) => b.toString(16).padStart(2, "0"))
+    .join("");
+  return `rl:${day}:${hex.slice(0, 32)}`;
+}
+
+function json(payload, status = 200, extraHeaders = {}) {
   return new Response(JSON.stringify(payload), {
     status,
-    headers: { "Content-Type": "application/json" },
+    headers: { "Content-Type": "application/json", ...extraHeaders },
   });
 }

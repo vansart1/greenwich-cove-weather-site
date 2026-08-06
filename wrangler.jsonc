@@ -9,5 +9,21 @@
     "directory": "./",
     "binding": "ASSETS",
     "not_found_handling": "404-page"
-  }
+  },
+  // /refresh is a public, unauthenticated button that pushes to Victor's phone,
+  // so it gets two limits per visitor: a burst limit and a daily cap.
+  // The native binding only supports a 10s or 60s window, hence KV for the day.
+  "ratelimits": [
+    {
+      "name": "REFRESH_LIMIT",
+      "namespace_id": "1001",
+      "simple": { "limit": 1, "period": 60 }
+    }
+  ],
+  "kv_namespaces": [
+    {
+      "binding": "REFRESH_COUNTS",
+      "id": "18c8fff2986d4d1192c7ce9b7ba3324e"
+    }
+  ]
 }
