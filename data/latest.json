@@ -1,34 +1,77 @@
 {
-  "generated_at": "2026-08-09T16:34:00-04:00",
+  "generated_at": "2026-08-10T12:52:42-04:00",
   "storm": {
-    "risk_level": "low",
-    "summary_layperson": "No storms are on radar or expected to reach the cove during this window — it should stay dry, though NWS is watching a stronger system for tomorrow.",
+    "risk_level": "moderate",
+    "summary_layperson": "No storms are on radar right now, but the atmosphere is expected to destabilize through the afternoon and NWS has bumped up the severe-thunderstorm risk for later today — the cool water of Long Island Sound should work in the cove's favor if anything develops nearby, though nothing is close enough yet to say for sure.",
     "local_effect": "neutral",
-    "local_effect_blurb": "The Sound's marine layer is still substantial (13°F air–water gap at 5 PM) but fades to near zero by 8 PM — moot tonight since there's nothing on radar to blunt.",
-    "detail_html": "<p>Radar is clear over the cove and greater Long Island Sound this evening — KOKX shows no echoes, and no storm cells are tracked in the approach sector. A Heat Advisory remains in effect into Sunday evening (heat index near 96°F this afternoon), but that's a heat concern, not a convective one.</p><p>HRRR instability for the 17:00–22:00 window stays modest: CAPE peaks around <strong>1,220 J/kg</strong> near 7 PM before falling off after sunset, well under the 1,500 J/kg threshold this pipeline treats as a moderate-risk trigger. Bulk shear sits near <strong>16 kt</strong>, also below the 20 kt gate. Nothing in tonight's environment supports organized convection reaching the cove.</p><p>The OKX Area Forecast Discussion does flag a stronger system — SBCAPE 2,500–3,500 J/kg, 30–45 kt shear, and a marginal severe risk — but that's tied to a front arriving <strong>tomorrow</strong> (Aug 10), not tonight's window. Worth watching for the next publish cycle, not a factor for 17:00–22:00 today.</p><p>Because there's no storm to test it against, the cove's marine-layer protection is academic tonight. The air–water gap is a strong 13°F at 5 PM (Sound at 75°F vs air near 88°F) but decays through the evening as the land cools — it crosses below the ~5°F protective threshold around <strong>8:07 PM</strong> and keeps falling overnight. If anything were to develop late, it would be arriving into a cove with little buffer left.</p><p>Bottom line: dry evening, low storm risk, nothing on radar to track.</p>"
+    "local_effect_blurb": "No cell is being tracked yet so the marine-layer buffer isn't scored as active, but the air–water gap is a healthy 13°F at 2 PM, builds to about 15°F by mid-afternoon, and is still around 10°F at 7 PM — comfortably above the ~5°F protective threshold for the whole window, so anything that does fire should meet real resistance crossing the Sound.",
+    "detail_html": "<p>Radar is clear at the cove right now, but the Storm Prediction Center has nudged the severe-thunderstorm risk for the far western part of the forecast area up to a slight risk, with the marginal risk expanded to cover western Long Island and western Southern Connecticut — which includes Riverside. The NWS Ocean County (OKX) forecast discussion describes instability \"recharging\" this afternoon in the wake of a warm front, with showers and thunderstorms possible late this afternoon and evening, and mentions possible amendments for gusts to 35–50 kt with any strong-to-severe storms between roughly 4 PM and 10 PM. The point forecast calls for a 40% chance of showers and thunderstorms after 5 PM, a high near 91°F, and heat index values up to 97°F — a Heat Advisory is in effect until 7 PM.</p><p>Locally, the marine layer over the Sound is building nicely through the window. Water is 72.9°F while the model shows air warming from about 85°F at 2 PM to a peak near 88°F by late afternoon, so the air–water gap grows from roughly 13°F to 15°F before easing back to about 10°F by 7 PM as the day's heating tapers. That's well clear of the ~5°F threshold this pipeline treats as the buffer's collapse point — the layer holds all the way through 14:00–19:00 and beyond, not thinning out until well after sunset. Because no storm currently exists to test it against, the automated \"protective mechanism active\" flag reads false — that's a scoring artifact of having nothing to score, not a sign the buffer is weak.</p><p>Instability itself is expected to build steadily through the window: model CAPE goes from essentially 0 J/kg now to about 220 J/kg by 2 PM, 600 by 3 PM, 1,040 by 4 PM, and 1,140 by 5 PM, with the extended outlook reaching as high as 1,420 J/kg later in the evening. Deep-layer shear stays elevated the whole time, in the low-to-mid 30s kt, which favors better-organized cells if something does fire — not textbook severe-storm shear values, but enough to keep any storm from being pure pop-up junk.</p><p>Bottom line for the cove versus surrounding towns: if storms do fire late this afternoon or evening per the AFD, Riverside sits behind a strengthening marine layer that should blunt anything crossing the Sound from the typical SW–NW approach directions, while inland spots like North Stamford or White Plains get no such benefit and could see more direct hits. Nothing is close enough to call an arrival time.</p><p>What would change this call: any cell appearing on KOKX radar within 50 miles at 35+ dBZ would confirm the moderate risk is live rather than just a modeled possibility; a cell closing within 25 miles at 45+ dBZ, or an upstream station gusting 35+ kt with a cell approaching, would push this to high. The Heat Advisory's 7 PM expiration is a rough marker for when the peak heating-driven instability window starts to close.</p>"
   },
   "wind": {
-    "forecast_window": {"start": "17:00", "end": "22:00"},
-    "regime": "B-moderate",
-    "regime_label": "Moderate gradient wind — no sea breeze, fading light by night",
+    "forecast_window": {
+      "start": "14:00",
+      "end": "19:00"
+    },
+    "regime": "B-light",
+    "regime_label": "Light gradient wind — no sea breeze in play, direction may wander",
     "hourly": [
-      {"time": "17:00", "speed_kt": 8, "gust_kt": 14, "dir_deg": 304, "dir_compass": "NW", "shift_note": "puffy NW gradient, no sea breeze — big shifts in the puffs"},
-      {"time": "18:00", "speed_kt": 7, "gust_kt": 12, "dir_deg": 304, "dir_compass": "NW", "shift_note": "holding NW, still gusty"},
-      {"time": "19:00", "speed_kt": 5, "gust_kt": 8, "dir_deg": 313, "dir_compass": "NW", "shift_note": "softening, veering toward NNW as evening cools"},
-      {"time": "20:00", "speed_kt": 4, "gust_kt": 6, "dir_deg": 330, "dir_compass": "NNW", "shift_note": "light near sunset, gusts fading"},
-      {"time": "21:00", "speed_kt": 5, "gust_kt": 7, "dir_deg": 329, "dir_compass": "NNW", "shift_note": "light and drifty after dark"},
-      {"time": "22:00", "speed_kt": 5, "gust_kt": 7, "dir_deg": 337, "dir_compass": "NNW", "shift_note": "very light NNW, boundary layer stabilized"}
+      {
+        "time": "14:00",
+        "speed_kt": 5,
+        "gust_kt": 7,
+        "dir_deg": 101,
+        "dir_compass": "E",
+        "shift_note": "light and wandering, sea breeze not organizing"
+      },
+      {
+        "time": "15:00",
+        "speed_kt": 6,
+        "gust_kt": 8,
+        "dir_deg": 123,
+        "dir_compass": "ESE",
+        "shift_note": "still light, direction unsettled"
+      },
+      {
+        "time": "16:00",
+        "speed_kt": 6,
+        "gust_kt": 9,
+        "dir_deg": 153,
+        "dir_compass": "SSE",
+        "shift_note": "brief uptick, backing to SSE"
+      },
+      {
+        "time": "17:00",
+        "speed_kt": 3,
+        "gust_kt": 4,
+        "dir_deg": 120,
+        "dir_compass": "ESE",
+        "shift_note": "dropping off; watch for building storm risk after 5 PM"
+      },
+      {
+        "time": "18:00",
+        "speed_kt": 3,
+        "gust_kt": 5,
+        "dir_deg": 131,
+        "dir_compass": "SE",
+        "shift_note": "light and shifty, isolated storm cells possible nearby"
+      },
+      {
+        "time": "19:00",
+        "speed_kt": 4,
+        "gust_kt": 6,
+        "dir_deg": 190,
+        "dir_compass": "S",
+        "shift_note": "picking back up, veering toward S — keep eyes on radar"
+      }
     ],
-    "tactics_blurb": "Despite a strong 13°F air–water gap, the sea breeze never established — this is a moderate NW gradient-wind day, not a thermal day, and it fades to drifter range by 9–10 PM. Start mid-line, favor the middle of the course away from shore-side lulls, and don't count on wind late in the window.",
-    "favored_side": "center",
-    "tactics_detail_html": "<p>Despite a strong 13°F air–water temperature gap — normally plenty to build a sea breeze — the thermal never established today. Station observations show why: only 11% of coastal stations are reading any southerly component, and the near-cove cluster (RYC, Old Greenwich, Port Chester) is uniformly NW at high agreement. This is a <strong>moderate gradient-wind day, not a sea-breeze day</strong> — the deltaT (air-minus-water temperature gap) was favorable, but the offshore flow never let a thermal circulation set up.</p><p>RYC reads WNW 294° right now, 5.9 kt sustained (10-min average 11.1 kt) gusting to 18.5 kt — puffy, as expected for northwest flow funneling down over land. HRRR has the window starting around 8 kt at 5 PM and fading to 4–5 kt by 9–10 PM as the boundary layer stabilizes after dark, typical evening decay for a moderate-gradient day.</p><p>Direction backs slowly from WNW (~304°) toward NNW (~337°) through the window — a steady, one-way veer from nighttime drainage flow reinforcing the gradient, not a tactical oscillation. HRRR's forecast direction (302°) and current cove obs (315°) differ by only 13°, under the 15° threshold this pipeline flags — no override needed.</p><p>Cove geography for N–NW flow: offshore over land, gusty and puffy with big shifts near either shore. Best average pressure sits mid-cove, away from the immediate lee of trees and houses on the NW shore.</p><p>Racing character: starts in the 6–10 kt sweet spot with lively gusts, fades to sub-5-kt drifter range by the second half of the window. Later starts risk going light and shifty enough to threaten postponement.</p>"
+    "tactics_blurb": "Despite a solid 9–14°F air–water gap, the sea breeze isn't organizing today — this is a light, wandering gradient-wind day (E to S, mostly 3–6 kt) rather than a thermal one, so don't expect the clean building/oscillating pattern a real sea breeze would give. Favor the west side of the course (upwind of the Greenwich Point shadow) but start conservatively, and keep an eye on radar after 5 PM as isolated storms are possible.",
+    "favored_side": "right",
+    "tactics_detail_html": "<p>The air–water temperature gap is a strong 9.5°F right now and grows toward 15°F by mid-afternoon — on paper, plenty to build a sea breeze. But the second ingredient isn't there: only 38% of coastal stations are showing any southerly component, the western-LIS cluster nearest the cove agrees on direction only about 40–55% of the time, and the fetcher's own sea-breeze flag reads inactive. That combination — good deltaT but no coherent building signal — keeps this a gradient-only day (Regime B) rather than a thermal one, and the HRRR model agrees: instead of a clean push toward SSW through the afternoon, forecast direction wanders from E to ESE to SSE and back to ESE before swinging to S late in the window, with speeds staying in the 3–6 kt range throughout. Call it B-light.</p><p>Current RYC wind (SW, 1.9 kt) and the raw HRRR forecast (SE, 132°) diverge by about 49°, but since this isn't a sea-breeze day the maturation correction doesn't apply — there's no mature thermal direction to converge toward, just genuine gradient noise. Trust the hour-by-hour HRRR direction over any single station reading, and expect the wandering to continue rather than resolve into a steady axis.</p><p>Cove geography: the window's dominant directions (E through SSE) fall in the \"partial shelter from Greenwich Point\" band — lighter and shiftier along the east shore near Tod's Point, with pressure favoring the west shore (Belle Haven / Indian Harbor side). Facing upwind on a southerly beat, that puts the favored side on the right. By 7 PM the model swings toward due S, which would even out pressure across the course if it holds, but that late hour is in the lower-confidence extended outlook.</p><p>For the fleet: 3–6 kt with occasional gusts to 7–9 kt sits at the light end of raceable — a drifter-class day for one-designs, finicky rather than unraceable. The two soft hours around 5–6 PM (down to 3 kt) could produce a genuine lull. Layer on top of that the chance of an isolated shower or thunderstorm after 5 PM per the NWS forecast — not enough to change the wind call itself, but any nearby cell's outflow could produce a sudden, short-lived gust spike well above these numbers and should take priority over any tactical read.</p>"
   },
   "conditions": {
-    "sky": "Sunny",
-    "temp_f": 88.5,
-    "feels_like_f": 93
+    "sky": "Mostly Sunny then Chance Showers And Thunderstorms",
+    "temp_f": 81.6,
+    "feels_like_f": 84
   },
-  "data_caveats": [
-    "RAP CAPE unavailable this cycle; instability supplemented from OKX AFD text (that AFD's severe-storm mentions apply to Aug 10, not tonight's window)."
-  ]
+  "data_caveats": []
 }
