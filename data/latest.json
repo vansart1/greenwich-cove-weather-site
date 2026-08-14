@@ -1,81 +1,36 @@
 {
-  "generated_at": "2026-08-13T17:58:30-04:00",
+  "generated_at": "2026-08-14T16:36:24-04:00",
   "storm": {
-    "risk_level": "low",
-    "summary_layperson": "No storms are on radar or headed toward the cove tonight — just a slight chance of an isolated shower or thunderstorm, same as everywhere else nearby.",
+    "risk_level": "moderate",
+    "summary_layperson": "A cluster of showers and storms is parked about 35 miles north over the Hudson Valley, and it's barely moving toward us, so the near-term threat here stays modest tonight.",
     "local_effect": "neutral",
-    "local_effect_blurb": "No storm is currently in play for the Sound's marine layer to blunt or not; for reference, today's 8.3°F air-water gap is projected to fade below the ~5°F protective threshold by about 7:04 PM as the air cools after sunset.",
-    "detail_html": "<p>Radar (KOKX) shows no cells anywhere near the cove, and there are no NWS watches, warnings, or advisories active. CAPE is a modest 330 J/kg with strong 0-6km bulk shear aloft (<strong>45 kt from the west</strong>), but with instability this low there's essentially nothing for that shear to organize. The OKX area forecast discussion mentions a west-to-east shower/thunderstorm window developing during and after peak heating this afternoon and evening, with severe chances called \"less certain\" — that's a general regional mention, not a tracked cell. A separate AFD note about a frontal system with heavier rain applies to <strong>Sunday</strong>, three days out.</p><p>The Sound's usual protective marine layer isn't a factor either way tonight since there's nothing on radar for it to blunt. For reference: water is 74.1°F against 82.4°F air right now, an 8.3°F gap, but that's a moving target — air cools after sunset (7:55 PM) while the Sound stays flat, so the gap is projected to fall under the ~5°F protective threshold around <strong>7:04 PM</strong>, and keep sliding negative overnight. A storm that tried to organize earlier in the evening would find a real buffer; one developing after 7 PM would find little to none.</p><p>Net effect: the cove and surrounding towns face the same low, mostly cosmetic risk tonight — a stray shower is more likely than an organized thunderstorm, and there's no local mechanism currently amplifying or mitigating anything because nothing is approaching.</p><p><strong>Bottom line:</strong> nothing to act on. Worth a radar recheck if anything fires up later this evening, particularly after the marine-layer gap collapses near 7 PM, since that's when the cove loses its usual edge over inland spots.</p>"
+    "local_effect_blurb": "The Sound's marine layer holds a healthy 9°F air–water gap right now (fading to about 3°F by 8 PM), but this storm's track is staying inland to the north instead of crossing the Sound, so that usual buffer isn't a factor tonight.",
+    "detail_html": "<p>Radar (KOKX, scanned 8:24 PM) shows a cluster of showers and thunderstorms centered about 35–38 miles north of the cove, over the lower Hudson Valley, with peak reflectivity of 44 dBZ. The cell is essentially <strong>stationary relative to the cove</strong> — measured closing speed is a mere 0.7 kt — so this reads as a moderate-risk night (a ≥35 dBZ cell within 50 miles) rather than an imminent threat.</p><p>Instability is thin: CAPE sits at just 150 J/kg per the latest HRRR run, well under the 1,500 J/kg level that would flag a punch-through risk, even though deep-layer shear is unusually strong at 55–65 kt. That combination — strong shear, weak fuel — tends to produce organized but modest convection rather than explosive updrafts, matching the NWS forecast discussion's own read that the severe threat is low and any stronger cells are more likely well south of us.</p><p><strong>The Sound's usual buffer isn't deciding tonight's outcome.</strong> Water is running 75°F against 84°F air — a 9°F gap that would normally support a moderate marine stable layer capable of choking incoming cells. But this approach is from due north, essentially parallel to the coast, so the storm never has to cross the cool water before it could reach the cove. That's why the local effect reads neutral rather than mitigating — the mechanism exists, it's just not the one in play for this track.</p><p>For context on how that buffer is trending anyway, in case something later tracks across the Sound instead: the 9°F gap holds through about 6 PM, narrows to roughly 6°F by 7 PM, and drops under the 5°F protective threshold by <strong>7:24 PM</strong> as the air cools faster than the water. By 9 PM the gap goes negative — water warmer than air — so anything crossing the Sound after full dark gets no cooling assist at all.</p><p>Bottom line for the cove versus surrounding towns: with instability this low and the cell essentially parked to the north, Riverside's outlook isn't meaningfully different from Stamford, Rye, or White Plains tonight. What would change the call: the cell actually starting to close on the cove (currently near-zero motion), CAPE climbing toward the 1,500–3,000 J/kg range as the evening destabilizes further, or a track shift that sends new development across the Sound instead of staying inland.</p>"
   },
   "wind": {
-    "forecast_window": {
-      "start": "17:00",
-      "end": "22:00"
-    },
-    "regime": "B-moderate",
-    "regime_label": "Moderate gradient wind — no sea breeze in play",
+    "forecast_window": {"start": "17:00", "end": "22:00"},
+    "regime": "A",
+    "regime_label": "Sea-breeze day (thermal only, light offshore gradient)",
     "hourly": [
-      {
-        "time": "17:00",
-        "speed_kt": 11,
-        "gust_kt": 15,
-        "dir_deg": 310,
-        "dir_compass": "NW",
-        "shift_note": "steady NW, gusty over the cove mouth — running well above HRRR's model guidance"
-      },
-      {
-        "time": "18:00",
-        "speed_kt": 10,
-        "gust_kt": 14,
-        "dir_deg": 308,
-        "dir_compass": "NW",
-        "shift_note": "holding, puffy with big oscillations"
-      },
-      {
-        "time": "19:00",
-        "speed_kt": 9,
-        "gust_kt": 13,
-        "dir_deg": 300,
-        "dir_compass": "WNW",
-        "shift_note": "backing to WNW briefly, holding through sunset (7:55 PM)"
-      },
-      {
-        "time": "20:00",
-        "speed_kt": 8,
-        "gust_kt": 12,
-        "dir_deg": 295,
-        "dir_compass": "WNW",
-        "shift_note": "easing slightly, WNW-NW puffy"
-      },
-      {
-        "time": "21:00",
-        "speed_kt": 7,
-        "gust_kt": 10,
-        "dir_deg": 300,
-        "dir_compass": "WNW",
-        "shift_note": "light-moderate, oscillating WNW-NW"
-      },
-      {
-        "time": "22:00",
-        "speed_kt": 7,
-        "gust_kt": 10,
-        "dir_deg": 312,
-        "dir_compass": "NW",
-        "shift_note": "holding light-moderate, veering back NW"
-      }
+      {"time": "17:00", "speed_kt": 6, "gust_kt": 9, "dir_deg": 165, "dir_compass": "SSE", "shift_note": "mature sea breeze, oscillating ±15°"},
+      {"time": "18:00", "speed_kt": 6, "gust_kt": 9, "dir_deg": 160, "dir_compass": "SSE", "shift_note": "sea breeze steady, still oscillating"},
+      {"time": "19:00", "speed_kt": 3, "gust_kt": 5, "dir_deg": 145, "dir_compass": "SE", "shift_note": "collapsing ~7:23 PM, 30 min before sunset — easing fast"},
+      {"time": "20:00", "speed_kt": 5, "gust_kt": 7, "dir_deg": 28, "dir_compass": "NNE", "shift_note": "thermal gone, light and backing — treat as variable"},
+      {"time": "21:00", "speed_kt": 10, "gust_kt": 14, "dir_deg": 48, "dir_compass": "NE", "shift_note": "gradient filling in from NE, model-only signal"},
+      {"time": "22:00", "speed_kt": 7, "gust_kt": 10, "dir_deg": 92, "dir_compass": "E", "shift_note": "extended outlook, lower confidence, backing E"}
     ],
-    "tactics_blurb": "RYC is reading a steady NW 11 kt gusting 15 right now — a gradient-wind evening, not a sea breeze (the classic S-SSW thermal axis never shows up in today's obs despite a healthy 8.3°F air-water gap). Expect puffy, oscillating NW-WNW breeze holding through and past sunset; favor the center of the cove away from the lee shores.",
-    "favored_side": "center",
-    "tactics_detail_html": "<p>This reads as a <strong>gradient-wind evening, not a sea-breeze day</strong>, even though the air-water temperature difference (deltaT) is a strong 8.3°F — normally plenty to seed a thermal. The two-ingredient sea-breeze test needs deltaT above 5°F <em>and</em> the breeze actually filling in from the classic S-SSW direction for this stretch of coast; only 15% of coastal stations are reading southerly, and the wind at the cove and across the western Sound is blowing from the NW instead. The automated pipeline's deltaT-and-time-of-day proxy flagged today as a sea-breeze day and applied a directional maturation correction, but that correction is built for the S-family sea-breeze axis — with the actual wind sitting in the NW/offshore quadrant, that flag looks like a false positive today, so the call here is gradient-only (B-moderate), not thermal.</p><p>What you'll actually feel is a moderate NW-to-WNW breeze, 7-11 kt depending on where you are. RYC (ground truth for the cove) is reading a steady 11.1 kt gusting 15.3, notably stronger than the wider regional gradient (7.6 kt on the authoritative ensemble measure) — a real cove-specific acceleration, likely local channeling as NW flow funnels over Greenwich Point and down through the cove mouth rather than a shelter effect. Per the cove's geography, N-NW flow arrives offshore over land, gusty and puffy with big oscillations (15-30°); the best average pressure sits down the middle of the cove, away from the immediate lee of the NW shore where you'll find the biggest puffs and the deepest holes between them.</p><p>Shift character is oscillating but terrain-driven rather than thermal — NW flow over this geography is inherently puffy and shifty, so play the swings rather than committing hard to one side. Because this is a gradient wind, it doesn't care about the sun: it should hold through and past sunset (7:55 PM), likely easing by a knot or two overnight as the boundary layer stabilizes after dark, not collapsing the way a pure sea breeze would.</p><p>Worth flagging: HRRR's raw hourly forecast for this window is running well below what's actually on the water — the model shows only 3-6 kt through the evening with direction wandering WNW-NW (295-307°), versus RYC's live 11 kt sustained with gusts to 15 and a firmer NW 310° reading already ahead of where the model expects the evening to end up. Direction agreement across the regional ensemble is a soft 0.61. Given that gap, the table above leans on RYC's live reading and the B-moderate framework (holds through sunset, gentle overnight easing) rather than the model's much lighter numbers.</p>"
+    "tactics_blurb": "Pure sea-breeze evening out of the SSE, mature and oscillating through about 7 PM — play the shifts rather than banging a corner. Pressure favors the west shore (Belle Haven/Indian Harbor), the right side of the beat looking upwind, since Tod's Point shelters the east side in this direction. The thermal collapses hard around 7:23 PM, 30 minutes before the 7:53 PM sunset, so a start after roughly 7:15 PM is racing on borrowed time.",
+    "favored_side": "right",
+    "tactics_detail_html": "<p>This is a <strong>pure thermal sea-breeze day</strong> (not reinforced) — the two-ingredient test is satisfied on the thermal side (9.4°F air–water differential, well above the 5°F gate) but the background gradient is light and offshore: the NWS forecast has today's synoptic wind at NE around 3 mph, essentially calm and not adding to the sea breeze. That combination puts today squarely in the pure-thermal regime rather than the reinforced sub-case.</p><p>HRRR is running behind the real sea breeze on direction, as it typically does on western-LIS thermal days: the model's near-term surface wind reads SE (141°) while Riverside YC and the western-LIS station cluster are already reading SSW (194°), a 53° divergence. Applying the maturation correction pulls the forecast direction to SSE (156°) for the next couple of hours — expect the wind to sit and oscillate in the SSE–SSW band through peak sea breeze, roughly ±15° each side of the mean, since the breeze has been running long enough to be fully mature rather than still ramping.</p><p>Pressure in the cove: with flow out of the SSE, Greenwich Point (Tod's Point) partially shelters the east side of the course, so the west shore — Belle Haven / Indian Harbor — carries more consistent pressure. Looking upwind (south) from the start, that's the right-hand side of the beat.</p><p>The thermal collapses on schedule: the sea breeze needs the 5°F+ air–water gap to keep running, and that gap crosses below threshold at <strong>7:24 PM</strong>, thirty minutes ahead of the 7:53 PM sunset. Expect speed to fall off hard through the 7 PM hour and bottom out light-and-variable by 8 PM.</p><p>What happens after the collapse is lower-confidence: HRRR's raw output (no longer correction-eligible once the thermal is gone) shows a light NE flow filling back in around 9–10 PM, 7–10 kt. That's model-only guidance this far out and it lines up with the stalled storm cluster sitting about 35 miles north — treat it as background gradient, not a repeat of the sea breeze, and don't count on it for racing.</p>"
   },
   "conditions": {
-    "sky": "Slight Chance Showers And Thunderstorms",
-    "temp_f": 85,
-    "feels_like_f": 86
+    "sky": "Mostly Sunny",
+    "temp_f": 81,
+    "feels_like_f": 84
   },
   "data_caveats": [
-    "Buoy 44040 wind/air observation is about 81 min old and the WLIS SST reading is about 93 min old — treat offshore sea-breeze depth and marine-layer numbers as based on slightly stale data.",
-    "KWST (Westerly RI) is stale at over 6 hours old and excluded from the station ensemble.",
-    "Regime call overrides the pipeline's automated sea-breeze proxy: deltaT and time-of-day flagged today as thermal, but observed wind at the cove is NW, not the classic S-SSW sea-breeze axis, so this is classified as a gradient-wind (B-moderate) evening instead."
+    "Storm cell motion discarded as a centroid-displacement artifact (implied 82 kt); arrival timing falls back to HRRR-steering estimate only, no confirmed ETA for the parked northern cell.",
+    "Buoy 44040 wind observation is 75 min old — used for background context, not treated as current.",
+    "APRS station GW5741 (New Canaan) flagged as a temperature outlier (+5.1°F) and excluded from the ensemble."
   ]
 }
