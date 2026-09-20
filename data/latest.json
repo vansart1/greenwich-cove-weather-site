@@ -1,35 +1,35 @@
 {
-  "generated_at": "2026-09-19T16:05:00-04:00",
+  "generated_at": "2026-09-20T16:02:00-04:00",
   "storm": {
     "risk_level": "low",
-    "summary_layperson": "No storm threat for the cove this evening — radar is clear and the atmosphere has essentially no fuel for thunderstorms (CAPE near zero) as temperatures cool after sunset.",
+    "summary_layperson": "Periods of light rain continue through the evening, but this is a quiet, low-energy system with no thunderstorm risk — expect steady light rain rather than anything severe, in Riverside and the surrounding area alike.",
     "local_effect": "neutral",
-    "local_effect_blurb": "The Sound (73°F) is running warmer than the air (66°F and falling toward 63°F by 8 PM), so there's no protective marine layer tonight — but with no storms anywhere near the area, that doesn't matter for this window.",
-    "detail_html": "<p>No thunderstorm risk is on the table for the 5–10 PM window. HRRR keeps <strong>CAPE at essentially zero</strong> (0–30 J/kg) through the period, and the latest OKX forecast discussion has SBCAPE below 100 J/kg with plenty of CIN (a capping layer) holding any lift down. Radar out of KOKX shows no echoes anywhere near the approach sectors, and there are no active NWS watches, warnings, or advisories.</p><p>Deep-layer shear is actually strong (48–60 kt out of the west), but shear without instability doesn't organize anything — it's a non-factor tonight.</p><p><strong>The marine layer isn't a factor either, in either direction.</strong> The Sound is running warmer than the air, which is the opposite setup from the stable, storm-choking marine layer the cove sometimes gets on hot summer afternoons. That protective mechanism needs cold water under warm air; tonight it's inverted, so there's no buffer — but since nothing is approaching, it doesn't matter.</p><p>Bottom line for the cove and surrounding towns alike: a quiet, mostly clear evening with no meaningful storm risk anywhere in the wider Sound.</p>"
+    "local_effect_blurb": "No marine-layer buffer to speak of — Sound water (72.5°F) is actually running warmer than the air (64.4°F) already at 4 PM, an inverted gap that stays inverted through the evening, so the cove's usual protective mechanism isn't in play (moot anyway, since no storm cells are on radar).",
+    "detail_html": "<p>Radar (KOKX) shows no organized storm cells within range and no active NWS alerts. CAPE is essentially zero (20 J/kg), so today's rain is stratiform — a steady light-rain system moving through, not thunderstorm activity. The regional forecast calls for continued light rain this evening with a southeast gradient wind around 10 mph.</p><p>Normally the cove's move is to check whether the Sound's marine layer would blunt an approaching storm, but there's nothing to blunt today, and the mechanism itself isn't even set up: Sound water is at 72.5°F while the air is only 64.4°F — an inverted gap versus the usual summer pattern where cool water sits under warm air. <strong>No stable marine layer is present</strong> (marine layer strength: absent), and that inversion holds through the whole forecast window, not just right now.</p><p>Practical outcome: expect continued light rain through the 5–10 PM window with essentially no lightning or thunder risk, for Riverside and the surrounding towns alike. Nothing about the local geography changes the picture one way or the other tonight — there's no \"Sound bubble\" effect to lean on because there's no storm for it to work against.</p><p>What would change the call: a new NWS watch/advisory, a CAPE spike into the moderate range, or an actual convective cell appearing on KOKX. Absent any of those, treat tonight as a quiet, low-risk rain evening.</p>"
   },
   "wind": {
     "forecast_window": {"start": "17:00", "end": "22:00"},
     "regime": "B-light",
-    "regime_label": "Light gradient wind — no sea breeze in play",
+    "regime_label": "Light gradient wind — no sea breeze, direction may wander",
     "hourly": [
-      {"time": "17:00", "speed_kt": 4, "gust_kt": 6, "dir_deg": 75, "dir_compass": "ENE", "shift_note": "light and wandering; cove obs already reading SE, model still has it ENE"},
-      {"time": "18:00", "speed_kt": 6, "gust_kt": 8, "dir_deg": 76, "dir_compass": "ENE", "shift_note": "still light, holding ENE"},
-      {"time": "19:00", "speed_kt": 5, "gust_kt": 8, "dir_deg": 81, "dir_compass": "E", "shift_note": "backing slightly toward E"},
-      {"time": "20:00", "speed_kt": 8, "gust_kt": 11, "dir_deg": 143, "dir_compass": "SE", "shift_note": "veering sharply to SE, freshening — catching up to cove obs"}
+      {"time": "17:00", "speed_kt": 3, "gust_kt": 5, "dir_deg": 155, "dir_compass": "SSE", "shift_note": "very light, backing slightly"},
+      {"time": "18:00", "speed_kt": 5, "gust_kt": 8, "dir_deg": 150, "dir_compass": "SSE", "shift_note": "still light, backing continues, right at sunset (6:54 PM)"},
+      {"time": "19:00", "speed_kt": 3, "gust_kt": 5, "dir_deg": 218, "dir_compass": "SW", "shift_note": "sharp veer to SW just after sunset, dying"},
+      {"time": "20:00", "speed_kt": 3, "gust_kt": 5, "dir_deg": 220, "dir_compass": "SW", "shift_note": "model data unavailable past 7 PM — extrapolated: light and variable, holding SW-ish"},
+      {"time": "21:00", "speed_kt": 3, "gust_kt": 5, "dir_deg": 220, "dir_compass": "SW", "shift_note": "extrapolated, low confidence — light and variable post-sunset flow"},
+      {"time": "22:00", "speed_kt": 3, "gust_kt": 5, "dir_deg": 225, "dir_compass": "SW", "shift_note": "extrapolated, low confidence — light and variable"}
     ],
-    "tactics_blurb": "Light, wandering gradient breeze (4–8 kt) with no sea breeze to lean on — stay center and play shifts as they come rather than committing to a side.",
-    "favored_side": "center",
-    "tactics_detail_html": "<p>This is a <strong>light gradient-wind evening, not a sea-breeze day</strong>. The thermal gate never engaged — Long Island Sound water (73°F) is actually warmer than the air (66°F), so there's no land-sea contrast to drive a classic afternoon sea breeze, and only 25% of coastal stations are reading southerly versus the roughly 50%+ needed to call a mature thermal in place.</p><p>HRRR has the window running light and ENE (4–6 kt) through 6–7 PM, veering to SE and freshening to around 8 kt by 8 PM. That's a real divergence worth flagging: Riverside YC's own station is already reading SE at 5.3 kt with gusts to 7 right now, 65° off the model's ENE call. The model looks to be behind the actual wind — expect the SE veer it shows for 8 PM to arrive earlier than forecast.</p><p>HRRR's forecast hours only extend to 8:00 PM this run (the later forecast hours failed to fetch), so 9 and 10 PM aren't covered by model data — treat the back half of the window as an extrapolation from the 8 PM trend (SE, freshening slightly) rather than a hard forecast.</p><p>With no dominant thermal engine and the wind still finding its direction, there's no strong case for either side of the course. <strong>Favor the center</strong> and play shifts as they come — a fleet leaning hard on one side in a wandering 4–8 kt gradient breeze is more likely to get burned by a shift than rewarded for a read.</p>"
+    "tactics_blurb": "Light gradient wind, no sea breeze in play — expect it to keep easing through the window and wander in direction (SSE early, swinging to SW after sunset). Pressure favors the west side of the course, where Tod's Point isn't sheltering the flow. Start conservatively, don't commit hard to one persistent shift, and keep expectations modest — this is a light-air, finicky evening.",
+    "favored_side": "right",
+    "tactics_detail_html": "<p>DeltaT (inland air minus Sound water) is -8.1°F — well below the +5°F needed to drive a thermal sea breeze — and the pipeline's own sea-breeze proxy confirms it's inactive. This is a <strong>gradient-only day</strong>: whatever onshore flow exists is synoptic, riding along with tonight's rain system, not a thermal sea breeze. Current authoritative gradient (airport/open-water sites) averages 8.1 kt from the S–SSE, while RYC in the cove itself is reading lighter — SE 5.6 kt gusting 9, 10-min avg 4.4 kt.</p><p>That RYC/airport gap is exactly what the cove geography predicts for SE-ish flow: Greenwich Point (Tod's Point) partially shelters the east side of the course, so pressure favors the west side, where the flow isn't blocked.</p><p>The few HRRR hours available (5–7 PM) show the flow continuing to ease — down to 2.5–4.7 kt — while backing slightly further SSE, then swinging sharply to SW by 7 PM, right around sunset (6:54 PM). That's a genuine directional transition, not a tactical oscillation to play. Direction agreement across the full station network is only 0.57 (below the 0.7 coherence threshold), consistent with a light, unsettled wind field rather than a clean, steady gradient flow.</p><p><strong>Data gap:</strong> HRRR forecast data cuts off after 7 PM (f05–f12 fetch failures), so the 8–10 PM rows in the table are extrapolated from the late trend (light, SW-ish) rather than pulled from the model — treat the second half of the window with low confidence.</p><p>Bottom line: a light, easing breeze all evening with no sea breeze to lean on, swinging from SSE to SW after sunset. Favor the west side of the course, don't commit hard to a shift, and expect drifter-to-light-air conditions (3–6 kt) for most of the window.</p>"
   },
   "conditions": {
-    "sky": "Partly Sunny",
-    "temp_f": 69,
-    "feels_like_f": 69
+    "sky": "Light Rain",
+    "temp_f": 67.4,
+    "feels_like_f": 67.4
   },
   "data_caveats": [
-    "Buoy 44040 (Western LIS) reading is 90 min old — treated as background context only.",
-    "RAP CAPE was unavailable; instability read from the OKX Area Forecast Discussion as a fallback (SBCAPE <100 J/kg, CIN present).",
-    "HRRR only returned forecast hours through 8:00 PM this run (f06–f12 fetch warnings); the wind table stops at 8:00 PM despite the requested window running to 10:00 PM.",
-    "HRRR forecasts ENE wind for early in the window while the cove's own RYC station is currently reading SE, a 65° divergence — below the threshold for an automatic correction, but worth watching."
+    "Buoy 44040 / WLIS offline (UConn ERDDAP fetch failed, 404) — over-water sea-breeze depth signal unavailable.",
+    "HRRR hourly forecast available only through 7:00 PM (f05–f12 fetch/parse warnings) — the 8:00–10:00 PM wind rows are extrapolated from the late trend, not model output."
   ]
 }
