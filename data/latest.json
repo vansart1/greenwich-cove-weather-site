@@ -1,36 +1,93 @@
 {
-  "generated_at": "2026-09-28T16:01:48-04:00",
+  "generated_at": "2026-10-02T16:44:01-04:00",
   "storm": {
-    "risk_level": "low",
-    "summary_layperson": "No storm risk this evening — skies are clearing out of some afternoon drizzle and fog, with essentially no instability in the atmosphere to build storms.",
+    "risk_level": "high",
+    "summary_layperson": "A band of heavy showers and a few thunderstorms along a cold front is 12–20 miles north and northwest of the cove and heading our way, due around 6 PM — and because it is coming overland rather than across the Sound, the cove gets no special protection tonight.",
     "local_effect": "neutral",
-    "local_effect_blurb": "The Sound (65°F) is actually a touch warmer than the air (61°F) right now, so there's no marine-layer buffer in play tonight — moot anyway with no storms in the forecast.",
-    "detail_html": "<p>Today's setup is quiet: CAPE (a measure of atmospheric instability) is essentially zero across the HRRR model output for this window, and the National Weather Service's area forecast discussion carries no severe mentions. Radar out of KOKX shows no echoes at all in range of the cove.</p><p>There is a stronger-than-usual band of wind shear aloft (about 23 knots out of the southwest at 0–6 km), but wind shear only matters when there's instability to organize — with CAPE near 10 J/kg, there's nothing for it to work with. This is a shear-without-fuel setup, not a storm setup.</p><p>The Sound is not acting as a stabilizing marine layer tonight. Normally the cove benefits when cool Sound water sits under warmer air, creating a stable cap that chokes off building storms before they reach shore. Right now it's the reverse — the water (64.9°F) is about 4°F warmer than the air (60.8°F) — so there is no protective gap to speak of. It doesn't matter for tonight's forecast since there's nothing to protect against, but it means don't expect any Sound-effect discount if isolated showers do try to fire later.</p><p>Bottom line for the window: expect leftover clouds and possible lingering drizzle to clear, with no thunderstorm risk for Riverside or the surrounding shoreline through 10 PM.</p>"
+    "local_effect_blurb": "The air is 14°F warmer than the Sound at 4 PM but that gap shrinks to about 4°F by 7 PM — and it doesn't matter tonight, because these storms arrive overland from the north and never cross the cool water.",
+    "detail_html": "<p>A cold front is pushing into the area this evening with a broken band of heavy showers and embedded thunderstorms ahead of it. At the 4:35 PM radar scan there were ten separate cells within 30 miles of the cove, the nearest about <strong>12–14 miles due north</strong> and the strongest (51–54 dBZ, which means heavy rain) 16–19 miles to the north and northwest over Westchester. The whole area of rain is drifting <strong>southeast at about 10 knots</strong> — straight toward the Greenwich shoreline.</p><p><strong>Timing:</strong> the lead cell is tracked to reach the cove around <strong>6:05 PM, with a window of roughly 5:40 to 6:30 PM</strong>. Other cells in the band follow close behind, with the last tracked one due between about 6:10 and 7:15 PM, so expect an hour or more of on-and-off heavy showers rather than one quick hit. The motion is measured from radar rather than estimated by a model, but the band is slow-moving and ragged, so confidence in the exact minute is medium.</p><p><strong>Why the cove's usual protection doesn't apply.</strong> On many summer evenings the cool Sound weakens storms before they reach us: the water is much colder than the air, which creates a stable layer that starves a storm of fuel as it crosses. That gap is real this afternoon — the air is about 81°F against 66°F water, a 14°F difference — but it only helps against storms that travel over the water. Tonight's cells are coming down from the north, entirely over land, so they bypass the Sound altogether. The gap is also closing on its own: the Sound holds its temperature while the air cools toward sunset (6:34 PM), so it falls to about 9°F by 6 PM and to roughly 4°F by 7 PM, below the level where it does anything, at about 6:50 PM.</p><p>The southwest sea breeze blowing at the cove now won't hold the storms off either. It fades around 6 PM, about half an hour before sunset, and the wind behind it is forecast to swing west and then northwest as the front arrives — blowing with the storms rather than against them.</p><p><strong>How bad?</strong> The ingredients are lopsided. There is very little instability (the energy storms feed on is only about 230 J/kg, and the National Weather Service calls the thunderstorm setup unfavorable), which argues against anything severe. But winds aloft are strong (about 41 knots of wind shear), which keeps the band organized and can bring gusty winds down in the heavier cells. The most likely outcome for the cove is the same as for the towns around it: a period of heavy downpours, a noticeable wind shift with gusts, and a rumble or two of thunder. No National Weather Service warnings or advisories are in effect.</p><p><strong>What would change the call:</strong> the cells could weaken as they come off the hills toward the coast with so little fuel available, in which case the cove sees ordinary showers. If instead a cell in the band strengthens or a warning is issued, treat it at face value — there is no local discount to apply tonight. Anyone on the water should plan to be off it before about 5:40 PM.</p>",
+    "arrival": {
+      "expected_local": "6:04 PM",
+      "window_local": {
+        "earliest": "5:42 PM",
+        "latest": "6:27 PM"
+      },
+      "confidence": "medium",
+      "blurb": "Radar-tracked cell 14 mi north closing at about 8 kt, with stronger cells just behind it; it arrives overland, so the Sound's marine layer won't weaken it — expect it at full strength."
+    }
   },
   "wind": {
-    "forecast_window": {"start": "17:00", "end": "22:00"},
-    "regime": "B-light",
-    "regime_label": "Light gradient wind — no sea breeze, direction may wander",
+    "forecast_window": {
+      "start": "17:00",
+      "end": "22:00"
+    },
+    "regime": "A+",
+    "regime_label": "Sea breeze reinforced by the background wind, then a cold-front shift to the northwest",
     "hourly": [
-      {"time": "17:00", "speed_kt": 7, "gust_kt": 13, "dir_deg": 2, "dir_compass": "N", "shift_note": "light, puffy post-frontal flow"},
-      {"time": "18:00", "speed_kt": 5, "gust_kt": 10, "dir_deg": 337, "dir_compass": "NNW", "shift_note": "easing, backing toward NNW"},
-      {"time": "19:00", "speed_kt": 4, "gust_kt": 8, "dir_deg": 325, "dir_compass": "NW", "shift_note": "continuing to ease and back"},
-      {"time": "20:00", "speed_kt": 3, "gust_kt": 6, "dir_deg": 315, "dir_compass": "NW", "shift_note": "going light and variable"},
-      {"time": "21:00", "speed_kt": 3, "gust_kt": 6, "dir_deg": 305, "dir_compass": "NW", "shift_note": "light drainage-type flow settling in"},
-      {"time": "22:00", "speed_kt": 3, "gust_kt": 5, "dir_deg": 300, "dir_compass": "WNW", "shift_note": "very light, near calm"}
+      {
+        "time": "17:00",
+        "speed_kt": 9,
+        "gust_kt": 14,
+        "dir_deg": 246,
+        "dir_compass": "WSW",
+        "shift_note": "steady reinforced sea breeze, starting to veer right"
+      },
+      {
+        "time": "18:00",
+        "speed_kt": 6,
+        "gust_kt": 15,
+        "dir_deg": 275,
+        "dir_compass": "W",
+        "shift_note": "thermal collapsing; front and storms arriving — squally gusts near cells"
+      },
+      {
+        "time": "19:00",
+        "speed_kt": 5,
+        "gust_kt": 10,
+        "dir_deg": 302,
+        "dir_compass": "WNW",
+        "shift_note": "behind the front, puffy offshore flow"
+      },
+      {
+        "time": "20:00",
+        "speed_kt": 5,
+        "gust_kt": 8,
+        "dir_deg": 255,
+        "dir_compass": "WSW",
+        "shift_note": "light, direction wandering"
+      },
+      {
+        "time": "21:00",
+        "speed_kt": 3,
+        "gust_kt": 6,
+        "dir_deg": 306,
+        "dir_compass": "NW",
+        "shift_note": "near calm"
+      },
+      {
+        "time": "22:00",
+        "speed_kt": 4,
+        "gust_kt": 7,
+        "dir_deg": 338,
+        "dir_compass": "NNW",
+        "shift_note": "light northerly filling in behind the front"
+      }
     ],
-    "tactics_blurb": "This is a gradient-wind evening, not a sea-breeze day — the deltaT gate never closed, so no thermal is filling in. Expect a light north-to-northwest flow that keeps easing and backing left through the window; favor the center of the course and play shifts as they come rather than banking hard on one side.",
-    "favored_side": "center",
-    "tactics_detail_html": "<p>Today does not qualify as a sea-breeze day: the air–water temperature difference (deltaT) needed to drive a thermal circulation never met the gate (coastal stations show 0% southerly flow and deltaT is actually negative — the Sound is warmer than the air right now), so this is pure gradient wind, not sea breeze. That means the usual sea-breeze direction-maturation correction does not apply here; the raw HRRR forecast direction is used as-is.</p><p>Current obs are running light gradient northerly: Riverside YC reads 5–10 kt out of the NE with gusts to 16, the offshore buoy reads about 11.5 kt NNE, and Bridgeport/White Plains both show 9 kt out of the N. The HRRR model shows this gradient flow continuing to ease through the evening — 6.7 kt at 5 PM backing to 4.9 kt and NNW by 6 PM.</p><p>HRRR hourly output only extends through 6 PM for this forecast cycle (later hours hadn't posted yet at fetch time), so the 7–10 PM rows above are extrapolated from that decay-and-backing trend rather than pulled directly from the model. Expect continued easing into a light and eventually near-calm northwesterly flow as the evening goes on, consistent with the post-frontal pattern and the lack of any thermal replacement.</p><p>For racers: this is a genuinely light-air evening with some puffiness early (note the wide gust spread at RYC and the buoy — 23 kt of shear aloft is mixing down some gusts even without a thermal driving it), settling into very light and shifty conditions by the second half of the window. With no dominant side of the course being reinforced by a thermal, and the wind trending toward direction-wander as it dies, staying central and reading puffs beats committing to a geographic bias tonight.</p>"
+    "tactics_blurb": "A good 8–12 kt southwest-to-west-southwest breeze holds only until about 5:30–6 PM, then a cold front swings it right to west and northwest and it goes light and shifty. Favor the right side for the one-way right shift — but storms are due at the cove between about 5:40 and 6:30 PM, so the real call is to be off the water before then.",
+    "favored_side": "right",
+    "tactics_detail_html": "<p><strong>What kind of day it is.</strong> This afternoon is a sea breeze reinforced by the background (gradient) wind. The air–water temperature difference that drives a sea breeze is large — about 14°F (81°F air inland against 66°F Sound water) — and the background wind is itself onshore from the southwest at roughly 9 kt across the area's airports. About 63% of coastal stations are blowing onshore against 12% inland, which is a moderate, real sea breeze riding on top of a helpful gradient. Riverside YC was reading <strong>SW 236° at 12 kt, gusting 14</strong> at 4:40 PM (10-minute average 7 kt).</p><p><strong>Direction.</strong> The HRRR forecast model has the wind at 231–239° early in the window, while stations along the western Sound are already at about 241° — the model typically runs a little behind the afternoon clockwise swing of the sea breeze here. Applying the usual correction for that gives west-southwest, about 246°, for the 5 PM hour. The model and the stations are only 10° apart, so confidence in direction for that first hour is high.</p><p><strong>Then the front.</strong> This window does not end in a normal sunset fade. The sea breeze loses its engine around 6 PM (sunset is 6:34 PM), and at the same time a cold front with a band of showers and thunderstorms arrives from the north. The wind swings right — to west near 6 PM and west-northwest by 7 PM — and drops to about 5–6 kt outside of the showers. This is a one-way, persistent shift rather than a back-and-forth oscillation, which is why the right side of the course pays while there is still racing wind. Near any heavy cell expect sudden, squally gusts from a different direction than the table shows; the table describes the wind between showers.</p><p><strong>After the front</strong> the cove is in light offshore flow: 3–5 kt, wandering between west-southwest and northwest through 8–9 PM as the showers move through, then settling into a light north-northwesterly by 10 PM. West and northwest winds come over land here, so what little breeze there is will be puffy with holes close to the Connecticut shore.</p><p><strong>What racers will feel.</strong> From 5 PM until the front, 8–12 kt of fairly steady west-southwest breeze with clean flow in from the Sound — good one-design racing for the first 30–45 minutes. After roughly 6 PM it is drifter conditions at best, in fading light, with rain and possible lightning. With the lead storm cell tracked to reach the cove between about 5:40 and 6:30 PM, any racing tonight should be short and finished early.</p>"
   },
   "conditions": {
-    "sky": "Areas Of Drizzle",
-    "temp_f": 62.3,
-    "feels_like_f": 62.3
+    "sky": "Chance Showers And Thunderstorms",
+    "temp_f": 82.9,
+    "feels_like_f": 86.6
   },
   "data_caveats": [
-    "HRRR hourly wind/temp data for this cycle (19Z) only extends through 6:00 PM EDT; the 7–10 PM rows in the wind table are extrapolated from the observed decay/backing trend, not direct model output.",
-    "Buoy 44040 observation is 90 min old — treated as stale.",
-    "Marine-layer trend covers only 3 forecast hours (through 6:00 PM) but is moot for tonight — the layer is already absent (Sound water is warmer than the air, not colder)."
+    "Storm risk is rated high on radar proximity (cells of 45+ dBZ within 25 miles and closing); atmospheric instability is low, so severe weather is not expected — heavy downpours and gusts are the main threat.",
+    "Radar positions and arrival times are from the 4:35 PM scan; storms may have moved or changed strength since — check live radar.",
+    "Wind table shows the wind between showers; the forecast model has no gust data, so gust figures are estimates and brief stronger gusts are possible near storm cells.",
+    "Buoy 44040 (western Sound) observation is 72 minutes old.",
+    "The backup instability model (RAP) was not used this run; instability figures come from the HRRR model, cross-checked against the National Weather Service forecast discussion.",
+    "Two of the 29 wind stations (Port Chester and Rye) were stale and excluded."
   ]
 }
