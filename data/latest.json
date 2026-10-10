@@ -1,82 +1,83 @@
 {
-  "generated_at": "2026-10-10T08:40:16-04:00",
+  "generated_at": "2026-10-10T16:02:49-04:00",
   "storm": {
     "risk_level": "low",
-    "summary_layperson": "No storms anywhere nearby today — a cool, quiet autumn day under high pressure, with nothing on radar and no warnings.",
+    "summary_layperson": "No storm risk this evening — high pressure is in control, skies are partly sunny to clear, and the cove will see the same quiet, dry weather as the surrounding towns.",
     "local_effect": "neutral",
-    "local_effect_blurb": "No marine-layer buffer today: the Sound (65°F) is warmer than the morning air, and even at the afternoon high the air only gets about 1°F above the water — never near the ~5°F needed — so the Sound isn't shaping the weather either way.",
-    "detail_html": "<p><strong>Regional picture:</strong> Strong high pressure (about 1030 hPa) sits over southern New England this morning. Radar from Upton (KOKX) shows no echoes to track, there are no NWS watches, warnings, or advisories, and the atmosphere has <strong>zero instability</strong> (0 J/kg of CAPE, the fuel thunderstorms need). The upper-level winds are fairly strong (about 41 kt of shear), but with no instability there is nothing for that wind to organize.</p><p><strong>Local modifier:</strong> On summer days the cool Sound often acts as a shield — when the air over land is much warmer than the water, a stable, cool layer forms near the surface that chokes storms. Today the setup is reversed: the Sound is about 65°F while the air at the cove was about 55°F at 8:40 AM. The model warms the air to about 66°F by midday, so the air–water gap only reaches roughly +1°F around noon to 4 PM before falling back below the water temperature after sunset (6:21 PM). It never approaches the ~5°F threshold, so there is <strong>no protective marine layer at any point today</strong> — but there is also nothing for it to protect against.</p><p><strong>Most likely outcome:</strong> Dry for the cove and the surrounding towns alike. Expect partly sunny skies and a high in the mid-60s. The forecasters' discussion points to the next shower chance arriving late Tuesday into Wednesday, with an isolated thunderstorm possible then.</p><p><strong>What would change the call:</strong> Not much today. Only an unexpected disturbance producing instability could do it, and nothing in the model run (zero instability through 7 PM) or the forecaster discussion points that way.</p>"
+    "local_effect_blurb": "No marine-layer buffer tonight: the Sound (65°F) is already about as warm as the air at 4 PM and ends up nearly 5°F warmer than the air by 7 PM as the evening cools — but there is nothing for it to buffer against.",
+    "detail_html": "<p><strong>Regional picture:</strong> strong high pressure (about 1030 mb) sits over the area. The atmosphere has no storm fuel at all — the model shows zero instability through the evening — there are no National Weather Service alerts, and the forecast is simply partly sunny, turning clear. The NWS discussion does not mention showers again until late Tuesday.</p><p><strong>About the radar blip:</strong> the 3:51 PM radar scan showed one small, strong-looking echo about 38 miles west-southwest, over northern New Jersey. It was not there on the previous scan, and the airports around it (Newark, Caldwell, Teterboro) were all reporting clear or mostly clear skies with no rain at 3:45 PM. With no instability and high pressure overhead, that echo is almost certainly a radar artifact rather than a real shower, so it is <strong>not</strong> being treated as an approaching storm and no arrival time is given.</p><p><strong>Local effects:</strong> on summer afternoons the cool Sound often builds a stable layer of air that weakens incoming storms. That is not in play tonight. The water is 65°F and the air is 64–66°F — no gap to speak of — and because the Sound holds its temperature while the air cools after sunset (6:21 PM), the water ends up warmer than the air: roughly 1°F warmer at 5 PM, 4°F at 6 PM and 5°F by 7 PM. The sea breeze is not running either. Neither effect helps or hurts tonight.</p><p><strong>Most likely outcome:</strong> dry and quiet at the cove and in every neighboring town, with light easterly air and temperatures sliding from the mid 60s into the upper 50s by 10 PM.</p><p><strong>What would change the call:</strong> the New Jersey echo persisting on later scans and moving east, or rain actually being reported at the airports underneath it. Neither is expected.</p>"
   },
   "wind": {
     "forecast_window": {
-      "start": "10:00",
-      "end": "15:00"
+      "start": "17:00",
+      "end": "22:00"
     },
     "regime": "B-light",
-    "regime_label": "Light gradient wind — no sea breeze, direction wandering",
+    "regime_label": "Light gradient wind — no sea breeze, direction may wander",
     "hourly": [
       {
-        "time": "10:00",
-        "speed_kt": 5,
+        "time": "17:00",
+        "speed_kt": 4,
         "gust_kt": 7,
-        "dir_deg": 34,
-        "dir_compass": "NE",
-        "shift_note": "light NE filling in, patchy"
+        "dir_deg": 75,
+        "dir_compass": "ENE",
+        "shift_note": "light and patchy, wandering ±20°"
       },
       {
-        "time": "11:00",
+        "time": "18:00",
         "speed_kt": 4,
         "gust_kt": 6,
-        "dir_deg": 35,
-        "dir_compass": "NE",
-        "shift_note": "light and steady-ish, drifter risk"
+        "dir_deg": 92,
+        "dir_compass": "E",
+        "shift_note": "slow right shift starting"
       },
       {
-        "time": "12:00",
+        "time": "19:00",
         "speed_kt": 4,
-        "gust_kt": 7,
-        "dir_deg": 66,
-        "dir_compass": "ENE",
-        "shift_note": "swinging right toward E, soft patch"
-      },
-      {
-        "time": "13:00",
-        "speed_kt": 7,
-        "gust_kt": 9,
-        "dir_deg": 112,
-        "dir_compass": "ESE",
-        "shift_note": "easterly settling in, building slightly"
-      },
-      {
-        "time": "14:00",
-        "speed_kt": 7,
-        "gust_kt": 9,
-        "dir_deg": 109,
-        "dir_compass": "ESE",
-        "shift_note": "best of the day, light ESE"
-      },
-      {
-        "time": "15:00",
-        "speed_kt": 6,
-        "gust_kt": 8,
+        "gust_kt": 6,
         "dir_deg": 104,
         "dir_compass": "ESE",
-        "shift_note": "steady, starting to back and soften"
+        "shift_note": "right shift continuing, puffs fading after sunset"
+      },
+      {
+        "time": "20:00",
+        "speed_kt": 4,
+        "gust_kt": 6,
+        "dir_deg": 119,
+        "dir_compass": "ESE",
+        "shift_note": "furthest right, light and steady"
+      },
+      {
+        "time": "21:00",
+        "speed_kt": 4,
+        "gust_kt": 5,
+        "dir_deg": 113,
+        "dir_compass": "ESE",
+        "shift_note": "holding, easing back left"
+      },
+      {
+        "time": "22:00",
+        "speed_kt": 4,
+        "gust_kt": 5,
+        "dir_deg": 106,
+        "dir_compass": "ESE",
+        "shift_note": "holding light, glassy patches"
       }
     ],
-    "tactics_blurb": "A light easterly drifter day with no sea breeze to rescue it — the wind swings from NE in the late morning to ESE after 1 PM. Once it's ESE, favor the right (south/west) side, away from Greenwich Point's wind shadow, and hold off racing until it settles.",
+    "tactics_blurb": "Drifter-class light easterly that slowly swings right (ENE to ESE) through the evening, with Greenwich Point blanketing the east side of the course. Favor the right, open-water side for both the shift and the better pressure, keep the boat moving, and stay out of the lee of the point.",
     "favored_side": "right",
-    "tactics_detail_html": "<p><strong>Regime call — light gradient wind, no sea breeze.</strong> A sea breeze needs the land to heat well above the water (at least ~5°F). Today it can't: the Sound is about 65°F and the air at Riverside YC was 54.7°F at 8:40 AM. The model peaks the air near 66°F around noon to 4 PM, an air–water temperature difference of only about 1°F. No coastal or inland station is showing southerly flow (0 of 20 coastal stations), so the thermal never gets going. What wind there is comes from the large-scale (gradient) flow around the high, and that's weak: well-sited anemometers average under 2 kt right now, and the cove is effectively calm (RYC 10-minute average 0.3 kt).</p><p><strong>Through the window:</strong> The model fills in a light NE of about 4–5 kt by 10–11 AM, then rotates it clockwise through ENE at noon to <strong>ESE (~105–112°) at 6–7 kt from 1 to 3 PM</strong>, which is the best wind of the window. The NWS forecast (east wind around 5 mph) agrees with the easterly call. This is a slow rotation of the background flow around the high, not a sea breeze. It will feel like a steady drift to the right through midday rather than shifts you can play back and forth.</p><p><strong>Where the pressure is:</strong> In the morning NE, flow comes off the land cleanly and is fairly uniform, with a touch more pressure mid-cove. Once it goes ESE, Greenwich Point (Tod's Point) sits upwind of the east side of the course and throws a wind shadow. Pressure favors the <strong>west and south side</strong> — the right side on an ESE beat — while the shore near Tod's Point stays lighter and patchier. A light easterly is one of the cove's softest directions, so the open Sound may look breezier than the start line feels.</p><p><strong>Shift character:</strong> A persistent clockwise swing from 10 AM to about 1 PM (NE → ESE, about 75°), then roughly steady ESE, beginning to back slightly by 3 PM. During the swing, the side the wind is rotating toward pays. In the settled ESE, puffs will be patchy at this strength rather than cleanly oscillating.</p><p><strong>What racers will feel:</strong> 4–5 kt before noon is drifter territory — dinghies can move, keelboats will struggle, and postponement on shore or on the water until the easterly settles is a real possibility. 6–7 kt from 1 to 3 PM is raceable light air for most fleets. Treat the 2–3 PM numbers with some caution: they come from the model's lower-confidence later hours. Gusts are estimated (the model output doesn't include them).</p>"
+    "tactics_detail_html": "<p><strong>What kind of day:</strong> a light gradient-wind evening — no sea breeze in play. A sea breeze needs the land to be at least 5°F warmer than the water, and today the air–water temperature difference is essentially zero (air 64–66°F, Sound 65°F). What is blowing is the weak background flow around high pressure: the well-sited airport and buoy sensors average only about 6 kt, from the east to southeast.</p><p><strong>What the cove actually has:</strong> the Riverside YC station read ESE 3.5 kt at 4 PM, with a 10-minute average of just 2.2 kt and puffs to 6–7. The model has 5–6 kt over open water, and the western-Sound buoy agreed with that at last report (E 5.6 kt, about 75 minutes old). The gap is geography, not a model miss: an easterly comes across Greenwich Point, which shelters the cove more than any other direction. The hourly numbers above are therefore shaded about 1–2 kt below the model.</p><p><strong>Shifts through the window:</strong> the model swings the breeze slowly and steadily right — ENE (075°) at 5 PM, east at 6 PM, ESE (105–120°) from 7 to 8 PM — then lets it ease back a little to about 105° by 10 PM. That is a persistent shift of roughly 45° rather than an oscillation to tack on. On top of it, expect short-term wandering of 20° or more: nearby stations disagree widely on direction right now, which is typical when the flow is this weak.</p><p><strong>Favored side:</strong> right. Looking upwind, the right is the open-water side toward the cove mouth, away from the wind shadow of Greenwich Point, and it is also the inside of the persistent right shift. As the breeze goes further toward the southeast after 7 PM the shelter eases slightly, with the best pressure along the western side of the course.</p><p><strong>Will it hold:</strong> yes, in the sense that it will not get worse — this wind is not driven by the sun, so sunset (6:21 PM) does not switch it off. But there is no build coming either: 3–5 kt all evening, with the puffs flattening out after dark as the air near the water cools. For the fleet that means marginal, patience-testing racing: priority on boat speed and connecting puffs over fine positioning, and long glassy holes near the east shore.</p>"
   },
   "conditions": {
     "sky": "Partly Sunny",
-    "temp_f": 54.7,
-    "feels_like_f": 54.7
+    "temp_f": 65.9,
+    "feels_like_f": 65.9
   },
   "data_caveats": [
-    "Buoy 44040 (western Sound) stale — last reading 174 min ago; its water-temperature feed also failed (404), so Sound water temperature comes from Bridgeport Harbor (BRHC3)",
-    "Marine-layer trend uses raw model air temperatures (pipeline found no current inland air-temp reading); RYC's live 54.7°F is consistent with the model's morning values",
-    "2–3 PM wind numbers come from the model's lower-confidence later hours (f07–f08)",
-    "Gust values are estimated — the model wind output for this window has no gust field"
+    "Radar showed a single strong echo 38 mi WSW over northern New Jersey at 3:51 PM; it was absent on the prior scan, airports beneath it report clear skies, and the model shows zero instability — treated as a radar artifact, not an approaching storm, so no arrival time is published",
+    "The main forecast-model run only reached 7 PM when data was pulled; the 8 PM hour was filled in from the same run a few minutes later and 9–10 PM come from the previous hour's run",
+    "Gust values are estimated from the Riverside YC gust-to-average ratio — the model wind output has no gust field",
+    "Hourly speeds are shaded 1–2 kt below the model to reflect Greenwich Point's shelter in an easterly (RYC reading 2–4 kt vs. model 5 kt)",
+    "Buoy 44040 (western Sound) reading is 75 min old; Sound water temperature comes from Bridgeport Harbor (BRHC3)"
   ]
 }
