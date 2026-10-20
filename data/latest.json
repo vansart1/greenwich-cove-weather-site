@@ -1,36 +1,82 @@
 {
-  "generated_at": "2026-10-19T16:01:33-04:00",
+  "generated_at": "2026-10-20T16:02:03-04:00",
   "storm": {
     "risk_level": "low",
-    "summary_layperson": "No storms anywhere nearby tonight — high pressure is keeping skies clear and dry over Greenwich and the surrounding towns alike.",
+    "summary_layperson": "No storms anywhere nearby tonight — clear, dry, cool northerly air with nothing on radar and no weather alerts.",
     "local_effect": "neutral",
-    "local_effect_blurb": "No marine-layer buffer: the Sound (63°F) is already warmer than the air (61°F) at 4 PM, and the gap only widens the other way as air cools to the mid-50s by 7 PM — the Sound isn't shaping the weather tonight.",
-    "detail_html": "<p><strong>Regional picture:</strong> A strong high (pressure near 1027 hPa across the region) is in control. KOKX radar shows no echoes at all, there are no NWS alerts, and the atmosphere has no instability to work with (CAPE of 0 J/kg, wind shear only about 9 kt). The NWS forecast is simply “Sunny”.</p><p><strong>Local effect:</strong> The cool-water “marine layer” that sometimes blunts summer storms needs the air to be at least ~5°F warmer than the Sound. Tonight it's the reverse: Bridgeport Harbor water is 63°F while the cove air is about 61°F, and the model cools the air to roughly 54°F by 7 PM. The Sound holds its temperature while the air cools after sunset, so the water only gets relatively warmer through the evening — no protective layer at any point in the window. There is no sea breeze running either. With no storms to modify, this doesn't matter today.</p><p><strong>Cove vs. surrounding areas:</strong> Same as everywhere else in the region — dry, clear, cooling quickly after the 6:07 PM sunset.</p><p><strong>What would change the call:</strong> Nothing in the current data points that way. A new radar echo or NWS alert would be needed to raise the risk, and the large-scale setup gives no sign of one tonight.</p>"
+    "local_effect_blurb": "The Sound's cooling buffer is already fading — the air–water gap is about 6°F now and drops below the ~5°F threshold around 4:15 PM, reversing to the air being colder than the water (about −7°F) by 8 PM — but with no storms around it doesn't matter tonight.",
+    "detail_html": "<p><strong>Regional picture:</strong> A dry, settled northerly flow covers the whole region. The Upton (KOKX) radar shows no echoes to track, there are no NWS watches, warnings or advisories, and the atmosphere has no storm fuel at all — convective energy (CAPE) is 0 J/kg and wind shear is a light 8 kt. Dewpoints in the upper 30s confirm very dry air.</p><p><strong>Local modifier:</strong> On warm days, Long Island Sound acts as a buffer — cool water under warmer air forms a stable “marine layer” that tends to weaken storms crossing it. Right now the water is 62°F and the air is about 68°F, a modest 6°F gap. But the Sound holds its temperature while the air cools after sunset (6:05 PM tonight), so that gap closes fast: it falls below the ~5°F threshold around <strong>4:15 PM</strong>, is near 3°F by 5 PM, and by 8 PM the air (about 55°F) is actually colder than the water. There is no sea breeze running today either — the wind is blowing off the land.</p><p><strong>Most likely outcome:</strong> A quiet, storm-free evening for the cove and every surrounding town alike. With nothing to deflect, the local effects are simply not in play — the cove is no better or worse off than inland Westchester or Fairfield County tonight.</p><p><strong>What would change the call:</strong> Only something unforecast — a new echo appearing on radar to the west or an NWS alert. Neither the model nor the forecast offices show any sign of that through the evening.</p>"
   },
   "wind": {
-    "forecast_window": {"start": "17:00", "end": "22:00"},
-    "regime": "B-light",
-    "regime_label": "Light gradient wind — no sea breeze, direction wandering",
+    "forecast_window": {
+      "start": "17:00",
+      "end": "22:00"
+    },
+    "regime": "B-moderate",
+    "regime_label": "Moderate northerly gradient wind — no sea breeze",
     "hourly": [
-      {"time": "17:00", "speed_kt": 5, "gust_kt": 8, "dir_deg": 72, "dir_compass": "ENE", "shift_note": "light and unsettled — cove showing SSE puffs"},
-      {"time": "18:00", "speed_kt": 5, "gust_kt": 7, "dir_deg": 62, "dir_compass": "ENE", "shift_note": "backing, softening with sunset"},
-      {"time": "19:00", "speed_kt": 5, "gust_kt": 7, "dir_deg": 14, "dir_compass": "NNE", "shift_note": "backing to NNE, offshore flow setting"},
-      {"time": "20:00", "speed_kt": 4, "gust_kt": 6, "dir_deg": 10, "dir_compass": "N", "shift_note": "light offshore, puffy"},
-      {"time": "21:00", "speed_kt": 4, "gust_kt": 6, "dir_deg": 5, "dir_compass": "N", "shift_note": "light offshore, puffy"},
-      {"time": "22:00", "speed_kt": 3, "gust_kt": 5, "dir_deg": 5, "dir_compass": "N", "shift_note": "fading, near drifter"}
+      {
+        "time": "17:00",
+        "speed_kt": 7,
+        "gust_kt": 13,
+        "dir_deg": 10,
+        "dir_compass": "N",
+        "shift_note": "puffy offshore, big oscillations"
+      },
+      {
+        "time": "18:00",
+        "speed_kt": 7,
+        "gust_kt": 12,
+        "dir_deg": 0,
+        "dir_compass": "N",
+        "shift_note": "slow left drift, sunset 6:05"
+      },
+      {
+        "time": "19:00",
+        "speed_kt": 8,
+        "gust_kt": 12,
+        "dir_deg": 355,
+        "dir_compass": "N",
+        "shift_note": "holding after dark, gusts easing"
+      },
+      {
+        "time": "20:00",
+        "speed_kt": 8,
+        "gust_kt": 11,
+        "dir_deg": 350,
+        "dir_compass": "N",
+        "shift_note": "steady, settling"
+      },
+      {
+        "time": "21:00",
+        "speed_kt": 7,
+        "gust_kt": 10,
+        "dir_deg": 350,
+        "dir_compass": "N",
+        "shift_note": "steady (extrapolated)"
+      },
+      {
+        "time": "22:00",
+        "speed_kt": 7,
+        "gust_kt": 10,
+        "dir_deg": 350,
+        "dir_compass": "N",
+        "shift_note": "steady (extrapolated)"
+      }
     ],
-    "tactics_blurb": "Light, wandering breeze that backs from ENE toward N through the evening — a persistent left shift, so favor the left side of the beat. Expect near-drifter conditions; keep the boat moving and hunt pressure in the middle of the cove.",
-    "favored_side": "left",
-    "tactics_detail_html": "<p><strong>The call: light gradient wind, no sea breeze.</strong> The airports are only reporting around 7 kt on average, and the sea breeze never got going today — only 1 of 19 coastal stations shows a southerly, and the air–water temperature difference is negative (air 61°F vs. Sound 63°F, about −2°F). Without land warmer than water, there's no thermal engine, so the sea-breeze direction correction does not apply.</p><p><strong>Direction through the window:</strong> The model (HRRR) has light east-northeast wind at 5 PM backing steadily to north-northeast by 7 PM as the land cools after the 6:07 PM sunset. Right now, though, the Riverside YC anemometer reads SSE at about 4 kt (10-min average), with gusts to 8 — nearly 90° off the model. Western Sound stations disagree widely too (direction agreement only 0.41), so treat the early part of the window as unsettled. Confidence in direction is low until the offshore flow sets in after sunset.</p><p><strong>Where the pressure is:</strong> While the wind is east-ish, Greenwich Point shelters the cove heavily and the start line can be dead even when the open Sound has breeze. As it backs to NE the flow gets cleaner and more uniform, with slightly more pressure mid-cove. Once it goes N after dark, expect it to come off the land puffy and shifty, with holes between puffs — best average pressure in the middle of the cove, away from the trees on shore.</p><p><strong>Shift character:</strong> This is a persistent backing trend (ENE → NNE → N), not an oscillating breeze — the wind keeps rotating left and doesn't come back. Favor the left side of upwind legs and don't bank on getting the right back.</p><p><strong>What the fleet will feel:</strong> 4–5 kt, falling to around 3 kt by 10 PM. That's light-air, drifter-class sailing: heavier boats will struggle to hold way, and race committees may have trouble setting a square line with the direction moving this much. Chilly too — air drops into the mid-50s by 7 PM.</p>"
+    "tactics_blurb": "Northerly breeze blowing off the land, so it's puffy and shifty with big swings between gusts and lulls, and it holds through sunset at around 7–8 kt. Stay in the middle of the cove away from the shoreline wind shadows, and tack on the big headers.",
+    "favored_side": "center",
+    "tactics_detail_html": "<p><strong>The call:</strong> Moderate gradient wind — no sea breeze in play (B-moderate). The well-sited airport anemometers around the Sound average 11.6 kt from the north to north-northeast, and the air–water temperature difference is only 5.6°F, right at the edge of what a sea breeze needs. More decisively, not one of 24 coastal or inland stations shows any southerly component, so no sea breeze has formed. Because this is a gradient-wind day, not a sea-breeze day, the sea-breeze direction correction does not apply and there is no sunset collapse to worry about.</p><p><strong>Right now at RYC:</strong> NNE 4 kt instantaneous, 10-minute average 8.1 kt, gusting 15 — a big gust-to-lull spread typical of wind coming off the land. The model (HRRR) is running about 2 kt lighter than RYC is actually reading, so the hourly numbers above are nudged up to match the cove.</p><p><strong>Where the pressure is:</strong> In a north-to-north-northeast wind the breeze reaches the cove after crossing Greenwich's trees and houses, so it arrives in puffs with holes between them. The steadiest average pressure is usually mid-cove, away from the lee of either shore. Expect the strongest puffs to roll down off the northern and northwestern shore.</p><p><strong>Shift character:</strong> Oscillating, not persistent — offshore flow typically swings 15–30° between puffs. The model shows a slow drift to the left (from about 10° toward 350°) through the evening, so lean slightly toward the left-hand shifts late, but mostly play the oscillations: tack on the big headers and stay connected to the puffs. Stations disagree on direction (agreement only 0.5 across the area, with inland stations reading west-northwest), which is another sign of a shifty, terrain-chopped breeze rather than a front.</p><p><strong>Through the window:</strong> Unlike a sea breeze, this wind doesn't care about the sun — it holds through the 6:05 PM sunset. After dark the lower atmosphere stabilizes, so the gusts should soften (from mid-teens toward ~10 kt) while the average stays around 7–8 kt. That's the sweet spot for one-design dinghies — good racing, but stay alert for the lulls. It will be chilly: air dropping from the upper 60s into the mid-50s by 8 PM.</p>"
   },
   "conditions": {
     "sky": "Sunny",
-    "temp_f": 61,
-    "feels_like_f": 61
+    "temp_f": 73,
+    "feels_like_f": 73
   },
   "data_caveats": [
-    "HRRR model data only available through 7 PM (forecast hours 5–12 failed to download) — 8–10 PM wind is extrapolated from the evening trend and is lower confidence.",
+    "HRRR model data only available through 8 PM (forecast hours 6–12 failed to download) — 9–10 PM wind is extrapolated from the evening trend and is lower confidence.",
     "Buoy 44040 (Western Long Island Sound) offline — UConn data server returned an error; over-water wind and air temp unavailable.",
-    "Wind direction confidence is low — the cove anemometer (SSE) and the model (ENE) currently differ by ~90°."
+    "Westchester (KHPN), Islip (KISP) and Westerly (KWST) airport wind sensors are down; regime call uses the remaining 24 stations.",
+    "HRRR is running ~2 kt lighter than the RYC anemometer; hourly speeds are adjusted toward the cove reading."
   ]
 }
