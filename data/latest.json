@@ -1,81 +1,37 @@
 {
-  "generated_at": "2026-10-26T16:01:41-04:00",
+  "generated_at": "2026-10-27T16:02:37-04:00",
   "storm": {
     "risk_level": "low",
-    "summary_layperson": "No storms anywhere nearby this evening — clear skies and no weather alerts, so there's nothing for the Sound to protect the cove from tonight.",
+    "summary_layperson": "No storms anywhere near the area tonight — clear, cool, and calm, with the only weather note being a minor coastal flooding statement for tomorrow's high tide.",
     "local_effect": "neutral",
-    "local_effect_blurb": "Marine layer holds at 4 PM (9°F air–water gap) but fades around 5:15 PM and is gone by 6 PM as the air cools below the 60°F Sound — no buffer this evening, though none is needed.",
-    "detail_html": "<p><strong>Regional picture:</strong> Quiet. The Upton (KOKX) radar shows no precipitation echoes in range, there are no NWS watches, warnings, or advisories, and the atmosphere has no storm fuel at all — CAPE (a measure of how much energy rising air has to build thunderstorms) is 0 J/kg. Winds aloft are a moderate 24 kt from the west-northwest, but with zero instability that shear has nothing to organize.</p><p><strong>Local modifier:</strong> The cool Sound sometimes acts as a shield for the cove — when the water is well below the air, a stable, cool layer sits over it and tends to weaken storms coming off the land. At 4 PM that gap is about <strong>9°F</strong> (air ~70°F, Sound ~60°F). But the Sound holds its temperature while the air cools after sunset, so the protective gap closes: the model projects it dropping below the ~5°F threshold around <strong>5:15 PM</strong>, to about 1°F by 6 PM, and by 7–8 PM the air is actually <strong>colder than the water</strong> (2–4°F below). Any storm arriving this evening would find no buffer at all.</p><p><strong>Most likely outcome:</strong> Dry, clear evening for the cove and surrounding towns alike. With nothing on radar and no instability, there is no meaningful difference between the shoreline and inland areas tonight.</p><p><strong>What would change the call:</strong> Only an unexpected development of showers to the west, which the current data gives no hint of. The model forecast beyond 8 PM was unavailable this run, but with no fuel in the atmosphere and a dry westerly flow, a late-evening surprise is very unlikely.</p>"
+    "local_effect_blurb": "No marine-layer buffer at all: the Sound (60°F) is already warmer than the air at 4 PM, and the gap widens to ~7°F the other way by 8 PM as the air cools — moot tonight with no storms around.",
+    "detail_html": "<p><strong>Regional picture:</strong> High pressure (about 1028 hPa) is in charge. KOKX radar shows no echoes to track, the model shows zero instability (CAPE 0 J/kg), and there are no watches or warnings. Upper-level wind shear is strong at about 49 kt from the WNW, but with no instability there is nothing for that shear to organize — it is a dry, stable fall evening.</p><p><strong>Local modifier:</strong> None in play. The Sound's usual protective trick needs the water to be noticeably <em>colder</em> than the air (about 5°F or more) so a cool, stable layer sits over the water and starves storms. Tonight it is the reverse: Sound water is 60°F and the air is about 59°F at 4 PM. The air keeps cooling after the 5:56 PM sunset while the water holds steady, so by 8 PM the air is roughly 7°F colder than the water — no stable layer at any point in the window.</p><p><strong>Most likely outcome for the cove:</strong> Same as everywhere else around — dry, clear, and quiet. No difference expected between the cove and inland towns.</p><p><strong>One thing to note:</strong> NWS Upton has a <strong>Coastal Flood Statement</strong> (minor) for the next high tide cycle, through 3 PM tomorrow. That's a nuisance-flooding heads-up for low-lying shoreline spots, not a storm.</p><p><strong>What would change the call:</strong> Nothing realistic in this window — it would take new echoes developing upstream, and the model shows no instability to support that.</p>"
   },
   "wind": {
-    "forecast_window": {
-      "start": "17:00",
-      "end": "22:00"
-    },
+    "forecast_window": {"start": "17:00", "end": "22:00"},
     "regime": "B-light",
-    "regime_label": "Light westerly gradient — no sea breeze, fading after sunset",
+    "regime_label": "Light gradient wind — no sea breeze, direction wandering",
     "hourly": [
-      {
-        "time": "17:00",
-        "speed_kt": 5,
-        "gust_kt": 9,
-        "dir_deg": 280,
-        "dir_compass": "W",
-        "shift_note": "puffy westerly, softening toward sunset"
-      },
-      {
-        "time": "18:00",
-        "speed_kt": 5,
-        "gust_kt": 7,
-        "dir_deg": 240,
-        "dir_compass": "WSW",
-        "shift_note": "backing left after sunset"
-      },
-      {
-        "time": "19:00",
-        "speed_kt": 5,
-        "gust_kt": 7,
-        "dir_deg": 260,
-        "dir_compass": "W",
-        "shift_note": "light, wandering ±15°"
-      },
-      {
-        "time": "20:00",
-        "speed_kt": 5,
-        "gust_kt": 6,
-        "dir_deg": 245,
-        "dir_compass": "WSW",
-        "shift_note": "light, wandering ±15°"
-      },
-      {
-        "time": "21:00",
-        "speed_kt": 4,
-        "gust_kt": 6,
-        "dir_deg": 245,
-        "dir_compass": "WSW",
-        "shift_note": "extrapolated — light, may go variable"
-      },
-      {
-        "time": "22:00",
-        "speed_kt": 4,
-        "gust_kt": 5,
-        "dir_deg": 245,
-        "dir_compass": "WSW",
-        "shift_note": "extrapolated — light, may go variable"
-      }
+      {"time": "17:00", "speed_kt": 4, "gust_kt": 7, "dir_deg": 115, "dir_compass": "ESE", "shift_note": "light, fading toward sunset"},
+      {"time": "18:00", "speed_kt": 3, "gust_kt": 5, "dir_deg": 88, "dir_compass": "E", "shift_note": "near-drifter after sunset"},
+      {"time": "19:00", "speed_kt": 4, "gust_kt": 6, "dir_deg": 100, "dir_compass": "E", "shift_note": "light easterly, patchy"},
+      {"time": "20:00", "speed_kt": 3, "gust_kt": 5, "dir_deg": 50, "dir_compass": "NE", "shift_note": "variable — swinging toward north"},
+      {"time": "21:00", "speed_kt": 4, "gust_kt": 6, "dir_deg": 0, "dir_compass": "N", "shift_note": "light land breeze, puffy"},
+      {"time": "22:00", "speed_kt": 4, "gust_kt": 6, "dir_deg": 357, "dir_compass": "N", "shift_note": "light land breeze, puffy"}
     ],
-    "tactics_blurb": "Light westerly that backs toward WSW after the 5:57 PM sunset — no sea breeze to organize it, so expect 4–5 kt with soft spots near the Connecticut shore. Stay center, keep the boat moving, and head toward the mouth of the cove where the westerly comes in less blocked by land.",
+    "tactics_blurb": "Drifter conditions: 3–4 kt from the east, swinging to a light northerly after dark. Stay center, stay off the Tod's Point shore while it's easterly, and sail toward whatever breeze you can see on the water.",
     "favored_side": "center",
-    "tactics_detail_html": "<p><strong>What kind of day it is:</strong> light gradient wind — no sea breeze, direction may wander. The ingredients for a sea breeze were half there: the air–water temperature difference was a healthy 9.4°F this afternoon (warm land, 60°F Sound), but the sea breeze never formed — only 2 of 19 shoreline stations show any southerly component, and the whole region from Rye to Westerly is blowing west. With sunset at <strong>5:57 PM</strong>, essentially the whole 5–10 PM window is after dark, so there's no thermal left to wait for anyway.</p><p><strong>Wind strength:</strong> The background wind across the western Sound is light — western-Sound airports average about 5 kt and the HRRR model holds the cove at 4–5 kt all evening. Riverside YC is currently reading a 10-minute average of 8 kt with puffs to 13 kt out of the WNW, but that's late-afternoon mixing from the warm land; as the air cools after sunset it stabilizes near the surface and those gusts die off. Expect <strong>5 kt at the start, easing to about 4 kt by 9–10 PM</strong>. Stronger breeze exists farther east (12 kt at Groton and Block Island), but it isn't reaching this end of the Sound.</p><p><strong>Direction and where the pressure is:</strong> Westerly near 280° at 5 PM, backing to west-southwest (240–260°) after sunset. A westerly blows down the Sound from the New York end — the direction is usually steady, but it tends to leave holes along the Connecticut shore while staying stronger out in the open Sound. In the cove that means lighter, patchier air near the docks and the western shore, and slightly better pressure toward the mouth. There's no strong side to commit to, so the call is <strong>center</strong>, leaning toward the open water.</p><p><strong>Shift character:</strong> Not a classic oscillating breeze. In wind this light, expect slow, wandering shifts of 10–20° rather than a regular rhythm, plus a gradual leftward drift (backing) through the evening. Play the pressure more than the shifts — a puff is worth more than a 10° lift tonight.</p><p><strong>What racers will feel:</strong> Drifter-class conditions for much of the fleet — enough to sail at the start, marginal by the end. Heavier boats will struggle; light-air technique and keeping the boat moving matter most. The model forecast beyond 8 PM was unavailable this run, so the 9 and 10 PM numbers are extrapolated from the trend.</p>"
+    "tactics_detail_html": "<p><strong>What kind of day it is:</strong> A light gradient-wind evening with no sea breeze. A sea breeze needs the land to be clearly warmer than the water; today the air (about 59°F) is actually a touch cooler than the Sound (60°F) — an air–water temperature difference of −1.4°F — so there's no thermal engine at all. What's left is the faint background flow around high pressure, about 3–5 kt.</p><p><strong>Right now:</strong> Riverside YC reads SE 3 kt (4 kt 10-minute average, gusts to 8), and the APRS stations around the cove are all under 1 kt — the breeze is very thin and patchy. Station directions disagree widely (only 35% agreement), which is typical of a light-air day where local eddies run the show.</p><p><strong>Through the window:</strong> The model holds a light easterly (E–ESE, 3–4 kt) through sunset at 5:56 PM and into early evening. Around 8 PM the runs disagree — the latest keeps it easterly, the two prior runs flip it north — so expect that hour to be variable. By 9–10 PM all runs agree on a light northerly land breeze around 4 kt as the land cools below the water.</p><p><strong>Where the pressure is:</strong> In an easterly the Greenwich Point (Tod's Point) peninsula shelters the cove, so the east side of the course will be the lightest; the cove is often near-dead in this direction even when the open Sound has some breeze. Once it goes northerly it blows off the land — puffy and shifty, with the best average pressure mid-cove away from the lee of trees and houses. Neither side is reliably favored, so stay center and keep options open.</p><p><strong>What the fleet will feel:</strong> 3–4 kt is drifter-class racing — heavier boats will struggle to steer, and a race may not get off or may be shortened. Keep weight forward and to leeward, head for visible ripples rather than committing to a side, and expect a big direction change if racing runs past 8 PM.</p>"
   },
   "conditions": {
     "sky": "Sunny",
-    "temp_f": 71,
-    "feels_like_f": 71
+    "temp_f": 58,
+    "feels_like_f": 58
   },
   "data_caveats": [
-    "Buoy 44040 (western Sound) is stale — last reading 90 minutes ago",
-    "HRRR model hours beyond 8 PM were unavailable — the 9 PM and 10 PM wind rows are extrapolated from the trend",
-    "Wind call is borderline: the Sound-wide average breeze is 8.5 kt, but that's driven by the eastern Sound; the western Sound and the model both show 4–6 kt at the cove"
+    "Buoy 44040 (western Sound) offline — UConn data server unreachable",
+    "Latest HRRR model run (19Z) only published through 8 PM; the 9 PM and 10 PM wind rows come from the prior 18Z and 17Z runs, which agree closely",
+    "Models disagree on the 8 PM wind (latest run easterly, prior runs northerly) — treat that hour as variable",
+    "NWS forecast timed out on the first fetch; sky conditions came from a retry"
   ]
 }
